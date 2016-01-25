@@ -1,25 +1,27 @@
-help-content
+## ca-help
+
+### a playground for web application development
+
+This repository comprises a student-developed web application for managing [help content]().
+
+
+
 ----
-----
+## 2016 Initiative
 
 
-This repository is a student-driven content drafting space for ITS help articles.
+Starting in 2016, SRC CAs are collaborating to develop a basic web application called 'ca-help'.
 
+This web application hosts a variety of help content&mdash;written text, images, video, and other form of media.
 
-
-
-Starting in 2016, SRC CAs will be asked to collaborate to develop a basic web application called 'ca-help'.
-
-This web application will host a variety of help content.  Content can be comprised of written text, images, video, or any other form of media that CAs wish to contribute.
-
-CA are expected to actively work on the 'ca-help' web application during their time on shifts.  CAs wishing to work during library shifts help to define and achieve goals with respect to site creation, development and content management.
+ITS CA contribute to the 'ca-help' web application during their time on shifts.  CAs wishing to work during library shifts help to define and achieve goals with respect to site creation, development and content management.
 
 CAs must elect to work primarily in one of two teams:
 
 
-## Development Team
+### Development Team
 
-The development team will take responsibility for building and modifying the web application framework.  This include extending and customizing the core application framework to meet ITS specifications.
+The development team is responsibile for building and modifying the web application framework to meet ITS specifications.  This includes coding to extend and customize the core application (such as changing the formatting language used for page creation) as well as install and modify its theme and user interfaces (UI). 
 
 The development team will work with the [Django web framework](https://www.djangoproject.com/).
 
@@ -27,7 +29,6 @@ Each CA wishing to contribute to the development team must be willing to build a
 
 
 
+### Content Team
 
-## Content Team
-
-
+The content team is responsible for composing and publishing help content articles.
