@@ -27,8 +27,10 @@ The development team will work with the [Django web framework](https://www.djang
 
 Each CA wishing to contribute to the development team must be willing to build and work with a testing / development environment.  ITS will maintain an Ubuntu Linux 14.04 virtual machine that can be locally deployed and managed on CA computers.  Where CAs do not have access to a personal computer, there will be an option to utilize a computer at ITS for development and testing.
 
+For information about '[getting started](https://github.com/src-its/ca-help/wiki/Development-Team-%7C-Getting-Started)' on the SRC-ITS development team, [check out our wiki](https://github.com/src-its/ca-help/wiki/Development-Team-%7C-Getting-Started)!
+
 
 
 ### Content Team
 
-The content team is responsible for composing and publishing help content articles.
+The content team is responsible for composing and publishing help content articles and other informational resources.
