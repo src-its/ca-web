@@ -16,7 +16,7 @@ This web application hosts a variety of help content&mdash;written text, images,
 
 ITS CA contribute to the 'ca-help' web application during their time on shifts.  CAs wishing to work during library shifts help to define and achieve goals with respect to site creation, development and content management.
 
-CA tasks will be assigned and managed primarily via our [GitHub wiki](https://github.com/src-its/ca-web/wiki/)
+CA tasks will be assigned and managed primarily via our [GitHub wiki](https://github.com/src-its/ca-web/wiki/). ITS also maintains a [Google spreadsheet with task assignments](https://docs.google.com/spreadsheets/d/11RLaTHYF4iGLeoE_8zSLclmo9oeqn0KDi4CKvMPRQyE/edit#gid=0) for CA reference.
 
 ---
 
@@ -25,7 +25,7 @@ CAs must elect to work primarily in one of two teams:
 
 ### Development Team
 
-The development team is responsibile for building and modifying the web application framework to meet ITS specifications.  This includes coding to extend and customize the core application (such as changing the formatting language used for page creation) as well as install and modify its theme and user interfaces (UI). 
+The development team is responsibile for building and modifying the web application framework to meet ITS specifications.  This includes coding to extend and customize the core application (such as changing the formatting language used for page creation) as well as install and modify its theme and user interfaces (UI).
 
 The development team will work with the [Django web framework](https://www.djangoproject.com/).
 
@@ -42,4 +42,3 @@ The content team is responsible for composing and publishing help articles and o
 CAs working on the content team must learn to use [both Git and GitHub](). Tasks will be opened, assigned and completed using the GitHub ticketing system.  All CA contributions must be pushed to GitHub prior to the end of each shift.
 
 For information about '[getting started](https://github.com/src-its/ca-web/wiki/Content-Team-%7C-Getting-Started)' on the SRC-ITS content team, [check out our wiki](https://github.com/src-its/ca-web/wiki/Content-Team-%7C-Getting-Started)!
-
