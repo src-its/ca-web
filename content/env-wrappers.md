@@ -1,5 +1,8 @@
 ~~~~Will format and make more coherent as ideas come~~~~
 
+https://en.wikipedia.org/wiki/Wrapper_library
+https://en.wikipedia.org/wiki/Driver_wrapper
+
 Premise of a wrapper/enviroment:
 
 -The most basic form in essentially a function that is called within a function
@@ -17,3 +20,9 @@ Premise of a wrapper/enviroment:
     -Java itself runs in a virtual enviroment
         -builds a temporary virtual machine
         -bound by no operating system, whereas other languages required OS specific libraries and code
+
+**Device Wrappers**
+-Used to make hardware not originally designed for an OS to work
+    -running windows drivers in linux
+    -using modern hardware on depreciated OS
+-For backwards compatibility
