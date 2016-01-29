@@ -140,6 +140,10 @@ Install `virtualenvwrapper` with `sudo`.
 
         mkvirtualenv ca-web
 
+This will install a standalone version of Python, as well as pip, into an isolated directory structure within your project directory. We chose to call our virtual environment newenv, but you should name it something descriptive. A directory will be created with the name you select, which will hold the file hierarchy where your packages will be installed.
+
+---
+
    **NOTE:** If the `mkvirtualenv` returns a "command not found" error, follow these steps:
    
    - check that `virtualenvwrapper.sh` is in `/usr/local/bin`; if not, use `locate virtualenvwrapper.sh` and then `ln -s` to the install location
@@ -154,4 +158,28 @@ Install `virtualenvwrapper` with `sudo`.
          `~ $ tail .bashrc`
 
 
+---
+
+To install packages into the isolated environment, you must activate it by typing:
+
+        source newenv/bin/activate
+
+Your prompt should change to reflect that you are now in your virtual environment. It will look something like (newenv)username@hostname:~/newproject$.
+
+In your new environment, you can use pip to install Django. Regardless of whether you are using version 2 or 3 of Python, it should be called just pip when you are in your virtual environment. Also note that you do not need to use sudo since you are installing locally:
+
+        pip install django
+
+You can verify the installation by typing:
+
+        django-admin --version
+
+To leave your virtual environment, you need to issue the deactivate command from anywhere on the system:
+
+        deactivate
+
+Your prompt should revert to the conventional display. When you wish to work on your project again, you should re-activate your virtual environment by moving back into your project directory and activating:
+
+        cd ~/newproject
+        source newenv/bin/activate
 
