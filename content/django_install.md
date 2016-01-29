@@ -183,3 +183,11 @@ Your prompt should revert to the conventional display. When you wish to work on 
         cd ~/newproject
         source newenv/bin/activate
 
+
+### references:
+
+
+Justin Ellingwood. 2015-Mar-05. "How To Install the Django Web Framework on Ubuntu 14.04" https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-14-04
+
+Kenneth Reitz Project. 2016. "Virtual Environments" **Python Guide.** http://docs.python-guide.org/en/latest/dev/virtualenvs/
+
