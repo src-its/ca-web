@@ -5,17 +5,17 @@ Addison
 
 Generate a new SSH key using the following command:
 
-   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 
 Be sure to substite in your own GitHub email address.
 
 
-    When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
 
-    Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
+Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
 
-    At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases".
+At the prompt, type a secure passphrase. For more information, see "Working with SSH key passphrases".
 
     Enter passphrase (empty for no passphrase): [Type a passphrase]
     Enter same passphrase again: [Type passphrase again]
