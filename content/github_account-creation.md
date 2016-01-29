@@ -8,6 +8,7 @@ After downloading, open Git shell.
 
 Then tell your Git your name and email address, so your all your commits will be labeled with your information, using the commands git config --global user.name "YOUR NAME" , and then $ git config --global user.email johndoe@example.com
 
+Next, generate your SSH key.
 
 ### Sources:
 
