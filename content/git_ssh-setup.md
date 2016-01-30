@@ -19,7 +19,7 @@ By default, the filenames of the public keys are one of the following:
 * id_ed25519.pub
 * id_rsa.pub
 
-If you see an existing key pair that you would like to use, you can [add it to the ssh-agent](#add-key-to-agent).  <!-- Anchor to where we elaborate this. -->
+If you see an existing key pair that you would like to use, you can [add it to the ssh-agent](#add-key-to-agent).
 
 If not, then generate a new SSH key using the following command:
 
