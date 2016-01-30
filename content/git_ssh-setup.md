@@ -19,45 +19,17 @@ By default, the filenames of the public keys are one of the following:
 * id_ed25519.pub
 * id_rsa.pub
 
-If you see an existing key pair that you would like to use, you can add it to the ssh-agent. 
+If you see an existing key pair that you would like to use, you can [add it to the ssh-agent](#add-key-to-agent).  <!-- Anchor to where we elaborate this. -->
 
 If not, then generate a new SSH key using the following command:
 
     ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
 Be sure to put your email in to replace the example one.
 
-Accept the default file location when you see "Enter a file in which to save the key," by pressing Enter.
+You'll be prompted to select a location to save the file.  Either change it to your preferred location, or accept the default  by pressing `Enter`.
 
     Enter a file in which to save the key(/Users/you/.ssh/id_rsa): [Press enter]
-
-At the prompt, type a secure passphrase.
-
-    Enter passphrase (empty for no passphrase): [Type a passphrase]
-    Enter same passphrase again: [Type passphrase again]
-
-In Git Bash, copy the alphanumeric key fingerprint you see. It should look like:
-
-    nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8= your_email@example.com
-
-If you're using OpenSSH 6.8 or newer, the key fingerprint should look like:
-
-    nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8= your_email@example.com
-
-##### Add your SSH key to the SSH Agent
-Ensure ssh-agent is enabled:
-If you are using Git Bash, you can turn on ssh-agent using the following command:
-
-    #start the ssh-agent in the background
-    eval "$(ssh-agent -s)"
-    Agent pid 59566
-If you are using another terminal prompt, you can turn on ssh-agent using the following command: 
-
-    #start the ssh-agent in the background
-    eval $(ssh-agent -s)
-    Agent pid 59566
-Add your SSH key to the ssh-agent using the following command:
-
-    ssh-add ~/.ssh/id_rsa
 
 ##### Add your SSH key to GitHub
 Copy the SSH key.
@@ -78,12 +50,38 @@ Paste your key into the "Key" field.
 Click Add key.
 Confirm the action by entering your GitHub password.
 
+#### Local Set-Up
+
+
+<a name="add-key-to-agent"></a>
+##### Add your SSH key to the SSH Agent
+
+Ensure ssh-agent is enabled:
+
+If you are using Git Bash, you can turn on ssh-agent using the following command:
+
+    #start the ssh-agent in the background
+    eval "$(ssh-agent -s)"
+    Agent pid 59566
+
+If you are using another terminal prompt, you can turn on ssh-agent using the following command: 
+
+    #start the ssh-agent in the background
+    eval $(ssh-agent -s)
+    Agent pid 59566
+
+Add your SSH key to the ssh-agent using the following command:
+
+    ssh-add ~/.ssh/id_rsa
+
+
 ##### Test your SSH connection
 
 When you test your connection, you'll need to authenticate this action using your password, which is the SSH key passphrase you created earlier. For more information on working with SSH key passphrases, see Working with SSH key passphrases.
 
 Open Git Bash and enter:
 
+```
 ssh -T git@github.com
 # Attempts to ssh to GitHub
 You may see one of these warnings:
@@ -100,6 +98,7 @@ Verify that the fingerprint in the message you see matches the following message
 Hi username! You've successfully authenticated, but GitHub does not
 provide shell access.
 Verify that the resulting message contains your username. If you see a message that contains "access denied," see Error: Permission denied (publickey).
+```
 
 If you receive a message about "access denied," you can read these instructions for diagnosing the issue.
 
@@ -107,7 +106,7 @@ If you're switching from HTTPS to SSH, you'll need to update your remote reposit
 
 ### References:
 
-GitHub. 2016 "Generating a new SSH key" . *GitHub Inc.* https://help.github.com/articles/generating-a-new-ssh-key/
-GitHub. 2016 "Generating a new SSH key" . *GitHub Inc.* https://help.github.com/articles/checking-for-existing-ssh-keys/
-GitHub. 2016 "Generating a new SSH key" . *GitHub Inc.* https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
-GitHub. 2016 "Generating a new SSH key" . *GitHub Inc.* https://help.github.com/articles/testing-your-ssh-connection/
+* GitHub. 2016 "Generating a new SSH key" . *GitHub Inc.* https://help.github.com/articles/generating-a-new-ssh-key/
+* GitHub. 2016 "Generating a new SSH key" . *GitHub Inc.* https://help.github.com/articles/checking-for-existing-ssh-keys/
+* GitHub. 2016 "Generating a new SSH key" . *GitHub Inc.* https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+* GitHub. 2016 "Generating a new SSH key" . *GitHub Inc.* https://help.github.com/articles/testing-your-ssh-connection/
