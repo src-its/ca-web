@@ -2,19 +2,18 @@
 
 ### a playground for web application development
 
-This repository comprises a student-developed web application for managing [help content]().
-
+This repository is developed to help SRC students to better understand the process of web application development.
 
 
 ----
 ## 2016 Initiative
 
 
-Starting in 2016, SRC CAs are collaborating to develop a basic web application called 'ca-help'.
+Starting in 2016, SRC CAs are collaborating to develop a basic web application called 'ca-web'.
 
-This web application hosts a variety of help content&mdash;written text, images, video, and other form of media.
+This web application hosts a variety of content&mdash;written text, images, video, and other forms of media.
 
-ITS CA contribute to the 'ca-help' web application during their time on shifts.  CAs wishing to work during library shifts help to define and achieve goals with respect to site creation, development and content management.
+ITS CA contribute to the 'ca-web' web application during their time on shifts.  CAs wishing to work during library shifts help to define and achieve goals with respect to site creation, development and content management.
 
 CA tasks will be assigned and managed primarily via our [GitHub wiki](https://github.com/src-its/ca-web/wiki/). ITS also maintains a [Google spreadsheet with task assignments](https://docs.google.com/spreadsheets/d/11RLaTHYF4iGLeoE_8zSLclmo9oeqn0KDi4CKvMPRQyE/edit#gid=0) for CA reference.
 
