@@ -1,5 +1,3 @@
-Nathaniel
-
 ## How to create and configure a GitHub account?
 
 
