@@ -1,7 +1,7 @@
 ## What is a 'server'? [disambiguation]
 
 --
-** Tasks for article completion:**
+**Tasks for article completion:**
 
 - [x] introduce how term can refer to multiple concepts
 - [ ] note conceptual distinctions
