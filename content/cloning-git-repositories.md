@@ -1,5 +1,10 @@
 ## How to clone a Git repository hosted on GitHub?
 
+---
+- [x] From the Git command line
+- [ ] Using Pycharm
+
+---
 
 First, check that you have SSH keys:
 
