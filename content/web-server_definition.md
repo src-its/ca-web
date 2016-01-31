@@ -4,7 +4,7 @@ What is a 'server'? [disambiguation]
 
 - [x] introduce how term can refer to multiple concepts
 - [ ] note conceptual distinctions
-- [] contribute references
+- [ ] contribute references
 - [ ] format article
 
 
