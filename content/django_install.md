@@ -1,6 +1,6 @@
 
 
-## Installing the Django [web framework]()
+## Installing the Django [web framework](https://github.com/src-its/ca-web/blob/master/content/web-framework_definition.md)
 
 Django is a full-featured Python web framework for developing dynamic websites and applications. [ref: Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-14-04)
 
