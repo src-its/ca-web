@@ -1,5 +1,3 @@
-Addison
-
 ### How to install/configure SSH keys for GitHub on Ubuntu
     
 #### Checking for & Generating SSH keys
@@ -56,6 +54,7 @@ Paste your key into the "Key" field.
 Click Add key.
 
 Confirm the action by entering your GitHub password.
+
 
 #### Configuring your Local Machine
 
