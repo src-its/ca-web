@@ -1,6 +1,7 @@
 ## What is a 'server'? [disambiguation]
 
---
+---
+
 **Tasks for article completion:**
 
 - [x] introduce how term can refer to multiple concepts
@@ -8,6 +9,7 @@
 - [ ] contribute references
 - [ ] format article
 
+---
 
 A web server is an information technology that processes requests via HTTP, the basic network protocol used to distribute information on the World Wide Web.[1]
 
