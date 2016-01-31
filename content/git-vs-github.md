@@ -1,21 +1,12 @@
 ## What is the difference between Git and GitHub?
-What is the difference between Git and GitHub?
 
+The distinction between Git and Github can be a bit confusing for new users.
 
+[Git](https://git-scm.com/) is an application for distributed revision control.  In sort, this means that Git is a tool that to manage the contributions of multiple users working over time within a designated file system.
 
- 
+[GitHub](https://github.com/) is a hosting service for Git repositories. In other words, GitHub is a service for projects that use Git.
 
-
-Git is not to be confused with Github! Git is a revision control system meaning it is a tool that manages your source code history. GitHub is a hosting service for Git repositories. They are not the same thing: Git is the tool and GitHub is the service for projects that use Git.
-
-
-
-         
-
-
-
-
-
+---
 
 
 GIT
@@ -35,16 +26,13 @@ Git = Local (on you computer).
 GitHub = Remote (web).
 
 
-References
+## References
 
 
-"Andrew McWilliams." Is Git the Same Thing as Github!? Accessed January 28, 2016. https://jahya.net/blog/git-vs-github/. 
-
-"Conceptual Difference between Git and GitHub." Version Control. Accessed January 28, 2016. http://programmers.stackexchange.com/questions/173321/conceptual-difference-between-git-and-github.
-
-"Difference between Git and GitHub." - Stack Overflow. Accessed January 28, 2016. http://stackoverflow.com/questions/13321556/difference-between-git-and-github. 
-
-"Git and GitHub: What's the Difference?" Git and GitHub: What's the Difference? Accessed January 28, 2016. https://www.codefellows.org/blog/git-and-github-what-s-the-difference. 
+* "Andrew McWilliams." Is Git the Same Thing as Github!? Accessed January 28, 2016. https://jahya.net/blog/git-vs-github/. 
+* "Conceptual Difference between Git and GitHub." Version Control. Accessed January 28, 2016. http://programmers.stackexchange.com/questions/173321/conceptual-difference-between-git-and-github.
+* "Difference between Git and GitHub." - Stack Overflow. Accessed January 28, 2016. http://stackoverflow.com/questions/13321556/difference-between-git-and-github. 
+* "Git and GitHub: What's the Difference?" Git and GitHub: What's the Difference? Accessed January 28, 2016. https://www.codefellows.org/blog/git-and-github-what-s-the-difference. 
 
 
 
