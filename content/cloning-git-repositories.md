@@ -33,7 +33,7 @@ Be sure to replaces `user-name` with your user name, and `repository` with your 
 
 Reference: 
 
-    [1] : https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository "Git Documentation"
+    [1]: https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository "Git Documentation"
 
 
 ## Related Articles:
