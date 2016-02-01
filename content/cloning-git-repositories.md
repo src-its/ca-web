@@ -31,9 +31,9 @@ At this point, go ahead and try to clone the repository.  [Use the command line]
 
 Be sure to replaces `user-name` with your user name, and `repository` with your target repository. E.g., `git clone git@github.com:/src-its/ca-web`
 
-Reference
+##Reference:
 
-    * [Git Documentation: Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
+* [Git Documentation: Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 
 
 ## Related Articles:
