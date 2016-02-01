@@ -5,6 +5,7 @@
 - [x] Using Pycharm
 
 ---
+## Using the Git Command Line
 
 First, check that you have SSH keys:
 
@@ -36,12 +37,12 @@ You'll need your github account details registered in PyCharm -- you can do this
 
 Next, in the main menu choose VCS > Checkout from Version Control > GitHub. A box titled "Select Git Hub Repository to Clone" will open. From there, you can use the drop-down box to choose the repository you want to clone, and give the project a name and file location. Click "Clone" to finalize these details and begin cloning the repository. 
 
-## References:
+### References:
 
 * [Git Documentation: Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 * [PyCharm 5.0 Help: Registering GitHub Account in PyCharm](https://www.jetbrains.com/pycharm/help/registering-github-account-in-pycharm.html)
 * [PyCharm 5.0 Help: Cloning a Repository](https://www.jetbrains.com/pycharm/help/cloning-a-repository-from-github.html)
 
-## Related Articles:
+### Related Articles:
 
 * [Learn how to set up `ssh` keys for use with Git](https://github.com/src-its/ca-web/blob/master/content/git_ssh-setup.md)
