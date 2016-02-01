@@ -2,7 +2,7 @@
 
 ---
 - [x] From the Git command line
-- [ ] Using Pycharm
+- [x] Using Pycharm
 
 ---
 
@@ -31,10 +31,16 @@ At this point, go ahead and try to clone the repository.  [Use the command line]
 
 Be sure to replaces `user-name` with your user name, and `repository` with your target repository. E.g., `git clone git@github.com:/src-its/ca-web`
 
-##Reference:
+## Using PyCharm
+You'll need your github account details registered in PyCharm -- you can do this by going under IDE Settings, selecting GitHub, and filling in the required security credentials. 
+
+Next, in the main menu choose VCS > Checkout from Version Control > GitHub. A box titled "Select Git Hub Repository to Clone" will open. From there, you can use the drop-down box to choose the repository you want to clone, and give the project a name and file location. Click "Clone" to finalize these details and begin cloning the repository. 
+
+## References:
 
 * [Git Documentation: Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
-
+* [PyCharm 5.0 Help: Registering GitHub Account in PyCharm](https://www.jetbrains.com/pycharm/help/registering-github-account-in-pycharm.html)
+* [PyCharm 5.0 Help: Cloning a Repository](https://www.jetbrains.com/pycharm/help/cloning-a-repository-from-github.html)
 
 ## Related Articles:
 
