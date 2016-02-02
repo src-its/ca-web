@@ -1,6 +1,6 @@
 ## ca-web
 
-### a playground for web application development
+### a [playground](https://github.com/src-its/ca-web/wiki) for web application development
 
 This repository is developed to help SRC students to better understand the process of web application development.
 
