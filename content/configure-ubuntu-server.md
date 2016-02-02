@@ -1,5 +1,5 @@
 
-## installing a LAMP server
+## method 1: installing a LAMP server
 
 A common web server software stack is Linux, Apache, MySQL, and PHP (LAMP).
 
@@ -35,7 +35,7 @@ NOTE: In Linux, you can install several software packages at the same time by li
 
 
 
-## installating alternative server bundles: Linux, nginx, postgres and python
+## method 2:  installating alternative server bundles: Linux, nginx, postgres and python
 
 
 
