@@ -1,6 +1,7 @@
 ## How to clone a Git repository hosted on GitHub?
 
 ---
+**In this article, we've cover cloning a Git repository**
 - [x] From the Git command line
 - [x] Using Pycharm
 
