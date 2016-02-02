@@ -1,0 +1,10 @@
+# What is a language?
+Formally, a language is just a set of valid strings as determined by some rule -- for instance, we could have the language of all three-letter english words, which would contain the strings "bat", "cat", "too", "the", etc. until we'd listed all the three-letter words in the dictionary. More practically, we hear about programming languages such as Java, Python, or C++, but conceptually these languages are no different than the collection of strings we constructed above. Java, for instance, is just the set of compilable Java programs, or the programs which adhere Java's syntactic and semantic ruleset -- all statements end with a semicolon, all variables are defined before being used, etc. 
+
+Confusion often arises about the difference between a programming language such as Java and a markup language such as HTML, and whether both belong in the category of computer languages. The defining difference between the two categories is that while a programming language is used to issue commands to a computer a markup language is used to provide semantic information about a document. HTML for instance uses tags like <p>, <a>, or <ul> to give context to text following that tag, but leaves the specifics of how such text might be displayed or handled to the browser, which is why the same page might be rendered differently in two different browsers. Conceptually, however, both markup and programming languages are sets of strings acceptable according to some set of rules and represent the same formal concept of a language.
+
+## Further Reading and References
+<!-- mostly wrote this from previous knowledge, so I'm just linking to some relevant wikipedia articles. -->
+* ["Formal Language." Wikipedia. Wikimedia Foundation. Web. 02 Feb. ](https://en.wikipedia.org/wiki/Formal_language)
+* ["Markup Language." Wikipedia. Wikimedia Foundation. Web. 02 Feb.](https://en.wikipedia.org/wiki/Markup_language)
+* ["Programming Languages." Wikipedia. Wikimedia Foundation. Web. 02 Feb. 2016](https://en.wikipedia.org/wiki/Programming_language)
