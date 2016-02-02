@@ -16,21 +16,21 @@ First, check that you have SSH keys:
 Your keys should look like one the following:
 
 ```
-* id_rsa.pem
-* id_rsa
-* id_rsa.pub
-* id_dsa.pem
-* id_dsa
-* id_dsa.pub
-* id_ecdsa.pem
-* id_ed25519.pem
+id_rsa.pem
+id_rsa
+id_rsa.pub
+id_dsa.pem
+id_dsa
+id_dsa.pub
+id_ecdsa.pem
+id_ed25519.pem
 ```
 
-If you have these keys, then chances are that you've finished [setting up `ssh` keys for use with Git](https://github.com/src-its/ca-web/blob/master/content/git_ssh-setup.md).
+If you have these keys, then chances are that you've finished [setting up `ssh` keys for use with Git](https://github.com/src-its/ca-web/blob/master/content/git_ssh-setup.md). [If not, the follow the proceedure to set up your keys as linked here.](https://github.com/src-its/ca-web/blob/master/content/git_ssh-setup.md)
 
-At this point, go ahead and try to clone the repository.  [Use the command line]() : `git clone git@github.com:/user-name/repository`
+If you have ssh keys installed, try to clone the repository [using the command line]() : `git clone git@github.com:/user-name/repository`
 
-Be sure to replaces `user-name` with your user name, and `repository` with your target repository. E.g., `git clone git@github.com:/src-its/ca-web`
+Be sure to replace `user-name` with your user name, and `repository` with your target repository. E.g., `git clone git@github.com:/src-its/ca-web`
 
 ## Using PyCharm
 You'll need your github account details registered in PyCharm -- you can do this by going under IDE Settings, selecting GitHub, and filling in the required security credentials. 
