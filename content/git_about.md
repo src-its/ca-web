@@ -15,5 +15,7 @@ Usually most 'version control' systems keep track and store their information as
 In addition to installing Git locally in your machine, you also need a server to run Git in, which keeps all the stored files and their snapshots from every project collaborator. A great hosting server for Git is GitHub. For more information on Git vs GitHub, check out this article https://github.com/fkast/ca-web/blob/master/content/git-vs-github.md
 
 ref 1: Andrew McWilliams. ["Is Git the Same Thing as Github!?"](https://jahya.net/blog/git-vs-github/)
+
 ref 2: Git. ["About Version Control"] (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
+
 ref 3: Git. ["Git Basics"] (https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
