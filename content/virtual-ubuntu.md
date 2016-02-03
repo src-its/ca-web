@@ -7,11 +7,15 @@
 2 Deploy Virtual Instance of Ubuntu Desktop
 
 JOHANNES SCREENSHOTS:
-
+Open VirtualBox and select New.
 ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/1%20FirstImage.png)
+Type "Ubuntu" in the name space, and VirtualBox will automatically fill in the rest.
 ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/2%20OS.png)
+Set the "Memory" to no more than half of your computer's RAM.
 ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/3%20Memory.png)
+Create a virtual hard disk.
 ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/4%20HDD.png)
+Set the hard disk type to VDI (VirtualBox Disk Image)
 ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/5%20Disk%20File%20Type.png)
 ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/6%20Storage.png)
 ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/7%20HDD%20Size.png)
