@@ -38,7 +38,7 @@ Use your SSH key filename to replace the example filename. When copying your key
 
 *the clip command says that it is used for .OOGL files? will need to find a fix to this step*
 
-    $ ~~clip < ~/.ssh/id_rsa.pub~~
+    ~~$ clip < ~/.ssh/id_rsa.pub~~
     # Copies the contents of the id_rsa.pub file to your clipboard
 
 If this doesn't work, you can locate the hidden `.ssh folder` to find the file and manually copy its content using a text editor.
