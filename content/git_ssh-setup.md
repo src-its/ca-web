@@ -22,7 +22,7 @@ If you see an existing key pair that you would like to use, you can [add it to t
 
 If not, then generate a new SSH key using the following command:
 
-    ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+    ssh-keygen -t rsa -b 4096
 
 Be sure to put your email in to replace the example one.
 
@@ -32,17 +32,12 @@ You'll be prompted to select a location to save the file.  Either change it to y
 
 #### Adding your SSH key to GitHub
 
-Copy the SSH key.
+To add your SSH key to GitHub, first navigate to your `.ssh` folder. If you generated your keys with `ssh-keygen -t rsa -b 4096`, the you should have to files (comprising your key pair) in your `.ssh` folder:
 
-Use your SSH key filename to replace the example filename. When copying your key, don't add any newlines or whitespace.
+* `id_rsa`
+* `id_rsa.pub`
 
-*the clip command says that it is used for .OOGL files? will need to find a fix to this step*
 
-~~$ clip < ~/.ssh/id_rsa.pub~~
-
-    # Copies the contents of the id_rsa.pub file to your clipboard
-
-If this doesn't work, you can locate the hidden `.ssh folder` to find the file and manually copy its content using a text editor.
 
 Go to Settings.
 
