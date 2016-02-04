@@ -8,7 +8,7 @@ The distinction between Git and Github can be a bit confusing for new users.
 
 ---
 
-### GIT vs GITHUB
+### Summary
 
 You do not need GitHub to use Git.
 
