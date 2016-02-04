@@ -637,6 +637,88 @@ With a reference later in the document defining the URL location:
 
 
 
+## Citations and References
+
+
+
+Citations in HTML are generally achieved as such:
+
+```
+Quote here.
+
+-- <cite>Benjamin Franklin</cite>
+
+```
+
+Quote here.
+
+-- <cite>Benjamin Franklin</cite>
+
+
+
+Citations and References are treated differently by different flavours of Markdown:
+
+
+
+GitHub Flavored Markdown doesn't support footnotes, but you can manually fake it¹ with Unicode characters or superscript tags, e.g. `<sup>1</sup>`.
+
+<sup>1</sup>Of course this isn't ideal, as you are now responsible for maintaining the numbering of your footnotes. It works reasonably well if you only have one or two, though.
+
+Expanding a little bit on the previous answer, you can make the footnote links clickable here as well. First define the footnote at the bottom like this
+
+`<a name="myfootnote1">1</a>: Footnote content goes here`
+Then reference it at some other place in the document like this
+
+`<sup>[1](#myfootnote1)</sup>`
+
+
+
+
+[Fletcher Penny’s MultiMarkdown](http://fletcherpenney.net/multimarkdown/) adds additional features to Markdown especially useful for academics.
+
+MultiMarkdown gives writers a greater range of tools for writing more complex material. Footnotes, for example, are represented by [^1] and correspond to the note such as:
+
+```
+This sentence needs a citation.[^1]
+
+[^1]: This is the citation.
+```
+
+If you are using Pandoc for transforming text, you can use its flavor of Markdown to do inline footnoting.^[Which looks something like this.]
+
+If things start getting a little messy, Dr. Drang has a [Python script that will clean up Markdown reference links](http://www.leancrew.com/all-this/2012/09/tidying-markdown-reference-links/).
+
+Because we typically want to list the citations as references at the end of the document, reference-style links should be preferred over inline links. From the markdown syntax documentation:
+
+```
+This is [an example][id] reference-style link.
+
+[id]: http://example.com/  "Optional Title Here"
+```
+
+Results in:
+
+This is [an example][id] reference-style link.
+
+[id]: http://example.com/  "Optional Title Here"
+
+
+It might be tempting to use sequential numbers as id for the reference-style links, but the order of links can of course change during writing. It may make sense to think of the id in reference-style links as a citekey, and people should be free use that functionality of their reference manager. The citekey is used to link to the reference list at the bottom of the document, different from linking to the citekey in a separate bibtex file.
+
+All of the above can be done in any text editor. This also includes the text editor that scholars spend most of their time with - their email program. Reference-style citations in an email are very readable, and also actionable since they are links and not text with bibliographic information.
+
+One problem with this approach is of course that all links are inline in the resulting HTML, without a references section at the end of the document. This may be fine, as we can provide citation information in the title attribute, available upon hovering over the link (try hovering over [this link](http://dx.doi.org/10.1371/journal.pmed.0020124 "Ioannidis JPA. Why Most Published Research Findings Are False. PLoS Medicine. Public Library of Science; 2005;2(8):e124. Available from: http://dx.doi.org/10.1371/journal.pmed.0020124"), the journal eLife is doing [something similar](http://dx.doi.org/10.7554/eLife.00633)). The markdown could look like this (using the Vancouver citation style):
+
+```
+[@Ioannidis2005]: http://dx.doi.org/10.1371/journal.pmed.0020124 "Ioannidis JPA. Why Most Published Research Findings Are False. PLoS Medicine. Public Library of Science; 2005;2(8):e124. Available from: http://dx.doi.org/10.1371/journal.pmed.0020124"
+```
+
+The title attribute now of course uses a citation style, but this is optional information and can easily be reformatted as we have the DOI.
+
+Or we break away from standard markdown and display reference-style links at the end of the document - similar to [footnotes](http://rephrase.net/box/word/footnotes/syntax/), which are also not part of standard markdown. But this is just a display issue that can be solved, and the solution might look different depending on whether the output is HTML, PDF or XML. This document for example contains 14 reference-style citations.
+
+There is obviously a need for tools that make adding citations to scholarly markdown easier. This could be accomplished by relatively small changes to existing reference managers (enabling copy/paste of citations in reference-style markdown format), or by tools similar to the [knitcitations](http://carlboettiger.info/2012/05/30/knitcitations.html) and [kcite](http://wordpress.org/plugins/kcite/).
+
 
 ### References:
 
@@ -647,4 +729,7 @@ With a reference later in the document defining the URL location:
     * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 * [GitHubGist: jonschlinkert/markdown.md](https://gist.github.com/jonschlinkert/5854601)
-
+* [Jason Heppler. 2012. "Using Markdown Like an Academic". *Gradhacker.org*](http://www.gradhacker.org/2012/11/20/using-markdown-like-an-academic/)
+* [Martin Fenner. 2013. "Citations in Scholarly Markdown"](http://blog.martinfenner.org/2013/06/19/citations-in-scholarly-markdown/)
+* [CommonMark: A strongly defined, highly compatible specification of Markdown](http://commonmark.org/)
+* [MultiMarkdown Syntax Guide](https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide)
