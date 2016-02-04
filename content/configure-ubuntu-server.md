@@ -1,3 +1,5 @@
+**Be aware! Do not select the pre-built LAMP package on starting your VM for the first time! It is best to configure it manually!**
+
 
 ## method 1: installing a LAMP server
 
