@@ -1,5 +1,4 @@
 ### How to install/configure SSH keys for GitHub on Ubuntu
-    
 #### Checking for & Generating SSH keys
 
 Before generating a new SSH key, you should check to see if any SSH keys exist.
@@ -13,10 +12,10 @@ Check your directory for an existing public SSH key.
 
 By default, the filenames of the public keys are one of the following:
 
-* id_dsa.pub
-* id_ecdsa.pub
-* id_ed25519.pub
-* id_rsa.pub
+* `id_dsa.pub`
+* `id_ecdsa.pub`
+* `id_ed25519.pub`
+* `id_rsa.pub`
 
 If you see an existing key pair that you would like to use, you can [add it to the ssh-agent](#add-key-to-agent).
 
@@ -24,39 +23,34 @@ If not, then generate a new SSH key using the following command:
 
     ssh-keygen -t rsa -b 4096
 
-Be sure to put your email in to replace the example one.
-
 You'll be prompted to select a location to save the file.  Either change it to your preferred location, or accept the default  by pressing `Enter`.
 
     Enter a file in which to save the key(/Users/you/.ssh/id_rsa): [Press enter]
 
+
 #### Adding your SSH key to GitHub
 
-To add your SSH key to GitHub, first navigate to your `.ssh` folder. If you generated your keys with `ssh-keygen -t rsa -b 4096`, the you should have to files (comprising your key pair) in your `.ssh` folder:
+To add your SSH key to GitHub, first navigate to your `.ssh` folder. If you generated your keys with `ssh-keygen -t rsa -b 4096`, then you should have two files (comprising your key pair) in your `.ssh` folder:
 
 * `id_rsa`
 * `id_rsa.pub`
 
+Go to `Settings`.
 
+In the user settings sidebar, click `SSH keys`.
 
-Go to Settings.
-
-In the user settings sidebar, click SSH keys.
-
-Click Add SSH key.
+Click `Add SSH key`.
 
 In the Title field, add a title that describes the key.
 
-Paste your key into the "Key" field.
+Paste your key into the `Key` field.
 
-Click Add key.
+Click `Add key`.
 
 Confirm the action by entering your GitHub password.
 
 
 #### Configuring your Local Machine
-
-
 <a name="add-key-to-agent"></a>
 ##### Adding your SSH key to the SSH Agent
 
@@ -86,22 +80,26 @@ When you test your connection, you'll need to authenticate this action using you
 Open Git Bash and enter`ssh -T git@github.com`
 
 You may see one of these warnings:
-
 ```
 The authenticity of host 'github.com (192.30.252.1)' can't be established.
 RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
-Are you sure you want to continue connecting (yes/no)?
+Are you sure you want to continue connecting (yes/no)? 
+```
+
+or
+
+```
 The authenticity of host 'github.com (192.30.252.1)' can't be established.
 RSA key fingerprint is nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
 Are you sure you want to continue connecting (yes/no)?
+```
 Note: The example above lists the GitHub IP address as 192.30.252.1. When pinging GitHub, you may see a range of IP addresses. For more information, see What IP addresses does GitHub use that I should whitelist?
 Verify that the fingerprint in the message you see matches the following message, then type yes:
-
+```
 Hi username! You've successfully authenticated, but GitHub does not
 provide shell access.
-Verify that the resulting message contains your username. If you see a message that contains "access denied," see Error: Permission denied (publickey).
-
 ```
+Verify that the resulting message contains your username. If you see a message that contains "access denied," see "Error: Permission denied (publickey)".
 
 If you receive a message about "access denied," you can read these instructions for diagnosing the issue.
 
