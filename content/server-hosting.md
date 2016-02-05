@@ -27,6 +27,9 @@ Hosting at home, or **self-hosting** is the least-cost, greatest-control option,
 
 Most people wishing to host a website opt for third-party hosting.  Advantages of hosted servers are that they are fast, always-on, powerful machines with access to lots of bandwidth.
 
+<!--here we should introduce the advantages and disadvantages of hosted servers. cost is a factor.  hosted servers typically have a variety of options, which users can select according to need.  more powerful servers cost more.  consider comparing the prices of different hosting plans.  also discuss how not all servers allow for /root access; some (like GitHub) are configured for you -- so that you are offered one particular stack as a result of your desired CMS platform-->
+
+
 Numerous companies offer to host web servers. Big names include:
 
 * Amazon
