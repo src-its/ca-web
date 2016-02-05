@@ -4,7 +4,7 @@ The distinction between Git and Github can be a bit confusing for new users. Thi
 
 [Git](https://git-scm.com/) is a free and open source application for distributed revision control ith an emphasis on speed, data integrity, and support for distributed, non-linear workflows.[^wikipedia]
 
-![Git website](https://www.codefellows.org/blog/git-and-github-what-s-the-difference)
+![Git website](https://dgosxlrnzhofi.cloudfront.net/custom_page_images/245/page_images/Git.png?1410459900)
 
 Git helps to manage changes to a file system by multiple users working over time. Git can version control nearly any electronic media.
 
