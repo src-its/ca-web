@@ -4,49 +4,26 @@ A server is a computer program or a machine that waits for requests from other m
 
 
 
-### self-hosting vs hosted servers
+### Self-hosting vs hosted servers
 
-Almost any computer with an active Internet connection can be configured to operate as a web server--so it is possible to host a web site or web application right from your home and have it available to anyone on the World Wide Web.
+Almost any computer with an active Internet connection can be configured to operate as a web server. This allows a person to host a web site or web application from their home.
 
-While typically the most economical option, there are numerous potential challenges in setting up a home server [2]:
+<b> Potential Challenges: </b> [2]
 
 1. reliability of Internet delivery
-   addressing the need to keep your site online all the time
 2. security
-   separting your computer from your server. being able to identify attacks and break-ins
-3. IP addressing and domain routing
-   getting a fixed IP address or setting up a dynamic DNS
-4. upload (outbound) speeds
-    the upload speed of most typical home broadband connections is significantly slower than the download speeds that one experiences when browsing the web, meaning that the pages you are serving out are likely to load very slowly for anyone attempting to view them (especially viewers in geographically distant areas).
-5. packet filtering - Not every Internet Service Provider allows users to host a public web site from computers on their network. Many ISPs do port filtering that will prevent email sent to your home-located server. They may also prevent access of a home web server or filter out other protocols.
+3. getting a fixed IP address 
+4. upload speed is lower than download speed meaning you pages may load very slowly
 
 
-Most people wishing to host a website opt for third-party hosting.  Advantages of hosted servers are that they are fast, always-on, powerful machines with access to lots of bandwidth.
+<b> Other options: </b>
 
-There's a plethora of companies offering to host your web server. Big names include:
+- Host servers (fast, always-on, powerful machines with access to lots of bandwidth). Examples of host servers:
 
-* Amazon
-* Google
+   * Amazon
+   * Google
+   * GitHub (offer free hosting services under limited conditions)
 
-There are even a few companies and organizations who offer free hosting services under limited conditions:
-
-* GitHub
-
-
-### URLS and DNS
-
-
-
-### web server software for HTTP request routing: Apache vs nginx (and others?)
-
-Web server software accepts and supervises the HTTP requests.
-
-Two popular web server software are Apache and nginx.
-
-* Apache
-
-
-* nginx 
 
 ## References:
 
