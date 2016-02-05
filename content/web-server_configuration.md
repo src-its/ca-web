@@ -3,7 +3,7 @@
 A server is a computer program or a machine accepts and supervises the HTTP requests.[^wikipedia]
 
 ## Server Harware
-    - Read our article about [self-hosting versus hosted servers!](https://github.com/src-its/ca-web/blob/master/content/server-hosting.md)
+   - Read our article about [self-hosting versus hosted servers!](https://github.com/src-its/ca-web/blob/master/content/server-hosting.md)
 
 ### Server Software
 
