@@ -22,8 +22,8 @@ GitHub is a centralized service for hosting a Git repository (or `repo` for shor
 
 ### GIT vs GITHUB
 
-<strong> Git = Local (on you computer); distributed.</strong> 
-<strong> GitHub = Remote (web); central.</strong> 
+* <strong> Git = Local (on you computer); distributed.</strong> 
+* <strong> GitHub = Remote (web); central.</strong> 
 
 ---
 
