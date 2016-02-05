@@ -17,6 +17,20 @@ Markdown is free software, available under a [BSD-style open source license](htt
 
 # Markdown Cheatsheet
 
+
+| **Type** | **Or** | **… to Get** |
+|----------|--------|--------------|
+||||
+||||
+||||
+||||
+||||
+||||
+
+
+
+----
+
 > This cheatsheet is taken from [a Gist](https://gist.github.com/jonschlinkert/5854601) by Jon Schlinkert.  Rendering can be enabled using the [{{gist}} helper](https://github.com/assemble/handlebars-helpers#gist) [without it, code syntax colorization is not visible].
 
 
