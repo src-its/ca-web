@@ -1,35 +1,39 @@
 ## What is the difference between Git and GitHub?
 
-The distinction between Git and Github can be a bit confusing for new users.
+The distinction between Git and Github can be a bit confusing for new users. This article seeks to clarify the differences between the Git software application and the GitHub web service.
 
-[Git](https://git-scm.com/) is a free and open source application for distributed revision control ith an emphasis on speed, data integrity, and support for distributed, non-linear workflows. [^mcwilliams]  In sort, this means that Git is a tool that to manage the contributions of multiple users working over time within a designated file system. Git allows you to use version control for any electronic media, such as documents. GitHub provides a convenient place to store multiple versions of files, share your repositories with other, and access other user’s repositories.[^1]
+[Git](https://git-scm.com/) is a free and open source application for distributed revision control ith an emphasis on speed, data integrity, and support for distributed, non-linear workflows.[^wikipedia]
 
-[GitHub](https://github.com/) is a hosting service for Git repositories. At it's core, it's just a place to store your identical working directories&mdash;repositories (or repo's for short). GitHub provides additional features, incuding a web front-end for viewing your repositories, comparing changes and administrating user accounts. But it's `raison d'être` is to host your repos and to make it easier for you to push and pull from your collaborators.[^1]
+![Git website](https://www.codefellows.org/blog/git-and-github-what-s-the-difference)
+
+Git helps to manage changes to a file system by multiple users working over time. Git can version control nearly any electronic media.
+
+**Concepts from Git:** Repositories, branches, remotes, committing, pushing, pulling, merging, rebasing, reverting, and cherry-picking.
+
+[GitHub](https://github.com/) is a hosting service for Git repositories[^schlicht].
+
+![GitHub](https://dgosxlrnzhofi.cloudfront.net/custom_page_images/246/page_images/GitHub.png?1410459913)
+
+GitHub is a centralized service for hosting a Git repository (or `repo` for short). GitHub provides additional features, incuding a web front-end for viewing your repositories, comparing changes and administrating user accounts.  GitHub provides a convenient place to store multiple versions of files, share your repositories with other, and access other user’s repositories. But it's `raison d'être` is to host your repos and to make it easier for you to push and pull from your collaborators.[^mcwilliams]
+
+**Concepts from GitHub:** Pull requests, issues, wikis, forking someone else's repository, Gists,github.com. [^jennings][^schlicht][^corns]
 
 ---
 
 ### GIT vs GITHUB
 
-You do not need GitHub to use Git.
-
-<strong> Git = Local (on you computer).</strong> 
-
-Concepts from Git: Repositories, branches, remotes, committing, pushing, pulling, merging, rebasing, reverting, and cherry-picking.
-
-<strong> GitHub = Remote (web).</strong> 
-
-Concepts from GitHub: Pull requests, issues, wikis, forking someone else's repository, Gists,github.com. [^2][^3][^4]
+<strong> Git = Local (on you computer); distributed.</strong> 
+<strong> GitHub = Remote (web); central.</strong> 
 
 ---
 
 ## References
 
-
 * [^mcwilliams]:"Andrew McWilliams." Is Git the Same Thing as Github!? Accessed January 28, 2016. https://jahya.net/blog/git-vs-github/. 
-* [^2]: Stephen Jennings. Nov 2, 2012.  "Conceptual Difference between Git and GitHub." *Programmers Stack Exchange*. Accessed January 28, 2016. http://programmers.stackexchange.com/questions/173321/conceptual-difference-between-git-and-github.
-* [^3]: "Difference between Git and GitHub." *Stack Overflow*. Accessed January 28, 2016. http://stackoverflow.com/questions/13321556/difference-between-git-and-github. 
-* [^4]: "Git and GitHub: What's the Difference?" Git and GitHub: What's the Difference? Accessed January 28, 2016. https://www.codefellows.org/blog/git-and-github-what-s-the-difference. 
-* [^5]: https://en.wikipedia.org/wiki/Git_(software)
+* [^jennings]: Stephen Jennings. Nov 2, 2012.  "Conceptual Difference between Git and GitHub." *Programmers Stack Exchange*. Accessed January 28, 2016. http://programmers.stackexchange.com/questions/173321/conceptual-difference-between-git-and-github.
+* [^schlicht]: schlicht. 14 Dec 2015. "Difference between Git and GitHub." *Stack Overflow*. Accessed January 28, 2016. http://stackoverflow.com/questions/13321556/difference-between-git-and-github. 
+* [^corns]: Dale Corns. September 11, 2014. "Git and GitHub: What's the Difference?" *[Code Fellows](https://www.codefellows.org/blog/git-and-github-what-s-the-difference)*  Accessed January 28, 2016. https://www.codefellows.org/blog/git-and-github-what-s-the-difference
+* [^wikipedia]: https://en.wikipedia.org/wiki/Git_(software)
 
 
 
