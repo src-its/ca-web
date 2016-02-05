@@ -22,8 +22,8 @@ Markdown is free software, available under a [BSD-style open source license](htt
 |----------|--------|--------------|
 | `*Italic*` | `_Italic_` | *Italic* |
 | `**Bold**` | `__Bold__` | **Bold** |
-| `# Heading 1` | `Heading 1`<br />`=========` | # Heading 1 |
-| `# Heading 2` | `Heading 2`<br />`=========` | ## Heading 2 |
+| `# Heading 1` | `Heading 1`<br />`=========` | <h1>Heading 1</h1> |
+| `## Heading 2` | `Heading 2`<br />`---------` | <h2> Heading 2</h2> |
 | `[Link](http://a.com)` | `[Link][1]`<br />`⋮` <br />`[1]: http://b.org` | [Link](http://a.com)` |  
 | `![Image](http://url/a.png)` | `[Image][1]`<br />`⋮` <br /> `[1]: http://b.org` | ![Image](http://commonmark.org/help/images/favicon.png) |
 
