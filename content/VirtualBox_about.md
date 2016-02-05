@@ -2,4 +2,4 @@ Oracle VM VirtualBox is a hypervisor [a program that allows multiple operating s
 
 VirtualBox may be installed on a number of host operating systems, including: Linux, OS X, Windows, Solaris, and OpenSolaris. There are also ports to FreeBSD and Genode. Using VirtualBox, one can create and manage guest virtual machines running versions and derivations of Windows, Linux, BSD, OS/2, Solaris, Haiku, OSx86. VirtualBox also allows for limited virtualization of OS X guests on Apple hardware.
 
-[Installation instructions are available on the VirtualBox website](https://www.virtualbox.org/manual/ch02.html). NOTE: When installing VirtualBox, ITS recommends that you also install the "Guest Additions" package of device drivers and system applications.
+[Installation instructions are available on the VirtualBox website](https://www.virtualbox.org/manual/ch02.html). When installing VirtualBox, ITS recommends that you also install the '[Guest Additions](https://www.virtualbox.org/manual/ch04.html)' package of device drivers and system applications.
