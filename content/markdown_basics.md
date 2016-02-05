@@ -20,12 +20,13 @@ Markdown is free software, available under a [BSD-style open source license](htt
 
 | **Type** | **Or** | **… to Get** |
 |----------|--------|--------------|
-||||
-||||
-||||
-||||
-||||
-||||
+| `*Italic*` | `_Italic_` |*Italic*`|
+| `**Bold**` | `__Bold__` |**Bold**|
+| `# Heading 1` | `Heading 1`<br />`=========` |# Heading 1|
+| `# Heading 2` | `Heading 2`<br />`=========` |# Heading 2|
+| `[Link](http://a.com)` | `[Link][1]`<br />`⋮` <br />`[1]: http://b.org` |`Link](http://a.com)`| 
+| `![Image](http://url/a.png)` | `[Image][1]`<br />`⋮` <br /> `[1]: http://b.org` | ![Image](http://url/a.png) |
+
 
 
 
