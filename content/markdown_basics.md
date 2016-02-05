@@ -725,11 +725,14 @@ There is obviously a need for tools that make adding citations to scholarly mark
 * [Daring Fireball: Markdown](http://daringfireball.net/projects/markdown/)
 * [Wikipedia: Markdown](http://en.wikipedia.org/wiki/Markdown)
 * [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
-    * [Markdown Basics](https://help.github.com/articles/markdown-basics/)
-    * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [Markdown Basics](https://help.github.com/articles/markdown-basics/)
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 * [GitHubGist: jonschlinkert/markdown.md](https://gist.github.com/jonschlinkert/5854601)
 * [Jason Heppler. 2012. "Using Markdown Like an Academic". *Gradhacker.org*](http://www.gradhacker.org/2012/11/20/using-markdown-like-an-academic/)
 * [Martin Fenner. 2013. "Citations in Scholarly Markdown"](http://blog.martinfenner.org/2013/06/19/citations-in-scholarly-markdown/)
+* [Martin Fenner. 2010. "Citations are links, so where is the problem?"](http://blog.martinfenner.org/2013/06/19/citations-in-scholarly-markdown/)
 * [CommonMark: A strongly defined, highly compatible specification of Markdown](http://commonmark.org/)
 * [MultiMarkdown Syntax Guide](https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide)
+
+* ["Bibliographies and Citations". *R Markdown*](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
