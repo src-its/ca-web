@@ -1,6 +1,6 @@
 ## What is needed to set up a web server for hosting a website?
 
-A server is a computer program or a machine accepts and supervises the HTTP requests.[^wikipedia]
+A server is a computer program or a machine accepts and supervises the HTTP requests. [^wikipedia]
 
 ## Server Harware
    - Read our article about [self-hosting versus hosted servers!](https://github.com/src-its/ca-web/blob/master/content/server-hosting.md)
@@ -32,6 +32,6 @@ Install Nginx and upstart job:
 
 ## References:
 
-[^wikipedia]: Wikipedia. "Server (computing)." Wikimedia Foundation, Inc. https://en.wikipedia.org/wiki/Server_(computing)
+[^wikipedia]: https://en.wikipedia.org/wiki/Server_(computing) Wikipedia. "Server (computing)." Wikimedia Foundation, Inc. https://en.wikipedia.org/wiki/Server_(computing)
 [^apache]: http://httpd.apache.org/
 [^nginx]: http://nginx.org/en/
