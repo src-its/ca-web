@@ -32,6 +32,12 @@ Install Nginx and upstart job:
 
 ## References:
 
+```
+[^wikipedia]:https://en.wikipedia.org/wiki/Server_(computing) "Wikipedia. 'Server (computing).' Wikimedia Foundation, Inc."
+[^apache]:http://httpd.apache.org/
+[^nginx]:http://nginx.org/en/
+```
+
 [^wikipedia]:https://en.wikipedia.org/wiki/Server_(computing) "Wikipedia. "Server (computing)." Wikimedia Foundation, Inc."
 [^apache]:http://httpd.apache.org/
 [^nginx]:http://nginx.org/en/
