@@ -139,7 +139,7 @@ Install `virtualenvwrapper` with `sudo`.
 
 1. Create a new virtual environment and work within it
 
-        sudo mkvirtualenv ca-web
+        mkvirtualenv ca-web
 
 This will install a standalone version of Python, as well as pip, into an isolated directory structure within your project directory. We chose to call our virtual environment newenv, but you should name it something descriptive. A directory will be created with the name you select, which will hold the file hierarchy where your packages will be installed.
 
@@ -169,7 +169,7 @@ Your prompt should change to reflect that you are now in your virtual environmen
 
 In your new environment, you can use pip to install Django. Regardless of whether you are using version 2 or 3 of Python, it should be called just pip when you are in your virtual environment. Also note that you do not need to use sudo since you are installing locally:
 
-        sudo pip install django
+        pip install django
 
 You can verify the installation by typing:
 
