@@ -42,7 +42,8 @@ There are even a few companies and organizations who offer free hosting services
 <!-- add to the list of examples above and add hyperlinks to the example -->
 
 ## References:
-
+```
 [^wikipedia]: Wikipedia. "Server (computing)." Wikimedia Foundation, Inc. https://en.wikipedia.org/wiki/Server_(computing)
 [^romkey]: https://romkey.com/2011/05/03/why-i-dont-self-host-anymore/ "romkey. 2011. "WHY I DON’T SELF-HOST ANYMORE." [Posted 2011/05/03] *ROMKEY.COM*  https://romkey.com/2011/05/03/why-i-dont-self-host-anymore/"
 [^netgear]: http://documentation.netgear.com/wgt624v4/enu/202-10234-01/WGT624_RM-05-04.html
+```
