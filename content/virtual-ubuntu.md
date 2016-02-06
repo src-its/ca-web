@@ -4,7 +4,7 @@
 
 ----
 
-Your Ubuntu Server virtual machine loads up by borrowing the resources of your host operating system and storing your virtual machine on a specific space on your host system's hard disk.
+Your Ubuntu Server virtual machine loads by borrowing the resources of your host operating system and storing your virtual machine on a specific space on your host system's hard disk.
 
 ----
 
