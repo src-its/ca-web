@@ -1,23 +1,23 @@
 
+## Installing Ubuntu Server as a VirtualBox application
+
 **Steps:**
 
-1 Download [Ubuntu Server 14.04.3 LTS ISO](http://www.ubuntu.com/download/server)
-    Before you can set up the 'ca-help' web application using VirtualBox, you'll need to download your OS installation media.
+1. Download [Ubuntu Server 14.04.3 LTS ISO](http://www.ubuntu.com/download/server)
+    - Before you can set up the 'ca-help' web application using VirtualBox, you'll need to download your OS installation media.  We'll be using Ubuntu Server for this project. 
     
-2 Deploy Virtual Instance of Ubuntu Desktop
-
-JOHANNES SCREENSHOTS:
-Open VirtualBox and select New.
-![](https://raw.githubusercontent.com/src-its/ca-web/master/images/1%20FirstImage.png)
-Type "Ubuntu" in the name space, and VirtualBox will automatically fill in the rest.
-![](https://raw.githubusercontent.com/src-its/ca-web/master/images/2%20OS.png)
-Set the "Memory" to no more than half of your computer's RAM.
-![](https://raw.githubusercontent.com/src-its/ca-web/master/images/3%20Memory.png)
+2. Deploy Virtual Instance of Ubuntu Desktop
+    - Open VirtualBox and select `New`:
+![VirtualBox intialization screen](/images/1%20FirstImage.png)
+    - Enter your OS type.  When you start typing 'Ubuntu', VirtualBox will attempt to help you select the correct OS.  Be sure to select the 64 bit version of the installation
+![VirtualBox set-up OS selection](/images/2%20OS.png)
+    - Set the 'Memory' to no more than half of your computer's RAM.
+    - ![](/images/3%20Memory.png)
 Create a virtual hard disk.
-![](https://raw.githubusercontent.com/src-its/ca-web/master/images/4%20HDD.png)
+![VirtualBox set-up memory allocation](/images/4%20HDD.png)
 Set the hard disk type to VDI (VirtualBox Disk Image)
-![](https://raw.githubusercontent.com/src-its/ca-web/master/images/5%20Disk%20File%20Type.png)
-![](https://raw.githubusercontent.com/src-its/ca-web/master/images/6%20Storage.png)
+![VirtualBox](/images/5%20Disk%20File%20Type.png)
+![](/images/6%20Storage.png)
 ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/7%20HDD%20Size.png)
 ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/8%20VB%20Start%20.png)
 ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/9%20ISO%20Selection.png)
