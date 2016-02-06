@@ -12,16 +12,15 @@ Your Ubuntu Server virtual machine (VM) loads by borrowing the resources of your
 1. Download [Ubuntu Server 14.04.3 LTS ISO](http://www.ubuntu.com/download/server)
     - Before you can set up the 'ca-help' web application using VirtualBox, you'll need to download your OS installation media.  We'll be using Ubuntu Server for this project. 
 
-
 2. Deploy Virtual Instance of Ubuntu Server
 
     - Open VirtualBox and select `New`: <br /> ![VirtualBox intialization screen](/images/1%20FirstImage.png)<br />
 
-Setup Wizard will appear and click at Next button. <br/> ![](http://i.stack.imgur.com/fl3x4.jpg)
+    - Setup Wizard will appear and click at Next button. <br/> ![](http://i.stack.imgur.com/fl3x4.jpg)
 
    - Enter your OS type.  When you start typing 'Ubuntu', VirtualBox will attempt to help you select the correct OS.  Be sure to select the 64 bit version of the installation  <br /> ![VirtualBox set-up OS selection](/images/2%20OS.png) <br />
     
-    - Set the 'Memory' to about half of your available RAM. This parameter will affect the speed of your machine.  You can allocate more or less RAM to balance your preferences and usage requirements. This setting can be adjusted again after you  create your virtual appliance and changes take effect on image start-up.  <br /> ![VirtualBox set-up memory allocation](/images/3%20Memory.png)
+   - Set the 'Memory' to about half of your available RAM. This parameter will affect the speed of your machine.  You can allocate more or less RAM to balance your preferences and usage requirements. This setting can be adjusted again after you  create your virtual appliance and changes take effect on image start-up.  <br /> ![VirtualBox set-up memory allocation](/images/3%20Memory.png)
     
    - Create a virtual hard disk.<br/>![VirtualBox set-up memory allocation](/images/4%20HDD.png)
 
@@ -32,7 +31,6 @@ Setup Wizard will appear and click at Next button. <br/> ![](http://i.stack.imgu
    - Set your location where you intend to store your VM <br/>  ![VirtualBox set-up file location and size](/images/7%20HDD%20Size.png)
 
    - Enter the size of your virtual disk (in MB) and click Next button.  <br/> ![](http://i.stack.imgur.com/rnLDr.png)
-
 
 ----
 
@@ -49,12 +47,11 @@ Setup Wizard will appear and click at Next button. <br/> ![](http://i.stack.imgu
 
 ---
 
-Alternatively, you can pre-define the *.ISO.
+   - Alternatively, you can pre-define the *.ISO.
 
-First, move (`mv`) your VirtualBox *.ISO file to wherever you wish to save your VirtualBox files and then link it to your machines from the 'Settings' menu.
+   - First, move (`mv`) your VirtualBox *.ISO file to wherever you wish to save your VirtualBox files and then link it to your machines from the 'Settings' menu.
 
-On VirtualBox main window, select START and pick your MEDIA SOURCE. In your case, select iso on your desktop.
-
+   - On VirtualBox main window, select START and pick your MEDIA SOURCE. In your case, select iso on your desktop.
 <!-- The original instructions stated to remove your installation `.ISO` from the virtual optical disk drive before restarting the VM. Not sure if this is necessary (or recommended). -->
 
 ---
