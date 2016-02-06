@@ -45,8 +45,6 @@ Your Ubuntu Server virtual machine (VM) loads by borrowing the resources of your
 <br /> ![selection confirmation](https://raw.githubusercontent.com/src-its/ca-web/master/images/10%20ISO%20Location.png)
 <br /> ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/11%20ISO%20Start.png)
 
-- Finish the installation as normal install.
-
 ---
 
    - Alternatively, you can pre-define your initial boot-up *.ISO. <br/><br/> First, move (`mv`) your VirtualBox *.ISO file to wherever you wish to save your VirtualBox files and then link it to your machines from the 'Settings' menu.
