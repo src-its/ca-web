@@ -10,16 +10,12 @@
 
     - Open VirtualBox and select `New`: <br /> ![VirtualBox intialization screen](/images/1%20FirstImage.png)<br />
 
-   - Enter your OS type.  When you start typing 'Ubuntu', VirtualBox will attempt to help you select the correct OS.  Be sure to select the 64 bit version of the installation
-
-    ![VirtualBox set-up OS selection](/images/2%20OS.png)
+   - Enter your OS type.  When you start typing 'Ubuntu', VirtualBox will attempt to help you select the correct OS.  Be sure to select the 64 bit version of the installation  <br /> ![VirtualBox set-up OS selection](/images/2%20OS.png) <br />
     
-    - Set the 'Memory' to about half of your available RAM. This parameter will affect the speed of your machine.  You can allocate more or less RAM to balance your preferences and usage requirements. This setting can be adjusted again after you  create your virtual appliance and changes take effect on image start-up. 
-    - !VirtualBox set-up memory allocation[](/images/3%20Memory.png)
+    - Set the 'Memory' to about half of your available RAM. This parameter will affect the speed of your machine.  You can allocate more or less RAM to balance your preferences and usage requirements. This setting can be adjusted again after you  create your virtual appliance and changes take effect on image start-up.  <br /> ![VirtualBox set-up memory allocation](/images/3%20Memory.png)
     
-Create a virtual hard disk.
-![VirtualBox set-up memory allocation](/images/4%20HDD.png)
-Set the hard disk type to VDI (VirtualBox Disk Image)
+   - Create a virtual hard disk.<br/>![VirtualBox set-up memory allocation](/images/4%20HDD.png)
+Set the hard disk type to VDI (VirtualBox Disk Image)<br/>
 
 ![VirtualBox](/images/5%20Disk%20File%20Type.png)
 
