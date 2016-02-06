@@ -34,7 +34,9 @@ Your Ubuntu Server virtual machine (VM) loads by borrowing the resources of your
 
 ----
 
-   - At this point, you have a configured VirtualBox machine image. The VirtualBox Set-Up Wizard will have dumped you back into the start-up menu, but your machine isn't yet fully configured.  Before you can start it up, you'll need to link an *.ISO image of your OS from which your image can be booted. <br /> ![selection prompt](https://raw.githubusercontent.com/src-its/ca-web/master/images/8%20VB%20Start%20.png)
+   - At this point, you have a configured VirtualBox machine image.
+   - Once you have completed the set-up, VirtualBox will print out the detail of your input.  Finish the wizard by clicking the create button.  <br/> ![](http://i.stack.imgur.com/L7bEX.jpg)
+   - The VirtualBox Set-Up Wizard will then dump you back into the start-up menu, but your machine isn't yet fully configured.  Before you can start it up, you'll need to link an *.ISO image of your OS from which your image can be booted. <br /> ![selection prompt](https://raw.githubusercontent.com/src-its/ca-web/master/images/8%20VB%20Start%20.png)
 
 ----
 
@@ -47,21 +49,23 @@ Your Ubuntu Server virtual machine (VM) loads by borrowing the resources of your
 
 ---
 
-   - Alternatively, you can pre-define the *.ISO.
+   - Alternatively, you can pre-define your initial boot-up *.ISO. <br/><br/> First, move (`mv`) your VirtualBox *.ISO file to wherever you wish to save your VirtualBox files and then link it to your machines from the 'Settings' menu.
+<br/>
+<br/>On VirtualBox main window, select START and pick your MEDIA SOURCE.
+   
 
-   - First, move (`mv`) your VirtualBox *.ISO file to wherever you wish to save your VirtualBox files and then link it to your machines from the 'Settings' menu.
-
-   - On VirtualBox main window, select START and pick your MEDIA SOURCE. In your case, select iso on your desktop.
 <!-- The original instructions stated to remove your installation `.ISO` from the virtual optical disk drive before restarting the VM. Not sure if this is necessary (or recommended). -->
 
+<!-- We should elaborate on this section with images. -->
+
+
 ---
 
-You will see the detail of your input here.  Finish the wizard by clicking the create button.  <br/> ![](http://i.stack.imgur.com/L7bEX.jpg)
+---
 
 ---
 
-3. Install Guest Additions.
-
+**Next Step:** Install Guest Additions.
 
 ---
 
