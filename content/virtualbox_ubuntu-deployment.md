@@ -38,13 +38,12 @@ Setup Wizard will appear and click at Next button. <br/> ![](http://i.stack.imgu
 
 ----
 
-At this point, you have a configured VirtualBox machine image. The VirtualBox Set-Up Wizard will have dumped you back into the start-up menu, but your machine isn't yet fully configured.  Before you can start it up, you'll need to link an *.ISO image of your OS from which your image can be booted.
+   - At this point, you have a configured VirtualBox machine image. The VirtualBox Set-Up Wizard will have dumped you back into the start-up menu, but your machine isn't yet fully configured.  Before you can start it up, you'll need to link an *.ISO image of your OS from which your image can be booted. <br /> ![selection prompt](https://raw.githubusercontent.com/src-its/ca-web/master/images/8%20VB%20Start%20.png)
+
 
 ----
 
 If you try to start up the image, Virtual Box may prompt to you select your host drive.  The screenshots that follow show the disk selection process when starting a newly-created image for Mac.
-
-   - ![selection prompt](https://raw.githubusercontent.com/src-its/ca-web/master/images/8%20VB%20Start%20.png)
 
    - ![ISO image](https://raw.githubusercontent.com/src-its/ca-web/master/images/9%20ISO%20Selection.png)
 
