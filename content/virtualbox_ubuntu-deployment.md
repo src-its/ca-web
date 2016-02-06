@@ -13,7 +13,6 @@ Your Ubuntu Server virtual machine (VM) loads by borrowing the resources of your
     - Before you can set up the 'ca-help' web application using VirtualBox, you'll need to download your OS installation media.  We'll be using Ubuntu Server for this project. 
 
 
-    
 2. Deploy Virtual Instance of Ubuntu Server
 
     - Open VirtualBox and select `New`: <br /> ![VirtualBox intialization screen](/images/1%20FirstImage.png)<br />
@@ -32,43 +31,46 @@ Setup Wizard will appear and click at Next button. <br/> ![](http://i.stack.imgu
 
    - Set your location where you intend to store your VM <br/>  ![VirtualBox set-up file location and size](/images/7%20HDD%20Size.png)
 
-
- Enter the size of your virtual disk (in MB) and click Next button.  <br/> ![](http://i.stack.imgur.com/rnLDr.png)
+   - Enter the size of your virtual disk (in MB) and click Next button.  <br/> ![](http://i.stack.imgur.com/rnLDr.png)
 
 
 ----
 
    - At this point, you have a configured VirtualBox machine image. The VirtualBox Set-Up Wizard will have dumped you back into the start-up menu, but your machine isn't yet fully configured.  Before you can start it up, you'll need to link an *.ISO image of your OS from which your image can be booted. <br /> ![selection prompt](https://raw.githubusercontent.com/src-its/ca-web/master/images/8%20VB%20Start%20.png)
 
-
 ----
 
-If you try to start up the image, Virtual Box may prompt to you select your host drive.  The screenshots that follow show the disk selection process when starting a newly-created image for Mac.
+-  If you try to start up the image, Virtual Box may prompt to you select your host drive.  The screenshots that follow show the disk selection process when starting a newly-created image for Mac.
+<br /> ![ISO image](https://raw.githubusercontent.com/src-its/ca-web/master/images/9%20ISO%20Selection.png)
+<br /> ![selection confirmation](https://raw.githubusercontent.com/src-its/ca-web/master/images/10%20ISO%20Location.png)
+<br /> ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/11%20ISO%20Start.png)
 
-   - ![ISO image](https://raw.githubusercontent.com/src-its/ca-web/master/images/9%20ISO%20Selection.png)
-
-   - ![selection confirmation](https://raw.githubusercontent.com/src-its/ca-web/master/images/10%20ISO%20Location.png)
-
-   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/11%20ISO%20Start.png)
-
----
-
-Alternatively, you can pre-define the *.ISO.  Simply move (`mv`) your VirtualBox *.ISO file from your downloads folder into your VirtualBox folder and then link it to your machines from the 'Settings' menu.
+- Finish the installation as normal install.
 
 ---
 
+Alternatively, you can pre-define the *.ISO.
+
+First, move (`mv`) your VirtualBox *.ISO file to wherever you wish to save your VirtualBox files and then link it to your machines from the 'Settings' menu.
+
+On VirtualBox main window, select START and pick your MEDIA SOURCE. In your case, select iso on your desktop.
+
+<!-- The original instructions stated to remove your installation `.ISO` from the virtual optical disk drive before restarting the VM. Not sure if this is necessary (or recommended). -->
+
+---
 
 You will see the detail of your input here.  Finish the wizard by clicking the create button.  <br/> ![](http://i.stack.imgur.com/L7bEX.jpg)
 
-On VirtualBox main window, select START and pick your MEDIA SOURCE. In your case, select iso on your desktop.
-Finish the installation as normal install.
+---
 
-Remove your installation .iso from the virtual optical disk drive before restarting the VM.
+3. Install Guest Additions.
 
-Install Guest Additions.
 
 ---
 
-http://askubuntu.com/questions/142549/how-to-install-ubuntu-on-virtualbox
+## References:
 
-http://www.psychocats.net/ubuntu/virtualbox
+* http://askubuntu.com/questions/142549/how-to-install-ubuntu-on-virtualbox
+* http://www.psychocats.net/ubuntu/virtualbox
+
+<!-- we need to add a complete list of citations on this page-->
