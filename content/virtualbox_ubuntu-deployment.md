@@ -50,33 +50,13 @@ If you try to start up the image, Virtual Box may prompt to you select your host
 
    - ![selection confirmation](https://raw.githubusercontent.com/src-its/ca-web/master/images/10%20ISO%20Location.png)
 
+   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/11%20ISO%20Start.png)
+
 ---
 
 Alternatively, you can pre-define the *.ISO.  Simply move (`mv`) your VirtualBox *.ISO file from your downloads folder into your VirtualBox folder and then link it to your machines from the 'Settings' menu.
 
 ---
-
-
-   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/11%20ISO%20Start.png)
-
-   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/12%20Hostname.png)
-
-   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/13%20Username.png)
-
-   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/14%20Password.png)
-
-   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/15%20Encrypt.png)
-
-   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/16%20TimeZone.png)
-
-   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/17%20Partition.png)
-
-   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/18%20PartitionSelect.png)
-
-   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/20%20WriteChanges.png)
-
-
-
 
 
 You will see the detail of your input here.  Finish the wizard by clicking the create button.  <br/> ![](http://i.stack.imgur.com/L7bEX.jpg)
