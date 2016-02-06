@@ -1,6 +1,6 @@
 ## What is Git?
 
-Git is a piece of software that handles 'version control' for you.
+Git is a piece of software that helps to manage revisions to a repository of files.
 
 ## What is Version Control?
 
