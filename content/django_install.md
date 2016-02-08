@@ -27,7 +27,7 @@ Some of the different methods are:
 
 
 
-1. Install the following packages:
+1. Install the following packages (N.B. the libxml2-dev package does **NOT** have a one before the two; that is a lower case L):
 
         sudo apt-get install libblas3gf libc6 libamd2.3.1 libumfpack5.6.2 \
         libgcc1 libgfortran3 liblapack3gf libstdc++6 \

@@ -1,5 +1,31 @@
+## initial configuration
 
-## method 1: installing a LAMP server
+After you have set up your Virtual Machine to run Ubuntu Server, on the first time you that you start the application you will need to run through an initial configuration sequence:
+
+   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/12%20Hostname.png)
+
+   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/13%20Username.png)
+
+   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/14%20Password.png)
+
+   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/15%20Encrypt.png)
+
+   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/16%20TimeZone.png)
+
+   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/17%20Partition.png)
+
+   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/18%20PartitionSelect.png)
+
+   - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/20%20WriteChanges.png)
+
+---
+
+## server stack configuration
+
+**Be aware! Do not select the pre-built LAMP package on starting your VM for the first time! It is best to configure it manually!**
+
+
+### method 1: LAMP
 
 A common web server software stack is Linux, Apache, MySQL, and PHP (LAMP).
 
@@ -16,7 +42,7 @@ First, ensure that Ubuntu is up-to-date:
 
 ### MySQL
 
-    sudo apt-get mysql-server
+    sudo apt-get install mysql-server
 
 ### PHP
 
@@ -35,7 +61,7 @@ NOTE: In Linux, you can install several software packages at the same time by li
 
 
 
-## method 2:  installating alternative server bundles: Linux, nginx, postgres and python
+### method 2: alternative server bundles - Linux, nginx, postgres and python
 
 
 

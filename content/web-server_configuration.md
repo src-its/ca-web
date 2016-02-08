@@ -1,54 +1,43 @@
 ## What is needed to set up a web server for hosting a website?
 
-A server is a computer program or a machine that waits for requests from other machines or software (clients) and responds to them. [1]
+A server is a computer program or a machine accepts and supervises the HTTP requests.[^wikipedia]
 
+## Server Harware
+   - Read our article about [self-hosting versus hosted servers!](https://github.com/src-its/ca-web/blob/master/content/server-hosting.md)
 
-
-### self-hosting vs hosted servers
-
-Almost any computer with an active Internet connection can be configured to operate as a web server--so it is possible to host a web site or web application right from your home and have it available to anyone on the World Wide Web.
-
-While typically the most economical option, there are numerous potential challenges in setting up a home server [2]:
-
-1. reliability of Internet delivery
-   addressing the need to keep your site online all the time
-2. security
-   separting your computer from your server. being able to identify attacks and break-ins
-3. IP addressing and domain routing
-   getting a fixed IP address or setting up a dynamic DNS
-4. upload (outbound) speeds
-    the upload speed of most typical home broadband connections is significantly slower than the download speeds that one experiences when browsing the web, meaning that the pages you are serving out are likely to load very slowly for anyone attempting to view them (especially viewers in geographically distant areas).
-5. packet filtering - Not every Internet Service Provider allows users to host a public web site from computers on their network. Many ISPs do port filtering that will prevent email sent to your home-located server. They may also prevent access of a home web server or filter out other protocols.
-
-
-Most people wishing to host a website opt for third-party hosting.  Advantages of hosted servers are that they are fast, always-on, powerful machines with access to lots of bandwidth.
-
-There's a plethora of companies offering to host your web server. Big names include:
-
-* Amazon
-* Google
-
-There are even a few companies and organizations who offer free hosting services under limited conditions:
-
-* GitHub
-
-
-### URLS and DNS
-
-
-
-### web server software for HTTP request routing: Apache vs nginx (and others?)
-
-Web server software accepts and supervises the HTTP requests.
+### Server Software
 
 Two popular web server software are Apache and nginx.
 
-* Apache
+1. [Apache HTTP server](http://httpd.apache.org/) - 
+    The Apache HTTP Server Project is an effort to develop and maintain an open-source HTTP server for modern operating systems including UNIX and Windows. The goal of this project is to provide a secure, efficient and extensible server that provides HTTP services in sync with the current HTTP standards.[^apache] <br />
+    The Apache HTTP Server ("httpd") was launched in 1995 and it has been the most popular web server on the Internet since April 1996. It has celebrated its 20th birthday as a project in February 2015.
 
+2. [nginx](http://nginx.org/en/) -
+    nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, and a generic TCP proxy server, originally written by Igor Sysoev. For a long time, it has been running on many heavily loaded Russian sites including Yandex, Mail.Ru, VK, and Rambler. According to Netcraft, nginx served or proxied 24.33% busiest sites in January 2016. Here are some of the success stories: Netflix, Wordpress.com, FastMail.FM.[^nginx]<br />
+    The sources and documentation are distributed under the 2-clause BSD-like license.
+### Apache configuration
 
-* nginx 
+### Nginx configuration
+
+Install Nginx and upstart job:
+
+         ~ $ sudo apt-get install nginx
+         ~ $ sudo ln -s /home/<user>/production/_deploy/production_nginx /etc/nginx/sites-available/production
+         ~ $ sudo ln -s /etc/nginx/sites-available/production /etc/nginx/sites-enabled/production
+         ~ $ sudo service nginx restart
+         ~ $ sudo cp production/_deploy/production_upstart.conf /etc/init/webcore_production.conf
+         ~ $ sudo service webcore_production start
+
 
 ## References:
 
-[1] Wikipedia. "Server (computing)." Wikimedia Foundation, Inc. https://en.wikipedia.org/wiki/Server_(computing)
-[2] romkey. 2011. "WHY I DON’T SELF-HOST ANYMORE." [Posted 2011/05/03] *ROMKEY.COM*  https://romkey.com/2011/05/03/why-i-dont-self-host-anymore/
+```
+[^wikipedia]:https://en.wikipedia.org/wiki/Server_(computing) "Wikipedia. 'Server (computing).' Wikimedia Foundation, Inc."
+[^apache]:http://httpd.apache.org/
+[^nginx]:http://nginx.org/en/
+```
+
+[^wikipedia]:https://en.wikipedia.org/wiki/Server_(computing) "Wikipedia. "Server (computing)." Wikimedia Foundation, Inc."
+[^apache]:http://httpd.apache.org/
+[^nginx]:http://nginx.org/en/
