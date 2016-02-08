@@ -19,8 +19,10 @@ Your Ubuntu Server virtual machine (VM) loads by borrowing the resources of your
     - Setup Wizard will appear and click at Next button. <br/> ![](http://i.stack.imgur.com/fl3x4.jpg)
 
    - Enter your OS type.  When you start typing 'Ubuntu', VirtualBox will attempt to help you select the correct OS.  Be sure to select the 64 bit version of the installation  <br /> ![VirtualBox set-up OS selection](/images/2%20OS.png) <br />
-    
-   - Set the 'Memory' to about half of your available RAM. This parameter will affect the speed of your machine.  You can allocate more or less RAM to balance your preferences and usage requirements. This setting can be adjusted again after you  create your virtual appliance and changes take effect on image start-up.  <br /> ![VirtualBox set-up memory allocation](/images/3%20Memory.png)
+
+<!-- Operating systems that are not 64 bit do not allow 64 bit installation, preventing the use of the Ubuntu server through Virtual Box. Instead install a 32 bit version of Ubuntu. -->    
+   
+    - Set the 'Memory' to about half of your available RAM. This parameter will affect the speed of your machine.  You can allocate more or less RAM to balance your preferences and usage requirements. This setting can be adjusted again after you  create your virtual appliance and changes take effect on image start-up.  <br /> ![VirtualBox set-up memory allocation](/images/3%20Memory.png)
     
    - Create a virtual hard disk.<br/>![VirtualBox set-up memory allocation](/images/4%20HDD.png)
 
