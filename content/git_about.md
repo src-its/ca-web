@@ -10,5 +10,11 @@ So, you install Git, then use it tp create the new project directory. You also t
 
 Git is just one among many version control systems out there.  It is a so-called distributed version control system, meaning that Git has commands that allow you to push and pull your changes to other people's machines. Neither copy of the project directory is any better or 'greater' than any other - you are both collaborating on identical copies. This is a good thing, and Git gives you the power to work on your own copy as-is until you are ready to pull in your collaborator's changes, and push back your own changes.[^mcwilliams]
 
-[^mcwilliams]: https://jahya.net/blog/git-vs-github/ "Andrew McWilliams. "Is Git the Same Thing as Github!?""
 
+## References
+
+```
+[^mcwilliams]: https://jahya.net/blog/git-vs-github/ "Andrew McWilliams. "Is Git the Same Thing as Github!?""
+```
+
+[^mcwilliams]: https://jahya.net/blog/git-vs-github/ "Andrew McWilliams. "Is Git the Same Thing as Github!?""
