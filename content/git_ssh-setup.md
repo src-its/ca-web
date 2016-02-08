@@ -1,4 +1,5 @@
 ### How to install/configure SSH keys for GitHub on Ubuntu
+----
 #### Checking for & Generating SSH keys
 <a name="generate-key"></a>
 
@@ -48,9 +49,8 @@ Click `Add key`.
 Confirm the action by entering your GitHub password.
 
 
-#### Configuring your Local Machine
+#### Adding your SSH key to the SSH Agent
 <a name="add-key-to-agent"></a>
-##### Adding your SSH key to the SSH Agent
 
 Ensure ssh-agent is enabled:
 
@@ -85,7 +85,9 @@ Hi username! You've successfully authenticated, but GitHub does not
 provide shell access.
 ```
 Verify that the resulting message contains your username. 
-
+----
+----
+----
 #### Troubleshooting
 If you see a message that contains "access denied," follow these steps.
 
@@ -121,7 +123,7 @@ OpenSSH 6.8 or newer: `ssh-add -l -E md5`
 Go to GitHub and click `Settings`.
 In the user settings sidebar, click SSH keys.
 Compare the list of SSH keys with the output from the `ssh-add` command.
-
+----
 ### References:
 
 * GitHub. 2016 "Generating a new SSH key" . *GitHub Inc.* https://help.github.com/articles/generating-a-new-ssh-key/
