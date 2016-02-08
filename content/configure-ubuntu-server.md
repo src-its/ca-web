@@ -42,7 +42,7 @@ First, ensure that Ubuntu is up-to-date:
 
 ### MySQL
 
-    sudo apt-get mysql-server
+    sudo apt-get install mysql-server
 
 ### PHP
 
