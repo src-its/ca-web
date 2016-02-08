@@ -40,9 +40,9 @@ Next, in the main menu choose VCS > Checkout from Version Control > GitHub. A bo
 
 ### References:
 
-* [Git Documentation: Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
-* [PyCharm 5.0 Help: Registering GitHub Account in PyCharm](https://www.jetbrains.com/pycharm/help/registering-github-account-in-pycharm.html)
-* [PyCharm 5.0 Help: Cloning a Repository](https://www.jetbrains.com/pycharm/help/cloning-a-repository-from-github.html)
+* ["Git Basics - Getting a Git Repository." git-scm. Accessed February 08, 2016. https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
+* ["Cloning a Repository from GitHub." PyCharm 5.0 Help. December 10, 2015. Accessed February 08, 2016. https://www.jetbrains.com/pycharm/help/cloning-a-repository-from-github.html. ](https://www.jetbrains.com/pycharm/help/cloning-a-repository-from-github.html)
+* ["Registering GitHub Account in PyCharm." PyCharm 5.0 Help. December 10, 2015. Accessed February 08, 2016. https://www.jetbrains.com/pycharm/help/registering-github-account-in-pycharm.html.](https://www.jetbrains.com/pycharm/help/registering-github-account-in-pycharm.html)
 
 ### Related Articles:
 
