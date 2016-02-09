@@ -39,4 +39,6 @@ ref 2: Git. ["About Version Control"] (https://git-scm.com/book/en/v2/Getting-St
 ref 3: Git. ["Git Basics"] (https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
 =======
 [^mcwilliams]: https://jahya.net/blog/git-vs-github/ "Andrew McWilliams. "Is Git the Same Thing as Github!?""
+
+Test
 >>>>>>> upstream/master
