@@ -28,8 +28,19 @@ If not, then generate a new SSH key using the following command:
 You'll be prompted to select a location to save the file.  Either change it to your preferred location, or accept the default  by pressing `Enter`.
 
     Enter a file in which to save the key(/Users/you/.ssh/id_rsa): [Press enter]
+    
+#### Copying your SSH Key
 
-
+So we have an issue where there are multiple clipboards on a given OS. We may be able to copy a string of text (such as that of the SSH key), but we are not able to transfer it across from the virtual machine to our parent machine. To combat this, we are to use an addon called *VirtualBox Guest*. In essensce, the addon allows for file sharing between the guest machine and host machine. VirtualBox normally has this functionality built in, but only for an OS with a GUI (and Ubuntu Server is solely command prompt based). To set up VirtualBox Guest, first you must got to `Devices` and then `Install Guest Additions`. From here you must enter the Guest Additions CD Image. After that, you must mount the CD Rom as such:
+    sudo mount /dev/cdrom /media/cdrom
+The next part can get a little fuzzy, so be careful! Verify that you have all of the install scripts in the right place by typing:
+    ls -l /media/cdrom/
+Now, type in the following command to ready our server for installation from the scripts:
+    sudo apt-get install -y dkms build-essential linux-headers-generic linux-headers-$(uname -r)
+Last, but not least, we can finally build and install out addon!
+    sudo /media/cdrom/VBoxLinuxAdditions.run
+    
+The original article can be found [here](http://en.ig.ma/notebook/2012/virtualbox-guest-additions-on-ubuntu-server)
 #### Adding your SSH key to GitHub
 
 To add your SSH key to GitHub, first navigate to your `.ssh` folder. Open `id_rsa.pub` (or whatever you named you file) in a text editor and copy its contents. Proceed with the following steps:
