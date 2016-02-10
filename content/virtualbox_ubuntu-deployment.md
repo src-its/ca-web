@@ -9,10 +9,10 @@ Your Ubuntu Server virtual machine (VM) loads by borrowing the resources of your
 ----
 
 
-1. Download [Ubuntu Server 14.04.3 LTS ISO](http://www.ubuntu.com/download/server)
-    - Before you can set up the 'ca-help' web application using VirtualBox, you'll need to download your OS installation media.  We'll be using Ubuntu Server for this project. 
+1. Download [Ubuntu Desktop 14.04.3 LTS ISO](http://www.ubuntu.com/download/desktop)
+    - Before you can set up the 'ca-help' web application using VirtualBox, you'll need to download your OS installation media.  We'll be using Ubuntu Desktop for this project. 
 
-2. Deploy Virtual Instance of Ubuntu Server
+2. Deploy Virtual Instance of Ubuntu Desktop
 
     - Open VirtualBox and select `New`: <br /> ![VirtualBox intialization screen](/images/1%20FirstImage.png)<br />
 
