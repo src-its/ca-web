@@ -67,16 +67,18 @@ Your Ubuntu Server virtual machine (VM) loads by borrowing the resources of your
 
 **Next Step:** Install Guest Additions.
 
-* Update your APT database:  sudo apt-get update
-* Install the latest security updates:  sudo apt-get upgrade
-* Install required packages:  sudo apt-get install build-essential module-assistant
-* Configure your system for building kernel modules:  sudo m-a prepare
+* Update your APT database:  `sudo apt-get update`
+* Install the latest security updates:  `sudo apt-get upgrade`
+* Install required packages:  `sudo apt-get install build-essential module-assistant`
+* Configure your system for building kernel modules:  `sudo m-a prepare`
 * Click on Install Guest Additions… from the Devices menu
-* Mount the virtual CD Rom: sudo mount /dev/cdrom /media/cdrom 
-* Change directory to the virtual CD Rom Drive: cd /media/cdrom
-* Install Guest Editions: sudo ./VBoxLinuxAdditions.run
-* Restart VM by entering: sudo reboot
+* Mount the virtual CD Rom: `sudo mount /dev/cdrom /media/cdrom`
+* Change directory to the virtual CD Rom Drive: `cd /media/cdrom`
+* Install Guest Editions: `sudo ./VBoxLinuxAdditions.run`
+* Restart VM by entering: `sudo reboot`
 * To check that Guest Editions are installed: lsmod | grep vboxguest
+
+<-- I got the above instructions from the site linked below.  IT doesn't work. Tried `sudo apt-get install virtualbox-guestadditions-utils`. didn't help -->
 
 ---
 
