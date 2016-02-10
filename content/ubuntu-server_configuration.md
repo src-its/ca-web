@@ -1,5 +1,7 @@
 ## initial configuration
 
+<!--
+
 After you have set up your Virtual Machine to run Ubuntu Server, on the first time you that you start the application you will need to run through an initial configuration sequence:
 
    - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/12%20Hostname.png)
@@ -18,7 +20,7 @@ After you have set up your Virtual Machine to run Ubuntu Server, on the first ti
 
    - ![](https://raw.githubusercontent.com/src-its/ca-web/master/images/20%20WriteChanges.png)
 
----
+--->
 
 ## server stack configuration
 
