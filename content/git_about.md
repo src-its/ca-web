@@ -4,7 +4,7 @@ Git is a piece of software that helps to manage revisions to a repository of fil
 
 ## What is Version Control?
 
-Version control systems (VCS) are tools for making file management easier.  If you are working on any project over a period of time&mdash;be it alone or in a group&mdash;you are likely to make multiple changes to the same file.  Without VCS, the onus of trackign changes is yours alone.  VCS record the changes that you or your collaborators make to a project files for you. That is, as you change project files, your VCS keeps a record of these changes so that you can track the history of edits and can even revert a  file (or files) to a previous state. This way, if anyone on the project makes a mistake or a change that anyone else doesn't agree with, it is possible to revert that file to previous state. In other words, version control is a mean of recording incremental changes so that each iteration of a file can be accessed and restored, as neccessary. [^mcwilliams][^git_about-vcs]
+Version control systems (VCS) are tools for making file management easier.  If you are working on any project over a period of time&mdash;be it alone or in a group&mdash;you are likely to make multiple changes to the same file.  Without VCS, the onus of trackign changes is yours alone.  VCS record the changes that you or your collaborators make to a project files for you. That is, as you change project files, your VCS keeps a record of these changes so that you can track the history of edits and can even revert a  file (or files) to a previous state. This way, if anyone on the project makes a mistake or a change that anyone else doesn't agree with, it is possible to revert that file to previous state. In other words, version control is a mean of recording incremental changes so that each iteration of a file can be accessed and restored, as neccessary.[^mcwilliams][^git_about-vcs]
 
 ## How is Git different from other Version Controls?
 
@@ -34,5 +34,5 @@ In addition to installing Git locally in your machine, you also need a server to
 
 
 [^mcwilliams]: https://jahya.net/blog/git-vs-github/ "Andrew McWilliams. "Is Git the Same Thing as Github!?""
-[^git_about-vcs]: Git. ["About Version Control"] (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
-[^git_basics]: Git. ["Git Basics"] (https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
+[^git_about-vcs]: https://git-scm.com/book/en/v2/Getting-Started-About-Version-ControlGit. ["About Version Control"] (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
+[^git_basics]: https://git-scm.com/book/en/v2/Getting-Started-Git-BasicsGit. ["Git Basics"] (https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
