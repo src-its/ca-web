@@ -31,7 +31,8 @@ You'll be prompted to select a location to save the file.  Either change it to y
     
 #### Copying your SSH Key
 
-We have an issue where there are multiple clipboards on one given OS. While we may be able to copy a string of text (such as that of the SSH key we are not able to transfer it across from the virtual machine to our parent machine. To rectify this, we should use an addon called *VirtualBox Guest*. In essence, the addon allows for file sharing between the guest machine and the host machine. VirtualBox normally has this functionality built in, but only for an OS with a GUI (and Ubuntu Server is solely command prompt based). To set up VirtualBox Guest, first you must got to `Devices` and then `Install Guest Additions`. From there you must enter the Guest Additions CD Image. After that, you must mount the CD Rom as such:
+<!-- Should this be a separate article? Seems like the issue of accessing host machine files is a more general issue. -->
+We have an issue where there are multiple clipboards on one given OS. While we may be able to copy a string of text (such as that of the SSH key) we are not able to transfer it across from the virtual machine to our parent machine. To rectify this, we should use an addon called *VirtualBox Guest*. In essence, the addon allows for file sharing between the guest machine and the host machine. VirtualBox normally has this functionality built in, but only for an OS with a GUI (and Ubuntu Server is solely command prompt based). To set up VirtualBox Guest, first you must got to `Devices` and then `Install Guest Additions`. From there you must enter the Guest Additions CD Image. After that, you must mount the CD Rom as such:
 
     sudo mount /dev/cdrom /media/cdrom
     
