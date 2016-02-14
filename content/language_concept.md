@@ -1,9 +1,54 @@
-# What is a language?
-In everyday conversation, "language" refers to human languages, which change and evolve as people use them differently. However, formal languages are much more rigid and rule based than human languages, and can be described in a far more concrete terms. The main difference between a human language and a formal language is that while there is no 'right' way to speak a human language, no 'proper' English that is more English than any other English, formal languages conform to specific rulesets which determine whether a particular term/phrase is part of the language. For instance, we could have the language of all three-letter english words, which would contain the strings "bat", "cat", "too", "the", etc. until we'd listed all the three-letter words in the dictionary. 
+## What is a language?
 
-More practically, we hear about programming languages such as Java, Python, or C++, and conceptually these are identical to the formal languages discussed above. A programming language has set rules to determine membership in the language: Java, for instance, is just the set of compilable Java programs, or the programs which adhere Java's syntactic and semantic ruleset -- all statements end with a semicolon, all variables are defined before being used, etc. 
+<!-- AKD note: We start on Header L2 b/c site title occupies L1 position on page. -->
 
-Confusion often arises about the difference between a programming language such as Java and a markup language such as HTML, and whether both belong in the category of computer languages. The defining difference between the two categories is that while a programming language is used to issue commands to a computer a markup language is used to provide semantic information about a document. HTML for instance uses tags like `<p>`, `<a>`, or `<ul>` to give context to text following that tag, but leaves the specifics of how such text might be displayed or handled to the browser, which is why the same page might be rendered differently in two different browsers. Conceptually, however, both markup and programming languages are sets of strings acceptable according to some set of rules and represent the same formal concept of a language.
+
+Formally, a language is just a set of valid strings as determined by some rule.
+
+Computer languages are formal languages that can be described in concrete terms and which adhere rigidly to rules. The rules of computer languages must all be explicitly defined in order to convey meaning between two systems. Computer programming languages such as Java, Python, or C++, are simply collections of rules for valid expressions of meaning within a bounded context (i.e. the interaction of programs). 
+
+Spoken and written human languages can be viewed as far less 'formal' in the sense that words can convey a specific, shared meaning even where they are not formally defined.  For example, to obtain valid three-letter English words, one could work through a dictionary compiling the strings "bat", "cat", "the", "too", etc. Depending on the size, thoroughness and objective of those compiling the dictionary, however, this exercise might not provide a comprehensive collection of valid strings; words like "ooh" and "ahh", for example, might be missing. Similarly, cultural phenomenon can lead to the spontaneous creation of new words and expressions, such as the recent prominence of words in American English like "amazeballs" and phrases like "totes adorbs".
+ 
+
+
+
+The meaning conveyed by terms and expressions change and evolve as people use them differently.
+
+
+
+### computer languages
+
+- [ ] Torring Complete languages
+- [ ] scripting languages
+- [ ] programming languages
+- [ ] object-oriented languages
+- [ ] markup language
+
+Computer languages are formal languages in that all rules of interaction are defined. Java, for instance, is means of expressing statements for compilable Java programs, or the programs which adhere Java's syntactic and semantic ruleset&mdash;all statements end with a semicolon, all variables are defined before being used, etc. 
+
+<!-- This could be elaborated. -->
+
+Computer languages behave like human languages in that clear communication depends on how both the "speaker" and the "listener" send and receive information. HTML for instance uses tags like `<p>`, `<a>`, or `<ul>` to give context to text following that tag, but leaves the specifics of how such text might be displayed or handled to the browser.  Thus, browsers that have different fonts for expressing typeface will render the same page differently.
+
+
+
+#### types of computer languages
+
+A programming language is used to issue commands to a computer.
+
+A markup language is used to provide semantic information about a document. For example, there is some debate about whether Java and HTML are considered a 'markup language' or a 'programming language'. <!-- This paragraph needs some further revisions and links in the text to different references (especially statements).  -->
+
+
+
+### human languages
+
+In everyday conversation, "language" refers to human languages. 
+
+There is no 'right' way to speak a human language. There is no 'proper' English that is more English than any other English. Formal rules may be designed and intended to facilitate shared expression. <!-- This paragraph needs some further revisions and links in the text to different references (especially statements).  -->
+
+<!-- We can build out this section further.  -->
+
+
 
 ## Further Reading and References
 <!-- mostly wrote this from previous knowledge, so I'm just linking to some relevant wikipedia articles. -->
