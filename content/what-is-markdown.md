@@ -14,3 +14,14 @@ But in Markdown, all you need to do is:
 	`*Italicize this sentence.*`
 
 We like to use Markdown because its simplicity makes it readable and accessible by everyone, including those who don’t know a thing about coding. Even for those who are familiar with HTML, using Markdown makes it easy to spot errors
+
+<!-- 
+
+NOTE: At some point we should introduce a discussion about how Markdown is currently without a 'standard'.
+
+Flavours  of Markdown include:
+
+
+
+-->
+
