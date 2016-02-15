@@ -82,15 +82,13 @@ If you have mounted the installation media, and wish to install Guest Additions 
 * Install Guest Editions: `sudo ./VBoxLinuxAdditions.run`
 * Restart VM by entering: `sudo reboot`
 
-* To check that Guest Editions are installed: `lsmod | grep vboxguest`
-
-<!-- consider showing output format -->
+* To check that Guest Editions are installed: `lsmod | grep vboxguest`, should return something like `vboxguest     278528 7 vboxsf`
 
 <!-- I got the above instructions from the site linked below.  IT doesn't work. Tried `sudo apt-get install virtualbox-guestadditions-utils`. didn't help -->
 
 If that doesn't work, then use the tried and true method of installing from the official packages:
 
-`sudo apt-get install virtualbox-guest-additions-iso virtualbox-guest-dkms virtualbox-guest-utils`
+`sudo apt-get install virtualbox-guest-additions-iso virtualbox-guest-dkms virtualbox-guest-utils linux-headers-generic`
 
 ---
 
