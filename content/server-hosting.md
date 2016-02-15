@@ -1,5 +1,5 @@
 
-### Self-hosting vs. Sosted Servers
+### Self-hosting vs. Hosted Servers
 
 #### Self-hosting 
 
