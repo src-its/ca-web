@@ -67,18 +67,30 @@ Your Ubuntu Server virtual machine (VM) loads by borrowing the resources of your
 
 **Next Step:** Install Guest Additions.
 
-* Update your APT database:  `sudo apt-get update`
-* Install the latest security updates:  `sudo apt-get upgrade`
-* Install required packages:  `sudo apt-get install build-essential module-assistant`
-* Configure your system for building kernel modules:  `sudo m-a prepare`
+* Install packages:  `sudo apt-get install build-essential module-assistant` 
+
+<!-- we should investigate why we need to install these packages, if they are truly necessary -->
+
+If you have mounted the installation media, and wish to install Guest Additions from the command line:
+
 * Click on Install Guest Additions… from the Devices menu
+
+<!-- consider adding photo to show that the devices menu is in the VirtualBox GUI container -->
+
 * Mount the virtual CD Rom: `sudo mount /dev/cdrom /media/cdrom`
 * Change directory to the virtual CD Rom Drive: `cd /media/cdrom`
 * Install Guest Editions: `sudo ./VBoxLinuxAdditions.run`
 * Restart VM by entering: `sudo reboot`
-* To check that Guest Editions are installed: lsmod | grep vboxguest
 
-<-- I got the above instructions from the site linked below.  IT doesn't work. Tried `sudo apt-get install virtualbox-guestadditions-utils`. didn't help -->
+* To check that Guest Editions are installed: `lsmod | grep vboxguest`
+
+<!-- consider showing output format -->
+
+<!-- I got the above instructions from the site linked below.  IT doesn't work. Tried `sudo apt-get install virtualbox-guestadditions-utils`. didn't help -->
+
+If that doesn't work, then use the tried and true method of installing from the official packages:
+
+`sudo apt-get install virtualbox-guest-additions-iso virtualbox-guest-dkms virtualbox-guest-utils`
 
 ---
 
