@@ -21,7 +21,11 @@ NOTE: At some point we should introduce a discussion about how Markdown is curre
 
 Flavours  of Markdown include:
 
-
+* John Gruber’s original Markdown
+* Github-flavored Markdown
+* PHP Markdown Extra
+* Pandoc
+* MultiMarkdown
 
 -->
 
