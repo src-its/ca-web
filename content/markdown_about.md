@@ -1,19 +1,29 @@
 ## What is Markdown and Why Do We Use it?
 
+Markdown was developed in 2004 by John Gruber, who wrote the first markdown-to-html converter in Perl that has become widely used in web applications. [^commonmark] It is a simple language and software tool used by web writers to convert plain text into HTML. According to its creator, John Gruber, the design goal of Markdown “is to make it as readable as possible”.
 
-Markdown is a simple language and software tool used by web writers to convert plain text into HTML. It’s widely accepted by According to its creator, John Gruber, the design goal of Markdown “is to make it as readable as possible” – and it is. 
+<!-- Citation needed for comment above -->
 
-Markdown is the lazy efficient way to write HTML. It allows you to style text into elements such as headers, links, and more by using half the jargon that HTML requires. 
+Markdown can be considered both a lazy and an efficient way to write HTML. It allows one to simply define elements such as headers, links, but reduces the jargon and extranious coding required by HTML.
 
-For example, to italicize text in HTML, you would need to wrap the text in tags like this:
+Consider writing this:
 
-	`<i>Italicize this sentence.</i>`
+```
+	<p> <!--Creating a new page. -->
+	<h1>Topical header here.</h1>
+	<p><i>Create this paragraph line. Italicize this sentence.</i></p>
+	</p> <!-- End page. -->
+```
 
-But in Markdown, all you need to do is:
+To get the same output in Markdown:
 
 	`*Italicize this sentence.*`
 
-We like to use Markdown because its simplicity makes it readable and accessible by everyone, including those who don’t know a thing about coding. Even for those who are familiar with HTML, using Markdown makes it easy to spot errors
+Rendering:
+
+*Italicize this sentence.*
+
+Markdown's simplicity makes it readable and accessible, including for those who don’t know about coding. Even for those who are familiar with HTML, Markdown makes it easier to spot encoding errors.
 
 <!-- 
 
@@ -29,3 +39,4 @@ Flavours  of Markdown include:
 
 -->
 
+[^commonmark]:http://commonmark.org/ CommonMark. 2016 "What is Markdown?" 
