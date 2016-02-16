@@ -17,11 +17,21 @@ Consider writing this:
 
 To get the same output in Markdown:
 
-	*Italicize this sentence.*
+```
+	# Topical header here.
+
+	*Italicize this sentence.
+```
 
 Rendering:
 
-&nbsp;&nbsp;&nbsp;&nbsp;*Italicize this sentence.*
+----
+
+# Topical header here.
+
+*Italicize this sentence.*
+
+----
 
 Markdown's simplicity makes it readable and accessible, including for those who don’t know about coding. Even for those who are familiar with HTML, Markdown makes it easier to spot encoding errors.
 
