@@ -4,13 +4,13 @@ Markdown was developed in 2004 by John Gruber, who wrote the first markdown-to-h
 
 <!-- Citation needed for comment above -->
 
-Markdown can be considered both a lazy and an efficient way to write HTML. It allows one to simply define elements such as headers, links, but reduces the jargon and extranious coding required by HTML.
+Markdown's simplicity makes it readable and accessible, including for those who don’t know about coding. Even for those who are familiar with HTML, Markdown makes it easier to spot encoding errors. Markdown can also be considered both a lazy and an efficient way to write HTML. It allows one to simply define elements such as headers, links, but reduces the jargon and extranious coding required by HTML. 
 
 Consider writing this:
 
 ```
 	<p> <!--Creating a new page. -->
-	<h1>Topical header here.</h1>
+	<h3>Topical header here.</h3>
 	<p><i>Create this paragraph line. Italicize this sentence.</i></p>
 	</p> <!-- End page. -->
 ```
@@ -18,7 +18,7 @@ Consider writing this:
 To get the same output in Markdown:
 
 ```
-	# Topical header here.
+	### Topical header here.
 
 	*Italicize this sentence.
 ```
@@ -27,13 +27,12 @@ Rendering:
 
 ----
 
-# Topical header here.
+### Topical header here.
 
 *Italicize this sentence.*
 
 ----
 
-Markdown's simplicity makes it readable and accessible, including for those who don’t know about coding. Even for those who are familiar with HTML, Markdown makes it easier to spot encoding errors.
 
 ## What are some of the shortcomings of Markdown (and how to overcome them)?
 
