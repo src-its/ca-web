@@ -9,12 +9,10 @@ Markdown's simplicity makes it readable and accessible, including for those who 
 Consider writing this:
 
 ```
-	<p> <!-- Creating a new page. -->
 	<h3>Topical header here.</h3>
-	<p> <!-- Creating this paragraph line. -->
+	<p>
 	<i>Italicize this sentence.</i>
-	</p> <!-- Closing this paragraph line. -->
-	</p> <!-- End page. -->
+	</p>
 ```
 
 To get the same output in Markdown:
