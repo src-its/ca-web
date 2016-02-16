@@ -20,7 +20,7 @@ To get the same output in Markdown:
 ```
 	### Topical header here.
 
-	*Italicize this sentence.
+	*Italicize this sentence.*
 ```
 
 Rendering:
