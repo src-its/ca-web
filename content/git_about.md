@@ -4,11 +4,13 @@ Git is a piece of software that helps manage revisions to a repository of files.
 
 ## What is Version Control?
 
-Version control systems (VCS) are tools used to make file management easier.  If you are working on any project over a period of time&mdash;be it alone or in a group&mdash;you are likely to make multiple changes to the same file.  Without VCS you would be responsible for tracking all of your changes, a tiresome and difficult task.  VCS record the changes that you or your collaborators make to a project files for you. That is, as you change a project file, your VCS keeps a record of these changes so that you can track the history of edits and can even revert a  file (or files) to a previous state if needed. This way, if anyone on the project makes a mistake or a change that someone else doesn't agree with, it is possible to revert that file to its previous state. In other words, version control is a mean of recording incremental changes so that each iteration of a file can be accessed and restored, as neccessary.[^mcwilliams][^git_about-vcs]
+Version control systems (VCS) are tools used to make file management easier.  If you are working on any project over a period of time&mdash;be it alone or in a group&mdash;you are likely to make multiple changes to the same file.  Without VCS you would be responsible for tracking all of your changes.  A VCS records the changes so that you can track the history of edits and can even revert a  file (or files) to a previous state if needed. This way, mistakes or a changes can be reverted to a previous state.
+
+In other words, version control is a mean of recording incremental changes so that each iteration of a file can be accessed and restored, as neccessary.[^mcwilliams][^git_about-vcs]
 
 ## How is Git different from other Version Controls?
 
-There are many 'version control systems' available; Git is just one of them. 
+There are many 'version control systems' available; Git is just one. 
 
 Git is a so-called distributed version control system, meaning that it allows a user to push and pull changes to another user's machine. No copy of a file or project directory is any better or 'greater' than any other;  all contributers are working on identical copies.[^mcwilliams]
 
