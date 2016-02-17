@@ -76,7 +76,6 @@ elaborate here about the purpose and function of each pakage:
 > **Note:** Make sure these links are valid if you are installing into a new version of Ubuntu (other than 14.04)
 
 1. Install geospatial libraries <!--We should note why we're asking users to do this-->
-
         sudo apt-get install binutils libproj-dev gdal-bin libgeo-proj4-perl libjson0-dev
 
 1. Install [PostGIS](http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS20Ubuntu1204)
@@ -84,7 +83,6 @@ elaborate here about the purpose and function of each pakage:
 
         sudo apt-get install postgresql-9.3-postgis-2.1
         sudo apt-get install postgresql-server-dev-9.3
-
 
 1. [Install Git](http://git-scm.com/book/en/Getting-Started-Installing-Git):
 
@@ -94,20 +92,18 @@ elaborate here about the purpose and function of each pakage:
 1. Install pip
 
     **NOTE:** PIP is used to conveniently install Python modules needed for the project. If 'which pip' returns a path to pip, it is already installed. If it is not installed, you can install pip by typing:
-
+    
         sudo apt-get install python-pip
 
-Once pip is installed, you can use it to install the virtualenv package. If you installed the Python 2 pip, you can type:
-
+   Once pip is installed, you can use it to install the virtualenv package. If you installed the Python 2 pip, you can type:
+   
         sudo pip install virtualenv
 
-
-If, instead, you plan on using version 3 of Python, you can install `pip` and `virtualenv` by typing:
+   If, instead, you plan on using version 3 of Python, you can install `pip` and `virtualenv` by typing:
 
         sudo apt-get install python3-pip
         sudo pip3 install virtualenv
 
-               
    verify `pip`:
 
         ~ $ which pip
