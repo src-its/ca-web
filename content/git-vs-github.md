@@ -8,28 +8,24 @@ The distinction between Git and Github can be a bit confusing for new users. Thi
 
 Git helps to manage changes to a file system by multiple users working over time. Git can version control nearly any electronic media.
 
-<<<<<<< HEAD
 ### Summary
-=======
+
 **Concepts from Git:** Repositories, branches, remotes, committing, pushing, pulling, merging, rebasing, reverting, and cherry-picking.
 
 [GitHub](https://github.com/) is a hosting service for Git repositories[^schlicht].
 
 ![GitHub](https://dgosxlrnzhofi.cloudfront.net/custom_page_images/246/page_images/GitHub.png?1410459913)
->>>>>>> upstream/master
 
 GitHub is a centralized service for hosting a Git repository (or `repo` for short). GitHub provides additional features, incuding a web front-end for viewing your repositories, comparing changes and administrating user accounts.  GitHub provides a convenient place to store multiple versions of files, share your repositories with other, and access other user’s repositories. But it's `raison d'être` is to host your repos and to make it easier for you to push and pull from your collaborators.[^mcwilliams]
 
 **Concepts from GitHub:** Pull requests, issues, wikis, forking someone else's repository, Gists,github.com. [^jennings][^schlicht][^corns]
 
----
 
 ### GIT vs GITHUB
 
 * <strong> Git = Local (on you computer); distributed.</strong> 
 * <strong> GitHub = Remote (web); central.</strong> 
 
----
 
 ## References
 

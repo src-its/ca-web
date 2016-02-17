@@ -27,7 +27,7 @@ id_ecdsa.pem
 id_ed25519.pem
 ```
 
-If you have these keys, then chances are that you've finished [setting up `ssh` keys for use with Git](https://github.com/src-its/ca-web/blob/master/content/git_ssh-setup.md). [If not, the follow the proceedure to set up your keys as linked here.](https://github.com/src-its/ca-web/blob/master/content/git_ssh-setup.md)
+If you have these keys, then chances are that you've finished [setting up `ssh` keys for use with Git](https://github.com/src-its/ca-web/blob/master/content/git_ssh-setup.md). [If not, then follow the proceedure to set up your keys as linked here.](https://github.com/src-its/ca-web/blob/master/content/git_ssh-setup.md)
 
 If you have ssh keys installed, try to clone the repository [using the command line]() : `git clone git@github.com:/user-name/repository`
 
