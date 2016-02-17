@@ -1,7 +1,7 @@
-
 ### Self-hosting vs. Hosted Servers
 
-#### Self-hosting 
+
+#### Self-Hosting 
 
 Almost any computer with an active Internet connection can be configured to operate as a web server. This allows a person to host a site or application on the [World Wide Web](https://en.wikipedia.org/wiki/World_Wide_Web) from home.
 
@@ -23,7 +23,7 @@ Hosting at home, or **self-hosting** is the least-cost, greatest-control option,
 <!-- here we need to elaboriate --> 
 
 
-#### Hosted Servers
+#### Commercially-Hosted Servers
 
 Most people wishing to host a website opt for third-party hosting.  Advantages of hosted servers are that they are fast, always-on, powerful machines with access to lots of bandwidth.
 

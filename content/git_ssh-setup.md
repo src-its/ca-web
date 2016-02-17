@@ -31,11 +31,12 @@ You'll be prompted to select a location to save the file.  Either change it to y
     
 #### Copying your SSH Key
 
-So we have an issue where there are multiple clipboards on a given OS. We may be able to copy a string of text (such as that of the SSH key), but we are not able to transfer it across from the virtual machine to our parent machine. To combat this, we are to use an addon called *VirtualBox Guest*. In essensce, the addon allows for file sharing between the guest machine and host machine. VirtualBox normally has this functionality built in, but only for an OS with a GUI (and Ubuntu Server is solely command prompt based). To set up VirtualBox Guest, first you must got to `Devices` and then `Install Guest Additions`. From here you must enter the Guest Additions CD Image. After that, you must mount the CD Rom as such:
+<!-- Should this be a separate article? Seems like the issue of accessing host machine files is a more general issue. -->
+We have an issue where there are multiple clipboards on one given OS. While we may be able to copy a string of text (such as that of the SSH key) we are not able to transfer it across from the virtual machine to our parent machine. To rectify this, we should use an addon called *VirtualBox Guest*. In essence, the addon allows for file sharing between the guest machine and the host machine. VirtualBox normally has this functionality built in, but only for an OS with a GUI (and Ubuntu Server is solely command prompt based). To set up VirtualBox Guest, first you must got to `Devices` and then `Install Guest Additions`. From there you must enter the Guest Additions CD Image. After that, you must mount the CD Rom as such:
 
     sudo mount /dev/cdrom /media/cdrom
     
-The next part can get a little fuzzy, so be careful! Verify that you have all of the install scripts in the right place by typing:
+The next part can get a little tricky, so be careful! Verify that you have all of the install scripts in the right place by typing:
 
     ls -l /media/cdrom/
     

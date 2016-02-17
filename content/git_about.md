@@ -1,18 +1,20 @@
 ## What is Git?
 
-Git is a piece of software that helps to manage revisions to a repository of files.
+Git is a piece of software that helps manage revisions to a repository of files.
 
 ## What is Version Control?
 
-Version control systems (VCS) are tools for making file management easier.  If you are working on any project over a period of time&mdash;be it alone or in a group&mdash;you are likely to make multiple changes to the same file.  Without VCS, the onus of trackign changes is yours alone.  VCS record the changes that you or your collaborators make to a project files for you. That is, as you change project files, your VCS keeps a record of these changes so that you can track the history of edits and can even revert a  file (or files) to a previous state. This way, if anyone on the project makes a mistake or a change that anyone else doesn't agree with, it is possible to revert that file to previous state. In other words, version control is a mean of recording incremental changes so that each iteration of a file can be accessed and restored, as neccessary.[^mcwilliams][^git_about-vcs]
+Version control systems (VCS) are tools used to make file management easier.  If you are working on any project over a period of time&mdash;be it alone or in a group&mdash;you are likely to make multiple changes to the same file.  Without VCS you would be responsible for tracking all of your changes.  A VCS records the changes so that you can track the history of edits and can even revert a  file (or files) to a previous state if needed. This way, mistakes or a changes can be reverted to a previous state.
+
+In other words, version control is a mean of recording incremental changes so that each iteration of a file can be accessed and restored, as neccessary.[^mcwilliams][^git_about-vcs]
 
 ## How is Git different from other Version Controls?
 
 There are many 'version control systems' available; Git is just one. 
 
-Git is a so-called distributed version control system, meaning that it allows a user to push and pull changes to another user's machines. No copy of a file or project directory is any better or 'greater' than any other;  all contributers are working on identical copies.[^mcwilliams]
+Git is a so-called distributed version control system, meaning that it allows a user to push and pull changes to another user's machine. No copy of a file or project directory is any better or 'greater' than any other;  all contributers are working on identical copies.[^mcwilliams]
 
-Git is constantly keeping snapshots of all changes, instead of complete new file versions. So if a small change is made to a file, Git implements the change and leaves the rest of the content unchanged. It references the unchanged content from the previous version, instead of saving the new version as a separate new file. This makes Git lightweight and efficient in that it does not use a lot of space when changing the files.[^git_about-vcs][^git_basics]
+Git is constantly keeping snapshots of all changes, instead of complete new file versions. So if a small change is made to a file, Git implements the change and leaves the rest of the content unchanged. It references the unchanged content from the previous version, instead of saving the new version as a separate new file. This makes Git lightweight and efficient because it does not use a lot of space when changing the files.[^git_about-vcs][^git_basics]
 
 <!--
 

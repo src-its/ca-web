@@ -9,10 +9,10 @@ Your Ubuntu Server virtual machine (VM) loads by borrowing the resources of your
 ----
 
 
-1. Download [Ubuntu Server 14.04.3 LTS ISO](http://www.ubuntu.com/download/server)
-    - Before you can set up the 'ca-help' web application using VirtualBox, you'll need to download your OS installation media.  We'll be using Ubuntu Server for this project. 
+1. Download [Ubuntu Desktop 14.04.3 LTS ISO](http://www.ubuntu.com/download/desktop)
+    - Before you can set up the 'ca-help' web application using VirtualBox, you'll need to download your OS installation media.  We'll be using Ubuntu Desktop for this project. 
 
-2. Deploy Virtual Instance of Ubuntu Server
+2. Deploy Virtual Instance of Ubuntu Desktop
 
     - Open VirtualBox and select `New`: <br /> ![VirtualBox intialization screen](/images/1%20FirstImage.png)<br />
 
@@ -67,11 +67,35 @@ Your Ubuntu Server virtual machine (VM) loads by borrowing the resources of your
 
 **Next Step:** Install Guest Additions.
 
+* Install packages:  `sudo apt-get install build-essential module-assistant` 
+
+<!-- we should investigate why we need to install these packages, if they are truly necessary -->
+
+If you have mounted the installation media, and wish to install Guest Additions from the command line:
+
+* Click on Install Guest Additions… from the Devices menu
+
+<!-- consider adding photo to show that the devices menu is in the VirtualBox GUI container -->
+
+* Mount the virtual CD Rom: `sudo mount /dev/cdrom /media/cdrom`
+* Change directory to the virtual CD Rom Drive: `cd /media/cdrom`
+* Install Guest Editions: `sudo ./VBoxLinuxAdditions.run`
+* Restart VM by entering: `sudo reboot`
+
+* To check that Guest Editions are installed: `lsmod | grep vboxguest`, should return something like `vboxguest     278528 7 vboxsf`
+
+<!-- I got the above instructions from the site linked below.  IT doesn't work. Tried `sudo apt-get install virtualbox-guestadditions-utils`. didn't help -->
+
+If that doesn't work, then use the tried and true method of installing from the official packages:
+
+`sudo apt-get install virtualbox-guest-additions-iso virtualbox-guest-dkms virtualbox-guest-utils linux-headers-generic`
+
 ---
 
 ## References:
 
 * http://askubuntu.com/questions/142549/how-to-install-ubuntu-on-virtualbox
 * http://www.psychocats.net/ubuntu/virtualbox
-
+* https://mylinuxramblings.wordpress.com/2014/12/06/how-to-install-virtualbox-guest-editions-in-ubuntu-server-14-04/
+* 
 <!-- we need to add a complete list of citations on this page-->
