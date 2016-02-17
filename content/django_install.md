@@ -1,6 +1,6 @@
-* [Configuration Options](configuration-cptions)
-* [System Prep](system-prep)
-* [Django Install](django-install)
+* [Configuration Options](#configuration-cptions)
+* [System Prep](#system-prep)
+* [Django Install](#django-install)
 
 ## Installing the Django [web framework](https://github.com/src-its/ca-web/blob/master/content/web-framework_definition.md)
 
