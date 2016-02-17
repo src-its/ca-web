@@ -153,9 +153,35 @@ This will install a standalone version of Python, as well as pip, into an isolat
    - verify contents of `.bashrc`
          `~ $ tail .bashrc`
 
-
 ---
 
+## Configure the virtual environment
+
+To work with the application without needing to directly invoke 'manage.py':
+
+1. Switch to the virtual environment.
+
+        workon newenv
+
+1. In the root directory (the working copy clone target), set up the project and add the folder to the path.
+
+        cd ca-web
+        add2virtualenv .
+        setvirtualenvproject
+
+   This will move you into this directory when you 'workon' the virtualenv in future and it will ensure that python searches for modules in this directory.
+
+1. Set the default settings module
+
+        (newenv) ~/ca-web $ echo 'export DJANGO_SETTINGS_MODULE=core.settings' >> ~/.virtualenvs/newenv/bin/postactivate
+   **NOTE:** This command may need editing for your particular set-up. It adds the assignment of the DJANGO_SETTINGS_MODULE to the python module responsible for supplying the django settings.  For the mapping app, use:
+
+        (newenv) ~/ca-web $ echo 'export DJANGO_SETTINGS_MODULE=core.settings.local' >> ~/.virtualenvs/newenv/bin/postactivate
+
+1. alias django into your `~/.bashrc` (`alias django='django-admin.py'`)
+
+
+---
 To install packages into the isolated environment, you must activate it by typing:
 
         source newenv/bin/activate
