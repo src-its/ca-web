@@ -83,7 +83,7 @@ elaborate here about the purpose and function of each pakage:
 1. Install [PostGIS](http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS20Ubuntu1204)
    * For Ubuntu 14.04*: 
 
-        sudo apt-get install postgresql-9.3-postgis-2.1
+        sudo apt-get install postgresql-9.3-postgis-2.1;
         sudo apt-get install postgresql-server-dev-9.3
 
 1. [Install Git](http://git-scm.com/book/en/Getting-Started-Installing-Git):
