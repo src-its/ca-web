@@ -25,8 +25,6 @@ Some of the different methods are:
 
 1. Enable the [universe repository](https://help.ubuntu.com/community/Repositories/CommandLine).
 
-
-
 1. Install the following packages (N.B. the libxml2-dev package does **NOT** have a one before the two; that is a lower case L):
 
         sudo apt-get install libblas3gf libc6 libamd2.3.1 libumfpack5.6.2 \
@@ -36,7 +34,6 @@ Some of the different methods are:
         libxml2-dev libxslt1-dev
 
 <!--
-
 elaborate here about the purpose and function of each pakage:
 
  libblas3gf
@@ -67,7 +64,6 @@ elaborate here about the purpose and function of each pakage:
  libevent-dev
  libxml2-dev
  libxslt1-dev
-
 -->
 
 3. Link image libraries to standard Debian locations
@@ -90,21 +86,12 @@ elaborate here about the purpose and function of each pakage:
         sudo apt-get install postgresql-9.3-postgis-2.1
         sudo apt-get install postgresql-server-dev-9.3
     ````
-   * For Ubuntu 12.04*: 
-    ````
-        sudo apt-add-repository ppa:ubuntugis/ppa
-        sudo apt-get update
-        sudo apt-get install postgres9.1-postgis
-        sudo apt-get install postgresql-server-dev-9.1
-    ````
-
 
 1. [Install Git](http://git-scm.com/book/en/Getting-Started-Installing-Git):
 
         ~ $ apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev
         ~ $ sudo apt-get install git 
-        
-        
+
 1. Install pip
 
     **NOTE:** PIP is used to conveniently install Python modules needed for the project. If 'which pip' returns a path to pip, it is already installed. If it is not installed, you can install pip by typing:
