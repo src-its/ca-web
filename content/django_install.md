@@ -89,33 +89,46 @@ elaborate here about the purpose and function of each pakage:
         sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev
         sudo apt-get install git 
 
-1. Install pip
+1. [Install pip](https://pip.pypa.io/en/stable/installing/)
 
-    **NOTE:** PIP is used to conveniently install Python modules needed for the project. If 'which pip' returns a path to pip, it is already installed. If it is not installed, you can install pip by typing:
+    pip is used to conveniently install Python modules needed for the project.
     
+    pip is already installed if you're using Python 2 >=2.7.9 or Python 3 >=3.4 downloaded from python.org. Verify this by entering `which pip` into the terminal. You should get an output like this:
+    
+            >> /usr/local/bin/pip
+    
+    If pip is not installed, first download [get-pip.py](https://bootstrap.pypa.io/get-pip.py)
+    
+        wget https://bootstrap.pypa.io/get-pip.py
+        
+    Then run the following: 
+    
+        python get-pip.py
+
+    Alternatively, you can use the Ubuntu package manager to install pip for you: 
+
         sudo apt-get install python-pip
+    
+    If you plan on using version 3 of Python, you can install `pip` and `virtualenv` by typing:
+
+        sudo apt-get install python3-pip
+
+1. Install virtualenv
 
    Once pip is installed, you can use it to install the virtualenv package. If you installed the Python 2 pip, you can type:
    
         sudo pip install virtualenv
 
-   If, instead, you plan on using version 3 of Python, you can install `pip` and `virtualenv` by typing:
+For Python 3, you can install  `virtualenv` by typing:
 
-        sudo apt-get install python3-pip
         sudo pip3 install virtualenv
 
-   verify `pip`:
-
-        ~ $ which pip
-        >> /usr/local/bin/pip
-
 1. [Install virtualenwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/install.html)
-Install `virtualenvwrapper` with `sudo`.
 
+        sudo apt-get install virtualenvwrapper
 
 
 ## Django Install
-
 
 1. Create a new virtual environment and work within it
 
