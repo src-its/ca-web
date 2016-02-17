@@ -91,7 +91,7 @@ elaborate here about the purpose and function of each pakage:
 
 1. [Install pip](https://pip.pypa.io/en/stable/installing/)
 
-    pip is used to conveniently install Python modules needed for the project.
+    **[pip](https://pip.pypa.io)** is used to conveniently install Python modules needed for the project.
     
     pip is already installed if you're using Python 2 >=2.7.9 or Python 3 >=3.4 downloaded from python.org. Verify this by entering `which pip` into the terminal. You should get an output like this:
     
@@ -109,7 +109,7 @@ elaborate here about the purpose and function of each pakage:
 
         sudo apt-get install python-pip
     
-    If you plan on using version 3 of Python, you can install `pip` and `virtualenv` by typing:
+    If you plan on using version 3 of Python, you can install pip and virtualenv by typing:
 
         sudo apt-get install python3-pip
 
@@ -119,7 +119,7 @@ elaborate here about the purpose and function of each pakage:
    
         sudo pip install virtualenv
 
-For Python 3, you can install  `virtualenv` by typing:
+   For Python 3, you can install virtualenv by typing:
 
         sudo pip3 install virtualenv
 
