@@ -1,10 +1,12 @@
-
+* [Configuration Options](configuration-cptions)
+* [System Prep](system-prep)
+* [Django Install](django-install)
 
 ## Installing the Django [web framework](https://github.com/src-its/ca-web/blob/master/content/web-framework_definition.md)
 
 Django is a full-featured Python web framework for developing dynamic websites and applications. [ref: Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-14-04)
 
-
+<a href="#configuration-cptions"></a>
 ## Be Aware of Configuration Options:
 
 There are a number of different ways in which you can install Django depending upon your needs and how you want to configure your development environment. These have different advantages and one method may lend itself better to your specific situation than others.
@@ -20,7 +22,7 @@ Some of the different methods are:
 * **Development Version Install through git**: If you wish to install the latest development version instead of the stable release, you will have to acquire the code from the git repo. This is necessary to get the latest features/fixes and can be done globally or locally. Development versions do not have the same stability guarantees, however.
 
 ----
-
+<a href="#system-prep"></a>
 ## System Prep
 
 1. Enable the [universe repository](https://help.ubuntu.com/community/Repositories/CommandLine).
@@ -127,7 +129,7 @@ elaborate here about the purpose and function of each pakage:
 
         sudo apt-get install virtualenvwrapper
 
-
+<a href="#django-install"></a>
 ## Django Install
 
 1. Create a new virtual environment and work within it
