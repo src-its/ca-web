@@ -73,7 +73,6 @@ elaborate here about the purpose and function of each pakage:
         sudo ln -s /usr/lib/x86_64-linux-gnu/libjpeg.so /usr/lib
         sudo ln -s /usr/lib/x86_64-linux-gnu/libfreetype.so /usr/lib
         sudo ln -s /usr/lib/x86_64-linux-gnu/libz.so /usr/lib
-
 > **Note:** Make sure these links are valid if you are installing into a new version of Ubuntu (other than 14.04)
 
 1. Install geospatial libraries <!--We should note why we're asking users to do this-->
@@ -82,15 +81,15 @@ elaborate here about the purpose and function of each pakage:
 
 1. Install [PostGIS](http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS20Ubuntu1204)
    * For Ubuntu 14.04*: 
-    ````
+
         sudo apt-get install postgresql-9.3-postgis-2.1
         sudo apt-get install postgresql-server-dev-9.3
-    ````
+
 
 1. [Install Git](http://git-scm.com/book/en/Getting-Started-Installing-Git):
 
-        ~ $ apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev
-        ~ $ sudo apt-get install git 
+        sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev
+        sudo apt-get install git 
 
 1. Install pip
 
@@ -98,16 +97,14 @@ elaborate here about the purpose and function of each pakage:
 
         sudo apt-get install python-pip
 
-If, instead, you plan on using version 3 of Python, you can install pip by typing:
-
-        sudo apt-get install python3-pip
-
 Once pip is installed, you can use it to install the virtualenv package. If you installed the Python 2 pip, you can type:
 
         sudo pip install virtualenv
 
-If you installed the Python 3 version of pip, you should type this instead:
 
+If, instead, you plan on using version 3 of Python, you can install `pip` and `virtualenv` by typing:
+
+        sudo apt-get install python3-pip
         sudo pip3 install virtualenv
 
                
@@ -126,9 +123,9 @@ Install `virtualenvwrapper` with `sudo`.
 
 1. Create a new virtual environment and work within it
 
-        mkvirtualenv ca-web
+        mkvirtualenv newenv
 
-This will install a standalone version of Python, as well as pip, into an isolated directory structure within your project directory. We chose to call our virtual environment newenv, but you should name it something descriptive. A directory will be created with the name you select, which will hold the file hierarchy where your packages will be installed.
+This will install a standalone version of Python, as well as pip, into an isolated directory structure within your project directory. We chose to call our virtual environment `newenv` but you should name it something descriptive. A directory will be created with the name you select, which will hold the file hierarchy where your packages will be installed.
 
 ---
 
