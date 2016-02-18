@@ -1,0 +1,10 @@
+.carousel-caption {
+ background: rgba(12, 12, 12, 0.6);
+ margin-bottom: 3em;
+}
+@media screen and (min-width: 768px)
+.carousel-caption {
+    left: 5%;
+    right: 5%;
+    padding-bottom: 10px;
+}
