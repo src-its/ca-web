@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
-    <!-- Material Design for Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/fezvrasta/bootstrap-material-design/v4-dist/css/bootstrap-material-design.css">
-
     <!-- Material Design for Bootstrap - LOCAL -->
     <!-- Material Design Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -34,12 +31,14 @@
     <link href="../assets-custom/css/style_custom.css" rel="stylesheet">    
 
 <!-- add after bootstrap.min.css -->
-<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.3.0/dist/bootstrap-toc.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.3.0/dist/bootstrap-toc.min.css">
 
 </head>
 
 
 <body data-spy="scroll" data-target="#toc">
+
+<!-- The following bit of code is an attempt to get a scrolling ToC element working within the page.  Based on this: http://afeld.github.io/bootstrap-toc/. It's buggy for now.  Grr -->
 
 <div class="col-sm-3">
 <div class="container-fluid" >
@@ -69,14 +68,16 @@
 <hr />
 
 
-<h3 data-toc-text="Step 1: Get an OS.">Step 1: Grab an image of your preferred OS.</h3>
+<h3 data-toc-text="Step 1: Get an OS."></h3>
+<h4>Step 1: Grab an image of your preferred OS.</h4>
 <ul>
 <li>Before you can set up the 'ca-help' web application using VirtualBox, you'll need to download your OS installation media. We'll be writing our 'how to' content for  <a href="http://www.ubuntu.com/download/desktop">Ubuntu Desktop 14.04.3 LTS ISO</a>
 </li>
 </ul>
 </p>
 
-<h3 data-toc-text="Step 2: Deploy Virtual Instance.">Step 2: Deploy Virtual Instance of Ubuntu Desktop</h3>
+<h3 data-toc-text="Step 2: Deploy Virtual Instance."></h3>
+<h4>Step 2: Deploy Virtual Instance of Ubuntu Desktop</h4>
 
     <!-- Carousel -->
         <div id="carousel1" class="carousel slide carousel-fade hoverable">
