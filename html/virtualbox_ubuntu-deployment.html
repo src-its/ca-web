@@ -69,14 +69,14 @@
 <hr />
 
 
-<h3>Step 1: Grab an image of your preferred OS.</h3>
+<h3 data-toc-text="Step 1: Get an OS.">Step 1: Grab an image of your preferred OS.</h3>
 <ul>
 <li>Before you can set up the 'ca-help' web application using VirtualBox, you'll need to download your OS installation media. We'll be writing our 'how to' content for  <a href="http://www.ubuntu.com/download/desktop">Ubuntu Desktop 14.04.3 LTS ISO</a>
 </li>
 </ul>
 </p>
 
-<p>Step 2: Deploy Virtual Instance of Ubuntu Desktop</p>
+<h3 data-toc-text="Step 2: Deploy Virtual Instance.">Step 2: Deploy Virtual Instance of Ubuntu Desktop</h3>
 
     <!-- Carousel -->
         <div id="carousel1" class="carousel slide carousel-fade hoverable">
@@ -86,9 +86,15 @@
                 <li data-target="#carousel1" data-slide-to="0" class="active">
                 </li>
                 <li data-target="#carousel1" data-slide-to="1"></li>
-                <li data-target="#carousel1" data-slide-to="2"></li>
-				<li data-target="#carousel1" data-slide-to="3" class="active"></li>
-                <li data-target="#carousel1" data-slide-to="4"></li>
+                <li data-target="#carousel2" data-slide-to="2"></li>
+				<li data-target="#carousel3" data-slide-to="3"></li>
+                <li data-target="#carousel4" data-slide-to="4"></li>
+                <li data-target="#carousel5" data-slide-to="5"></li>
+                <li data-target="#carousel6" data-slide-to="6"></li>
+                <li data-target="#carousel7" data-slide-to="7"></li>
+                <li data-target="#carousel8" data-slide-to="8"></li>
+                <li data-target="#carousel9" data-slide-to="9"></li>
+                <li data-target="#carousel10" data-slide-to="10"></li>
             </ol>
 
             <!-- Wrapper for slides -->
@@ -100,9 +106,9 @@
                         <a><img src="../images/001-virtualbox_welcome.jpg" class="img-responsive center-block" alt="slide1">
                             <div class="mask waves-effect waves-light"></div>
                         </a>
-                        <div class="carousel-caption hidden-xs">
+                        <div class="carousel-caption">
                             <div class="animated fadeInDown">
-                                <h5><a href="http://www.ubuntu.com/download/desktop">Create a new virtual machine.</a></h5>
+                                <h5>Create a new virtual machine.</h5>
                                 <p>Open VirtualBox and select <code>New</code>.</p>
                             </div>
                         </div>
@@ -116,7 +122,7 @@
                         <a><img src="http://i.stack.imgur.com/fl3x4.jpg" class="img-responsive center-block" alt="slide2">
                             <div class="mask waves-effect waves-light"></div>
                         </a>
-                        <div class="carousel-caption hidden-xs">
+                        <div class="carousel-caption">
                             <div class="animated fadeInDown">
                                 <p>Setup Wizard will appear and click at Next button.</p>
                             </div>
@@ -131,7 +137,7 @@
                         <a><img src="../images/002-virtualbox_os-selection.jpg" class="img-responsive center-block" alt="slide3">
                             <div class="mask waves-effect waves-light"></div>
                         </a>
-                        <div class="carousel-caption hidden-xs">
+                        <div class="carousel-caption">
                             <div class="animated fadeInDown">
                                 <p>When you start typing 'Ubuntu', VirtualBox will attempt to help you select the correct OS. Where possible, select the 64 bit version of the installation.</p>
                                 <!-- Note: VirtualBox requires some hardware virtualization capability to be native to your system before it can emulate 64 bit machines. Most recently manufactured computers have this capability, so if you don't see any 64-bit options in the system select dropdown you can usually fix this by going into BIOS and enabling hardware virtualization. -->
@@ -147,7 +153,7 @@
                         <a><img src="../images/003-virtualbox_memory-allocation.jpg" class="img-responsive center-block" alt="slide3">
                             <div class="mask waves-effect waves-light"></div>
                         </a>
-                        <div class="carousel-caption hidden-xs">
+                        <div class="carousel-caption">
                             <div class="animated fadeInDown">
                                 <p>Set the 'Memory' to about half of your available RAM.</p>
                                 <!-- This parameter will affect the speed of your machine.  You can allocate more or less RAM to balance your preferences and usage requirements. This setting can be adjusted again after you  create your virtual appliance and changes take effect on image start-up. -->
@@ -163,7 +169,7 @@
                         <a><img src="../images/004-virtualbox_disk-creation.jpg" class="img-responsive center-block" alt="slide3">
                             <div class="mask waves-effect waves-light"></div>
                         </a>
-                        <div class="carousel-caption hidden-xs">
+                        <div class="carousel-caption">
                             <div class="animated fadeInDown">
                                 <p>Create a virtual hard disk</p>
                             </div>
@@ -178,7 +184,7 @@
                         <a><img src="../images/005-virtualbox_disk-type-selection.jpg" class="img-responsive center-block" alt="slide3">
                             <div class="mask waves-effect waves-light"></div>
                         </a>
-                        <div class="carousel-caption hidden-xs">
+                        <div class="carousel-caption">
                             <div class="animated fadeInDown">
                                 <p>Set the hard disk type to VDI (VirtualBox Disk Image)</p>
                             </div>
