@@ -8,3 +8,10 @@
     right: 5%;
     padding-bottom: 10px;
 }
+.carousel-indicators li {
+  background-color: #000;
+}
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
