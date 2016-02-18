@@ -32,3 +32,11 @@ nav[data-toggle='toc'] {
     display: block;
   }
 }
+=======
+.carousel-indicators li {
+  background-color: #000;
+}
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
