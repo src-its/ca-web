@@ -18,7 +18,7 @@ Your Ubuntu Server virtual machine (VM) loads by borrowing the resources of your
 
     - Setup Wizard will appear and click at Next button. <br/> ![](http://i.stack.imgur.com/fl3x4.jpg)
 
-   - Enter your OS type.  When you start typing 'Ubuntu', VirtualBox will attempt to help you select the correct OS.  Be sure to select the 64 bit version of the installation  <br /> ![VirtualBox set-up OS selection](/images/2%20OS.png) <br /> Note: VirtualBox requires some hardware virtualization capability to be native to your system before it can emulate 64 bit machines. Most recently manufactured computers have this capability, so if you don't see any 64-bit options in the system select dropdown you can usually fix this by going into BIOS and enabling hardware virtualization. 
+    - Enter your OS type.  When you start typing 'Ubuntu', VirtualBox will attempt to help you select the correct OS.  Be sure to select the 64 bit version of the installation  <br /> ![VirtualBox set-up OS selection](/images/2%20OS.png) <br /> Note: VirtualBox requires some hardware virtualization capability to be native to your system before it can emulate 64 bit machines. Most recently manufactured computers have this capability, so if you don't see any 64-bit options in the system select dropdown you can usually fix this by going into BIOS and enabling hardware virtualization. 
 
 <!-- Operating systems that are not 64 bit do not allow 64 bit installation, preventing the use of the Ubuntu server through Virtual Box. Instead install a 32 bit version of Ubuntu. -->    
    
