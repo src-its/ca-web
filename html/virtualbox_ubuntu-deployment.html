@@ -33,14 +33,34 @@
     <!-- END: Material Design for Bootstrap - LOCAL -->
     <link href="../assets-custom/css/style_custom.css" rel="stylesheet">    
 
+<!-- add after bootstrap.min.css -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.3.0/dist/bootstrap-toc.min.css">
+
 </head>
 
 
-<body>
+<body data-spy="scroll" data-target="#toc">
 
-<div class="container">
+<div class="col-sm-3">
+<div class="container-fluid" >
+    <div class="row">
+      <!-- sidebar, which will move to the top on a small screen -->
+      <div class="col-xs-3">
+        <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
+      </div>
+      <!-- main content area -->
+      <div class="col-xs-9">
+        ...
+      </div>
+    </div>
+</div>
+</div>
+
+
+<div class="col-sm-9">
+<div class="container-fluid" class="col-xs-9" >
   
-<h3 id="configuring-and-deploying-ubuntu-server-as-a-virtualbox-application">Configuring and Deploying Ubuntu Server as a VirtualBox app</h3>
+<h2 id="virtualbox-ubuntu-server">Ubuntu Server as a VirtualBox App</h2>
 
 <hr />
 
@@ -49,7 +69,7 @@
 <hr />
 
 
-<p>Step 1: Grab an image of your preferred OS.
+<h3>Step 1: Grab an image of your preferred OS.</h3>
 <ul>
 <li>Before you can set up the 'ca-help' web application using VirtualBox, you'll need to download your OS installation media. We'll be writing our 'how to' content for  <a href="http://www.ubuntu.com/download/desktop">Ubuntu Desktop 14.04.3 LTS ISO</a>
 </li>
@@ -255,7 +275,7 @@
 <p>If that doesn't work, then use the tried and true method of installing from the official packages:</p>
 <p><code>sudo apt-get install virtualbox-guest-additions-iso virtualbox-guest-dkms virtualbox-guest-utils linux-headers-generic</code></p>
 <hr />
-<h2 id="references">References:</h2>
+<h2 id="references">References</h2>
 <ul>
 <li>http://askubuntu.com/questions/142549/how-to-install-ubuntu-on-virtualbox</li>
 <li>http://www.psychocats.net/ubuntu/virtualbox</li>
@@ -283,6 +303,11 @@
 
     <!-- Material Design Bootstrap -->
     <script type="text/javascript" src="../assets-mdb/js/mdb.js"></script>
+
+<!-- add after bootstrap.min.js -->
+<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.3.0/dist/bootstrap-toc.min.js"></script>
+</div>
+
 
 </div>
 </body>
