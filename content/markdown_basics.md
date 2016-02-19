@@ -6,7 +6,7 @@ Markdown refers to both:
 1. a [markup syntax](http://en.wikipedia.org/wiki/Markup_language) that was designed as an "easy-to-read, easy-to-write plain text format"
 1. a text-to-XHTML/HTML conversion tool, written in Perl 
 
-The overriding design goal in initial formulation of Markdown’s formatting syntax was to make it as "readable" as possible. The idea is that any Markdown-formatted document can be publishable "as-is"--i.e., as plain text file that can be logically interpreted by an unfamiliar reader without having to process it's formatting syntax through some form of 'printing' application [unlike text formatted in other a markup languages, such as Rich Text Format (RTF) or HTML, which--in their raw form--are cluttered with tags and formatting instructions to an extent that makes them difficult for human consumption].
+The overriding design goal in initial formulation of Markdown’s formatting syntax was to be as "readable" as possible. The idea is that any Markdown-formatted document can be publishable "as-is"--i.e., as plain text file that is interpretable by an unfamiliar reader without having to process its formatting syntax through some form of 'printing' application [unlike text formatted in other a markup languages, such as Rich Text Format (RTF) or HTML, which--in their raw form--are cluttered with tags and formatting instructions to an extent that makes them difficult for human consumption].
 
 It is important to note that there is no clearly-defined Markdown standard.  The original writeup and implementation by John Gruber is referred to by some as 'vanilla' Markdown, with other "flavours" of the syntax being created as different vendors write their own variants of the language to correct flaws or add missing features.
 
