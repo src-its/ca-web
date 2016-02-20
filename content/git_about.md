@@ -8,13 +8,13 @@ Version control systems (VCS) are tools used to make file management easier.  If
 
 In other words, version control is a mean of recording incremental changes so that each iteration of a file can be accessed and restored, as neccessary.[^mcwilliams][^git_about-vcs]
 
-## How is Git different from other Version Controls?
+## How is Git different from other Version Control Systems?
 
-There are many 'version control systems' available; Git is just one. 
+There are many version control systems available; Git is just one. 
 
 Git is a so-called distributed version control system, meaning that it allows a user to push and pull changes to another user's machine. No copy of a file or project directory is any better or 'greater' than any other;  all contributers are working on identical copies.[^mcwilliams]
 
-Git is constantly keeping snapshots of all changes, instead of complete new file versions. So if a small change is made to a file, Git implements the change and leaves the rest of the content unchanged. It references the unchanged content from the previous version, instead of saving the new version as a separate new file. This makes Git lightweight and efficient because it does not use a lot of space when changing the files.[^git_about-vcs][^git_basics]
+Git is constantly keeping snapshots of all changes, instead of complete new file versions. So if a small change is made to a file, Git implements the change and leaves the rest of the content unchanged. It references the unchanged content from the previous version, instead of saving the new version as a separate new file. This makes Git lightweight and efficient because it does not use a lot of space when changing the files.[^git_about-vcs] [^git_basics]
 
 <!--
 
