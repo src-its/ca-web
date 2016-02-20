@@ -14,7 +14,7 @@ There are many version control systems available; Git is just one.
 
 Git is a so-called distributed version control system, meaning that it allows a user to push and pull changes to another user's machine. No copy of a file or project directory is any better or 'greater' than any other;  all contributers are working on identical copies.[^mcwilliams]
 
-Git is constantly keeping snapshots of all changes, instead of complete new file versions. So if a small change is made to a file, Git implements the change and leaves the rest of the content unchanged. It references the unchanged content from the previous version, instead of saving the new version as a separate new file. This makes Git lightweight and efficient because it does not use a lot of space when changing the files.[^git_about-vcs] [^git_basics]
+Git is constantly keeping snapshots of all changes, instead of complete new file versions. So if a small change is made to a file, Git implements the change and leaves the rest of the content unchanged. It references the unchanged content from the previous version, instead of saving the new version as a separate new file. This makes Git lightweight and efficient because it does not use a lot of space when changing the files.[^git_about-vcs] &nbsp;[^git_basics]
 
 <!--
 
@@ -31,7 +31,6 @@ In addition to installing Git locally in your machine, you also need a server to
 * Git. ["About Version Control"](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
 * Git. ["Git Basics"](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
 
-
 [^mcwilliams]: https://jahya.net/blog/git-vs-github/ "Andrew McWilliams. 'Is Git the Same Thing as Github!?'"
-[^git_about-vcs]: https://git-scm.com/book/en/v2/Getting-Started-About-Version-ControlGit. "Git. ['About Version Control'](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)"
-[^git_basics]: https://git-scm.com/book/en/v2/Getting-Started-Git-BasicsGit. "Git. ['Git Basics'](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)"
+[^git_about-vcs]: https://git-scm.com/book/en/v2/Getting-Started-About-Version-ControlGit. "Git. 'About Version Control'"
+[^git_basics]: https://git-scm.com/book/en/v2/Getting-Started-Git-BasicsGit. "Git. 'Git Basics'."
