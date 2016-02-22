@@ -66,5 +66,8 @@ Flavours  of Markdown include:
 * MultiMarkdown
 
 -->
+## References:
 
-[^commonmark]:http://commonmark.org/ CommonMark. 2016 "What is Markdown?" 
+* CommonMark. 2016 ["What is Markdown?"](http://commonmark.org/)
+
+[^commonmark]:http://commonmark.org/ "CommonMark. 2016 'What is Markdown?'"
