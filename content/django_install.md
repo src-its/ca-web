@@ -163,21 +163,6 @@ elaborate here about the purpose and function of each pakage:
 
          `~ $ tail .bashrc`
 
-1. Configure the virtual environment to work with the application without needing to directly invoke 'manage.py':
-
-   - ensure that you're in your project working directory (we're using ca-web as our example).
-
-   - Switch to the virtual environment.
-
-                 workon newenv
-
-   - in the root directory (the working copy clone target), set up the project and add the folder to the path.
-
-                 cd ca-web
-                 add2virtualenv .
-                 setvirtualenvproject
-
-   - ... this will move you into this directory when you 'workon' the virtualenv in future and it will ensure that python searches for modules in this directory.
 
 ---
 
@@ -204,16 +189,34 @@ sudo ln -s /usr/share/virtualenvwrapper/virtualenvwrapper.sh /usr/local/bin/;
 source /usr/local/bin/virtualenvwrapper.sh;
 cd;
 echo 'source /usr/local/bin/virtualenvwrapper.sh' >> .bashrc;
-mkdir ca-web;
+```
+
+<a href="#django-install"></a>
+## Django Install
+
+```
+git clone git@github.com:src-its/django-ca ca-web
 cd ca-web;
 mkvirtualenv ca-web
 add2virtualenv .
 setvirtualenvproject
 deactivate
+workon ca-web
+cd core/settings/
+cp secrets.py.example secrets.py
+cp aaron.py.example ca.py
+vim ca.py
+## ENTER YOUR SETTINGS here
+echo 'export DJANGO_SETTINGS_MODULE=core.settings.ca' >> ~/.virtualenvs/ca-web/bin/postactivate
+deactivate
+sudo service postgres restart
+## MAKE YOUR configurations
+sudo /etc/init.d/postgresql restart
+workon ca-web
+django createdb
 ```
 
-<a href="#django-install"></a>
-## Django Install
+
 
 1. After you’ve created and activated a virtual environment, use pip to install Django
 
@@ -225,41 +228,47 @@ deactivate
 
     - Next, we need to establish a Django 'project'&mdash;a collection of settings for an instance of Django, including database configuration, Django-specific options and application-specific settings.
 
----
-
-<!-- NOTE: The installation instructions given below need to be updated -->
-
-
-1. Clone our mezzanine fork
-
-We are using a fork of mezzanine which currently needs to be cloned alongside the project.
-
-```
-git clone https://github.com:src-its/mezzanine.git
-```
 
 1. Clone the repository and install the requirements
 
          workon ca-web
-         (ca-web)~ $ git clone git@github.com:src-its/django-ca
-         (ca-web)~ $ cd django-ca
-         (ca-web)~/django-ca$ pip install -r requirements.txt
+         (ca-web)~ $ git clone git@github.com:src-its/django-ca ca-web
+         (ca-web)~ $ cd ca-web
+         (ca-web)~/ca-web$ pip install -r requirements.txt
 
 This installs Django, Mezzanine and the other required Python modules.
 
-1. Generate your local copy of `secrets.py` from `cccs.settings.secrets.example.py` and place it in `~/django-ca/core/settings`:
+1. Configure the virtual environment to work with the application without needing to directly invoke 'manage.py':
 
-         (src-its)~/django-ca$ cd core/settings/
-         (src-its)~/django-ca/core/settings$ cp secrets.py.example secrets.py
+   - ensure that you're in your project working directory (we're using ca-web as our example).
 
-Set its values appropriately for the database you are working with. If creating a local test database where security it not an issue, the values in the  example file may be fine.
+   - Switch to the virtual environment.
 
-1. Set the default settings module
+                 workon newenv
 
-        (src-its) ~/django-ca $ echo 'export DJANGO_SETTINGS_MODULE=core.settings' >> ~/.virtualenvs/src-its/bin/postactivate
-   **NOTE:** This command may need editing for your particular set-up. It adds the assignment of the DJANGO_SETTINGS_MODULE to the python module responsible for supplying the django settings.  For the mapping app, use:
+   - in the root directory (the working copy clone target), set up the project and add the folder to the path.
 
-        (src-its) ~/django-ca $ echo 'export DJANGO_SETTINGS_MODULE=core.settings.local' >> ~/.virtualenvs/src-its/bin/postactivate
+                 cd ca-web
+                 add2virtualenv .
+                 setvirtualenvproject
+
+   - ... this will move you into this directory when you 'workon' the virtualenv in future and it will ensure that python searches for modules in this directory.
+
+1. Generate a `secrets.py` file from the template `secrets.example.py` under `core` > `settings`. :
+
+         (ca-web)~/ca-web$ cd core/settings/
+         (ca-web)~/ca-web/core/settings$ cp secrets.py.example secrets.py
+
+1. Generate a `settings.py` file based on any of the examples under `core` > `settings`. :
+
+         (ca-web)~/django-ca/core/settings$ cp aaron.py ca.py
+
+    - Set its values appropriately for the database you are working with.
+
+1. Define your settings as the default:
+
+        (src-its) ~/django-ca $ echo 'export DJANGO_SETTINGS_MODULE=core.settings.ca' >> ~/.virtualenvs/ca-web/bin/postactivate
+   **NOTE:** This command may need editing for your particular set-up. It adds the assignment of the DJANGO_SETTINGS_MODULE to the python module responsible for supplying the django settings.
 
 1. alias django into your `~/.bashrc` (`alias django='django-admin.py'`), then log out and log back in to ensure that the alias takes effect.
 
