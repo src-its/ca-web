@@ -304,6 +304,7 @@ Set its values appropriately for the database you are working with. If creating 
 6. Sync the database:
 
         (src-its)~ $ django syncdb
+
 **NOTE**: You may encounter some errors here; especially if you are installing with Ubuntu 14.04. Common ones:
    * `django.core.exceptions.ImproperlyConfigured: Cannot determine PostGIS version`
 
@@ -334,8 +335,6 @@ This is for public facing servers only.
 #### Start your test local test site!
 
     django runserver
-
-
 
 #### The User Interface
 
