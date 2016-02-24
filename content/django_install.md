@@ -54,13 +54,13 @@ elaborate here about the purpose and function of each pakage:
  libatlas-dev
  libjpeg-dev
  libfreetype6-dev
- 
+
  python
  python-all-dev
- 
+
  gcc
  g++
- 
+
  libblas-dev
  liblapack-dev
  libevent-dev
@@ -84,7 +84,7 @@ elaborate here about the purpose and function of each pakage:
         sudo apt-get install binutils libproj-dev gdal-bin libgeo-proj4-perl libjson0-dev
 
 1. Install [PostGIS](http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS20Ubuntu1204)
-   * For Ubuntu 14.04*: 
+   * For Ubuntu 14.04*:
 
         sudo apt-get install postgresql-9.3-postgis-2.1
         sudo apt-get install postgresql-server-dev-9.3
@@ -92,28 +92,28 @@ elaborate here about the purpose and function of each pakage:
 1. [Install Git](http://git-scm.com/book/en/Getting-Started-Installing-Git):
 
         sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev
-        sudo apt-get install git 
+        sudo apt-get install git
 
 1. [Install pip](https://pip.pypa.io/en/stable/installing/)
 
     **[pip](https://pip.pypa.io)** is used to conveniently install Python modules needed for the project.
-    
+
     pip is already installed if you're using Python 2 >=2.7.9 or Python 3 >=3.4 downloaded from python.org. Verify this by entering `which pip` into the terminal. You should get an output like this:
-    
+
             >> /usr/local/bin/pip
-    
+
     If pip is not installed, first download [get-pip.py](https://bootstrap.pypa.io/get-pip.py)
-    
+
         wget https://bootstrap.pypa.io/get-pip.py
-        
-    Then run the following: 
-    
+
+    Then run the following:
+
         sudo python get-pip.py
 
-    Alternatively, you can use the Ubuntu package manager to install pip for you: 
+    Alternatively, you can use the Ubuntu package manager to install pip for you:
 
         sudo apt-get install python-pip
-    
+
     If you plan on using version 3 of Python, you can install pip and virtualenv by typing:
 
         sudo apt-get install python3-pip
@@ -121,7 +121,7 @@ elaborate here about the purpose and function of each pakage:
 1. Install virtualenv
 
    Once pip is installed, you can use it to install the virtualenv package. If you installed the Python 2 pip, you can type:
-   
+
         sudo pip install virtualenv
 
    For Python 3, you can install virtualenv by typing:
@@ -132,21 +132,20 @@ elaborate here about the purpose and function of each pakage:
 
         sudo apt-get install virtualenvwrapper
 
+1. Create a file directory for your project:
 
+        mkdir ca-web
 
-<a href="#django-install"></a>
-## Django Install
+1. Create a new virtual environment for your project
 
-1. Create a new virtual environment and work within it
+        mkvirtualenv ca-web
 
-        mkvirtualenv newenv
-
-This will install a standalone version of Python, as well as pip, into an isolated directory structure within your project directory. We chose to call our virtual environment `newenv` but you should name it something descriptive. A directory will be created with the name you select, which will hold the file hierarchy where your packages will be installed.
+   **NOTE:** IThis will install a standalone version of Python, as well as pip, into an isolated directory structure within your project directory. We chose to call our virtual environment `newenv` but you should name it something descriptive. A directory will be created with the name you select, which will hold the file hierarchy where your packages will be installed.
 
 ---
 
    **NOTE:** If the `mkvirtualenv` returns a "command not found" error, follow these steps:
-   
+
    - check that `virtualenvwrapper.sh` is in `/usr/local/bin`; if not, use `locate virtualenvwrapper.sh` and then `ln -s` to the install location
    - use the `source` command to pass the contents of 'virtualenvwrapper.sh'to the Tcl interpreter:
 
@@ -165,8 +164,25 @@ This will install a standalone version of Python, as well as pip, into an isolat
 
          `~ $ tail .bashrc`
 
+1. Configure the virtual environment to work with the application without needing to directly invoke 'manage.py':
+
+   - ensure that you're in your project working directory (we're using ca-web as our example).
+
+   - Switch to the virtual environment.
+
+                 workon newenv
+
+   - in the root directory (the working copy clone target), set up the project and add the folder to the path.
+
+                 cd ca-web
+                 add2virtualenv .
+                 setvirtualenvproject
+
+   - ... this will move you into this directory when you 'workon' the virtualenv in future and it will ensure that python searches for modules in this directory.
+
 ---
 
+** For a one-off system prep and environment build on Ubuntu 14.04, you can use to following code (which basically re-produces all the steps given above):
 
 ```
 sudo apt-get update;
@@ -186,24 +202,20 @@ sudo ln -s /usr/share/virtualenvwrapper/virtualenvwrapper.sh /usr/local/bin/;
 source /usr/local/bin/virtualenvwrapper.sh;
 cd;
 echo 'source /usr/local/bin/virtualenvwrapper.sh' >> .bashrc;
-
+mkdir ca-web;
+cd ca-web;
+mkvirtualenv ca-web
+add2virtualenv .
+setvirtualenvproject
+deactivate
 ```
 
-## Configure the virtual environment
+<a href="#django-install"></a>
+## Django Install
 
-To work with the application without needing to directly invoke 'manage.py':
+1. After you’ve created and activated a virtual environment, use pip to install Django
 
-1. Switch to the virtual environment.
-
-        workon newenv
-
-1. In the root directory (the working copy clone target), set up the project and add the folder to the path.
-
-        cd ca-web
-        add2virtualenv .
-        setvirtualenvproject
-
-   This will move you into this directory when you 'workon' the virtualenv in future and it will ensure that python searches for modules in this directory.
+        pip install Django
 
 1. Set the default settings module
 
@@ -246,4 +258,3 @@ Your prompt should revert to the conventional display. When you wish to work on 
 Justin Ellingwood. 2015-Mar-05. "How To Install the Django Web Framework on Ubuntu 14.04" https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-14-04
 
 Kenneth Reitz Project. 2016. "Virtual Environments" **Python Guide.** http://docs.python-guide.org/en/latest/dev/virtualenvs/
-
