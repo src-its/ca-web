@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+
+		{% include 'material/includes/material_css.html' %}
+	    <script src="{% static 'material/js/jquery-2.2.0.js' %}"></script>
+	    {% include 'material/includes/material_js.html' %}
+	    {% load material_form %} 
+
+		<meta charset="utf-8">
+		<title>Welcome!</title>
+	</head>
+	<body>
+		<p> Text text text I don't really know what this is going to look like </p>
+		<form method="POST">
+	        {% csrf_token %}
+	        {% form form=form %}{% endform %}
+	        <button type="submit" name="_submit" class="btn">Submit</button>
+    	</form>
+	</body>
+
+</html>
