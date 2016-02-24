@@ -254,21 +254,6 @@ This installs Django, Mezzanine and the other required Python modules.
 
 Set its values appropriately for the database you are working with. If creating a local test database where security it not an issue, the values in the  example file may be fine.
 
-#### Configure the virtual environment
-
-To work with the application without needing to directly invoke 'manage.py':
-
-1. Switch to the virtual environment.
-
-        workon src-its
-
-1. In the root directory (the working copy clone target), set up the project and add the folder to the path.
-
-        cd django-ca
-        add2virtualenv .
-        setvirtualenvproject
-   This will move you into this directory when you 'workon' the virtualenv in future and it will ensure that python searches for modules in this directory.
-
 1. Set the default settings module
 
         (src-its) ~/django-ca $ echo 'export DJANGO_SETTINGS_MODULE=core.settings' >> ~/.virtualenvs/src-its/bin/postactivate
