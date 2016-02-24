@@ -1,4 +1,4 @@
-## Initializing the *ca-web* Django Application
+## Initializing the [ca-web](https://github.com/src-its/django-ca) Django Application
 
 1. Clone the repository and install the requirements
 
@@ -7,19 +7,20 @@
          (ca-web)~ $ cd ca-web
          (ca-web)~/ca-web$ pip install -r requirements.txt
 
-This installs Django, Mezzanine and the other required Python modules.
+    - This installs Django, Mezzanine and the other required Python modules.
 
 1. Configure the virtual environment to work with the application without needing to directly invoke 'manage.py':
 
    - ensure that you're in your project working directory (we're using ca-web as our example).
 
-   - Switch to the virtual environment.
-
-                 workon newenv
-
-   - in the root directory (the working copy clone target), set up the project and add the folder to the path.
-
                  cd ca-web
+
+   - Switch into the virtual environment.
+
+                 workon ca-web
+
+   - set up the project and add the folder to the path.
+
                  add2virtualenv .
                  setvirtualenvproject
 
@@ -39,56 +40,103 @@ This installs Django, Mezzanine and the other required Python modules.
 1. Define your settings as the default:
 
         (src-its) ~/django-ca $ echo 'export DJANGO_SETTINGS_MODULE=core.settings.ca' >> ~/.virtualenvs/ca-web/bin/postactivate
+        
    **NOTE:** This command may need editing for your particular set-up. It adds the assignment of the DJANGO_SETTINGS_MODULE to the python module responsible for supplying the django settings.
 
-1. alias django into your `~/.bashrc` (`alias django='django-admin.py'`), then log out and log back in to ensure that the alias takes effect.
+1. alias django into your `~/.bashrc`
+
+        `alias django='django-admin.py'`)
+
+1. log out and back into your virtual environment in order to ensure that the alias takes effect:
+
+        deactivate
+        workon ca-web
+
+    - Your prompt should change to reflect that you are now in your virtual environment. It will look something like this
+    
+```
+     (ca-web)src-its@ubuntu:~/ca-web$.
+
+```
+
 
 #### Set up postgresql
 
-   **NOTE** The psql database user (e.g. its) must use `md5` rather than peer access for postgres. To enable this, you will likely need to edit `/etc/postgresql/9.3/main/pg_hba.conf`.  Add add a line for `username` and specify md5 access:
+1. Adjust your settings for postgres. The psql database user (e.g. caweb) must use `md5` rather than peer access. To enable this, edit `/etc/postgresql/9.3/main/pg_hba.conf`.  Add add a line for `username` and specify md5 access:
 
+```
      # TYPE  DATABASE        USER            ADDRESS                 METHOD
       local   all            its                                     md5
+```
 
-   Postgres can be fiddly to set up. Google is your friend.
+   - Postgres can be fiddly to set up. Google is your friend.
 
 1. Switch to postgres and add yourself as a super user:
 
         ~ $ sudo -iu postgres
         ~ $ psql -c 'CREATE USER <username> WITH SUPERUSER;'
 
-1. Add the `src-its` database and user.
 
-         ~ $ psql -c "CREATE USER its WITH PASSWORD 'password';"
+*When creating a database from scratch* (for a 'vanilla' copy of this work environment):
 
-2. *When creating a database from scratch* (for a 'vanilla' copy of this work environment):
+1. Add the `caweb` user.
 
-         (src-its)~ $ django createdb
-   Then postgis enable the result:
+         ~ $ psql -c "CREATE USER caweb WITH PASSWORD 'password';"
 
-         (src-its)~ $ psql django-ca
-         django-ca=# CREATE EXTENSION postgis;
-         django-ca=# CREATE EXTENSION postgis_topology;
+1. Create the `caweb` database.
 
-2. *To restore a dump it on the target system*:
+         ~ $ psql -c "CREATE DATABASE caweb;"
+         
+1. Change ownership of the `caweb` database to the `caweb` user.
+
+         ~ $ psql -c "ALTER DATABASE caweb OWNER TO caweb;"
+
+1. Now drop directly into psql as the `caweb` user:
+
+         psql caweb
+         
+1. Your terminal should change to something like this:
+
+         caweb=#
+
+1. Enable your empty database for post-GIS:
+
+         caweb=# CREATE EXTENSION postgis;
+         caweb=# CREATE EXTENSION postgis_topology;
+
+
+1. Ensure that the `caweb` user has full access:
+
+        ~ $ psql -c "GRANT ALL PRIVILEGES ON DATABASE django-ca TO its;"
+
+1. Log out of the postgres user with `CTRL + D`
+
+1. Once you're back in your virtual environment, create the database:
+
+        (ca-web)~ $ django createdb
+
+
+**NOTE**: You may encounter some errors here; especially if you are installing with Ubuntu 14.04. Common ones:
+   * `django.core.exceptions.ImproperlyConfigured: Cannot determine PostGIS version`
+
+   You need to explicitly define your`POSTGIS_VERSION`. If this is the case, and if you are using a `dev.py` or `production.py`, it's recommended that you `cp` your `*.py` module to a new local version for your and keep it out of git.  
+
+
+---
+
+1. *To restore a dump it on the target system*:
 
         ~ $ pg_restore -d postgres -C django-ca.pg_dump
    **NOTE:** The procss for making the database dump is to use `pg_dump` thus:
 
             ~ $ pg_dump -o -Fc django-ca >> django-ca.pg_dump
 
-1. Ensure that the user has full access:
+1. Sync the database:
 
-        ~ $ psql -c "GRANT ALL PRIVILEGES ON DATABASE django-ca TO its;"
+        (ca-web)~ $ django syncdb
+---
 
-6. Sync the database:
 
-        (src-its)~ $ django syncdb
-
-**NOTE**: You may encounter some errors here; especially if you are installing with Ubuntu 14.04. Common ones:
-   * `django.core.exceptions.ImproperlyConfigured: Cannot determine PostGIS version`
-
-   You need to explicitly define your`POSTGIS_VERSION`. If this is the case, and if you are using a `dev.py` or `production.py`, it's recommended that you `cp` your `*.py` module to a new local version for your and keep it out of git.  
 
 ##### Dealing with locale issues
 
@@ -211,44 +259,3 @@ sudo /etc/init.d/postgresql restart
 workon ca-web
 django createdb
 ```
-
-
-
-
-
-----
-
-
-1. Set the default settings module
-
-        (newenv) ~/ca-web $ echo 'export DJANGO_SETTINGS_MODULE=core.settings' >> ~/.virtualenvs/newenv/bin/postactivate
-   **NOTE:** This command may need editing for your particular set-up. It adds the assignment of the DJANGO_SETTINGS_MODULE to the python module responsible for supplying the django settings.  For the mapping app, use:
-
-        (newenv) ~/ca-web $ echo 'export DJANGO_SETTINGS_MODULE=core.settings.local' >> ~/.virtualenvs/newenv/bin/postactivate
-
-1. alias django into your `~/.bashrc` (`alias django='django-admin.py'`)
-
-
----
-To install packages into the isolated environment, you must activate it by typing:
-
-        source newenv/bin/activate
-
-Your prompt should change to reflect that you are now in your virtual environment. It will look something like (newenv)username@hostname:~/newproject$.
-
-In your new environment, you can use pip to install Django. Regardless of whether you are using version 2 or 3 of Python, it should be called just pip when you are in your virtual environment. Also note that you do not need to use sudo since you are installing locally:
-
-        pip install django
-
-You can verify the installation by typing:
-
-        django-admin --version
-
-To leave your virtual environment, you need to issue the deactivate command from anywhere on the system:
-
-        deactivate
-
-Your prompt should revert to the conventional display. When you wish to work on your project again, you should re-activate your virtual environment by moving back into your project directory and activating:
-
-        cd ~/newproject
-        source newenv/bin/activate
