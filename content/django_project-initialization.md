@@ -160,7 +160,7 @@ This is for public facing servers only.
          ~ $ sudo cp production/_deploy/production_upstart.conf /etc/init/webcore_production.conf
          ~ $ sudo service webcore_production start
 
-#### Start your test local test site!
+#### Start your local test site!
 
     django runserver
 
