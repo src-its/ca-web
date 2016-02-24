@@ -164,79 +164,9 @@ This is for public facing servers only.
 
     django runserver
 
-#### The User Interface
-
-##### Setting up the CSS build
-
-In order to get Sass and Compass working we need to have their Ruby gems installed.
-
-1. Make sure you've got Ruby 1.9.3+
-
-2. In the `cccs_web/theme/scss/` add a file named `Gemfile` pasting this content in:
-````
-      source "https://rubygems.org
-      gem "sass
-      gem "compass
-````
-Save the file and run `gem install bundler` (you might need sudo).
-Now, from `scss/` folder (the one where Gemfile lives) you can do `bundle install` which will install the gems listed in the `Gemfile` and their dependencies. This will also create a Gemfile.lock file which is the result of installed gems.
-
-3. In the same `cccs_web/theme/scss/` create a new file named `config.rb` with this content:
-````
-      # Get the directory that this configuration file exists in
-      dir = File.dirname(__FILE__)
-
-      # The output style // :expanded or :nested or :compact or :compressed
-      output_style = :compressed
-
-      # Set this to the root of your project when deployed:
-      # http_path = "/"
-      css_dir = "../static/css"
-      sass_dir = ""
-      images_dir = "../static/imgs"
-      javascripts_dir = "../static/js"
-      relative_assets = true
-
-      # Compass configurations
-      sass_path = dir
-      css_path = File.join(dir, "../../static_collected/", "css")
-````
-This will setup the necessary Compass information to compile and build Sass to CSS.
-
-Now we can:
-````
-      compass compile # compiles the scss/ folder into the destination file based on the settings provided in config.rb
-      compass watch # watches any changes in the Sass files during the development and automatically overrides the destination files (eg. our app.css)
-      compass clean # removes the destination files and .sass-cache/ folder placed in the Sass folder (eg. cccs_web/theme/scss)
-````
-At the moment, in config.rb, I've chosen that the Compass compiles the CSS into the `static_collected/` folder because this way I don't have to `django collectstatic` everytime I change something in the Sass files.
-
-In the HTML template `<header>` a simple `<link>` to the build is enough, loading a single minified css file.
-( there'll be four different css builds: app.css for modern broswers, ie78.css for old Exploders, text.css for text browsers and jsoff.css for the cases when javascript is off )
-
-##### Javascript
-
-The javascript layer is built using a `Require.js` AMD style.
-
-In the `<head>` section of our template we load the first necessary two files. We do this in the `<head>` for two reasons:
-- Modernizr is a library that likes to be loaded in the head. It detects the browsers capabilities and add a list of classes in the `<html>` tag that tells everything about the client, eg. `js, xhr2, rgba` etc
-- we pull from CDN therefore we don't have to wait for those requests until the DOM is loaded. However with require.js we can control when the javascript are loaded.
-
-`<script data-main="{% static "js/app/config/init" %}" src="{% static "js/libs/require.js" %}" type="text/javascript"></script>`
-
-First we need `require.js` and then we provide a configuration file (eg. `init.js`)
-
-In the init.js we have the global configuration file which maps and shims all the AMD modules. It will also call app.js as first dependency.
-
-App.js will first require the first and most important libraries as AMD modules and then once they're loaded, in the callback we can start doing our first checkings and logic.
-
-An example: say we now found with modernizr.js IE8 - we will then provide async js polyfills as AMD modules one by one to make it understand media queries, svg, rgba all we need depending on the page we're on. These are cachable.
-
-Then we coud also make REST operations and various DOM manipulation organised on AMD modules called when needed etc.
-
-
 --
 
+It is not possible to provide a on-off deployment script for this process due to the need to edit configuration files, as provided above.  The following code block consolidates the steps defined above.  Use it for references purposes only.
 
 ```
 git clone git@github.com:src-its/django-ca ca-web
