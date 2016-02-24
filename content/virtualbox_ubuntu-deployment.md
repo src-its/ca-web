@@ -36,9 +36,10 @@ Your Ubuntu Server virtual machine (VM) loads by borrowing the resources of your
 
 ----
 
-   - At this point, you have a configured VirtualBox machine image.
    - Once you have completed the set-up, VirtualBox will print out the detail of your input.  Finish the wizard by clicking the create button.  <br/> ![](http://i.stack.imgur.com/L7bEX.jpg)
    - The VirtualBox Set-Up Wizard will then dump you back into the start-up menu, but your machine isn't yet fully configured.  Before you can start it up, you'll need to link an *.ISO image of your OS from which your image can be booted. <br /> ![selection prompt](https://raw.githubusercontent.com/src-its/ca-web/master/images/8%20VB%20Start%20.png)
+
+   - NOTE: Set your configuration opetion now in settings; enable clipboard sharing.
 
 ----
 

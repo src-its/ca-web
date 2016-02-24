@@ -77,13 +77,16 @@ elaborate here about the purpose and function of each pakage:
         sudo ln -s /usr/lib/x86_64-linux-gnu/libz.so /usr/lib
 > **Note:** Make sure these links are valid if you are installing into a new version of Ubuntu (other than 14.04)
 
-1. Install geospatial libraries <!--We should note why we're asking users to do this-->
+1. Install geospatial libraries
+
+<!--We should note why we're asking users to do this-->
+
         sudo apt-get install binutils libproj-dev gdal-bin libgeo-proj4-perl libjson0-dev
 
 1. Install [PostGIS](http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS20Ubuntu1204)
    * For Ubuntu 14.04*: 
 
-        sudo apt-get install postgresql-9.3-postgis-2.1;
+        sudo apt-get install postgresql-9.3-postgis-2.1
         sudo apt-get install postgresql-server-dev-9.3
 
 1. [Install Git](http://git-scm.com/book/en/Getting-Started-Installing-Git):
@@ -105,7 +108,7 @@ elaborate here about the purpose and function of each pakage:
         
     Then run the following: 
     
-        python get-pip.py
+        sudo python get-pip.py
 
     Alternatively, you can use the Ubuntu package manager to install pip for you: 
 
@@ -129,6 +132,8 @@ elaborate here about the purpose and function of each pakage:
 
         sudo apt-get install virtualenvwrapper
 
+
+
 <a href="#django-install"></a>
 ## Django Install
 
@@ -144,16 +149,45 @@ This will install a standalone version of Python, as well as pip, into an isolat
    
    - check that `virtualenvwrapper.sh` is in `/usr/local/bin`; if not, use `locate virtualenvwrapper.sh` and then `ln -s` to the install location
    - use the `source` command to pass the contents of 'virtualenvwrapper.sh'to the Tcl interpreter:
+
          `~ $ source /usr/local/bin/virtualenvwrapper.sh`
+
    - verify that this works by re-running the virtualenv command:
+
          `~ $ mkvirtualenv ca-web`
+
    - exit virtualenv and `echo` the `source` command into the local user's `.bashrc`:
+
          `~ $ deactivate`
          `~ $ echo 'source /usr/local/bin/virtualenvwrapper.sh' >> .bashrc`
+
    - verify contents of `.bashrc`
+
          `~ $ tail .bashrc`
 
 ---
+
+
+```
+sudo apt-get update;
+sudo apt-get upgrade;
+sudo apt-get install libblas3gf libc6 libamd2.3.1 libumfpack5.6.2 libgcc1 libgfortran3 liblapack3gf libstdc++6 build-essential gfortran libatlas-dev libjpeg-dev libfreetype6-dev python python-all-dev gcc g++ libblas-dev liblapack-dev libevent-dev libxml2-dev libxslt1-dev;
+sudo ln -s /usr/lib/x86_64-linux-gnu/libjpeg.so /usr/lib;
+sudo ln -s /usr/lib/x86_64-linux-gnu/libfreetype.so /usr/lib;
+sudo ln -s /usr/lib/x86_64-linux-gnu/libz.so /usr/lib;
+sudo apt-get install binutils libproj-dev gdal-bin libgeo-proj4-perl libjson0-dev;
+sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev;
+wget https://bootstrap.pypa.io/get-pip.py;
+sudo python get-pip.py;
+sudo pip install virtualenv;
+sudo pip install pyopenssl ndg-httpsclient pyasn1;
+sudo apt-get install virtualenvwrapper;
+sudo ln -s /usr/share/virtualenvwrapper/virtualenvwrapper.sh /usr/local/bin/;
+source /usr/local/bin/virtualenvwrapper.sh;
+cd;
+echo 'source /usr/local/bin/virtualenvwrapper.sh' >> .bashrc;
+
+```
 
 ## Configure the virtual environment
 
