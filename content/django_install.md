@@ -34,7 +34,6 @@ Some of the different methods are:
         build-essential gfortran libatlas-dev libjpeg-dev libfreetype6-dev \
         python python-all-dev gcc g++ libblas-dev liblapack-dev libevent-dev \
         libxml2-dev libxslt1-dev
-
 <!--
 elaborate here about the purpose and function of each pakage:
 
@@ -79,7 +78,7 @@ elaborate here about the purpose and function of each pakage:
 
 1. Install geospatial libraries
 
-<!--We should note why we're asking users to do this-->
+   <!--We should note why we're asking users to do this-->
 
         sudo apt-get install binutils libproj-dev gdal-bin libgeo-proj4-perl libjson0-dev
 
@@ -131,7 +130,6 @@ elaborate here about the purpose and function of each pakage:
 
         sudo apt-get install virtualenvwrapper
 
-
 1. Create a new virtual environment for your project
 
         mkvirtualenv ca-web
@@ -157,7 +155,6 @@ elaborate here about the purpose and function of each pakage:
     - verify contents of `.bashrc`
 
          `~ $ tail .bashrc`
-
 
 <a href="#django-install"></a>
 ## Django Install
