@@ -159,6 +159,23 @@ elaborate here about the purpose and function of each pakage:
          `~ $ tail .bashrc`
 
 
+<a href="#django-install"></a>
+## Django Install
+
+1. After you’ve created and activated a virtual environment, use pip to install Django. Regardless of whether you are using version 2 or 3 of Python, it should be called just pip when you are in your virtual environment. Also note that you do not need to use sudo since you are installing locally:
+
+        pip install Django
+
+    - After running this command, you should receive a confirmation message that Django is installed.  At this point, however, you will not have any files or folders within your `ca-web` directory. You can tell Django is installed and which version by running the following command:
+
+        python -c "import django; print(django.get_version())"
+        
+    - Alternatively, try verifying the installation by typing:
+
+        django-admin --version
+
+    - Next, we need to establish a Django 'project'&mdash;a collection of settings for an instance of Django, including database configuration, Django-specific options and application-specific settings.
+
 ---
 
 ** For a one-off system prep and environment build on Ubuntu 14.04, you can use to following code (which basically re-produces all the steps given above):
@@ -186,24 +203,7 @@ cd;
 echo 'source /usr/local/bin/virtualenvwrapper.sh' >> .bashrc;
 ```
 
-<a href="#django-install"></a>
-## Django Install
-
-1. After you’ve created and activated a virtual environment, use pip to install Django. Regardless of whether you are using version 2 or 3 of Python, it should be called just pip when you are in your virtual environment. Also note that you do not need to use sudo since you are installing locally:
-
-        pip install Django
-
-    - After running this command, you should receive a confirmation message that Django is installed.  At this point, however, you will not have any files or folders within your `ca-web` directory. You can tell Django is installed and which version by running the following command:
-
-        python -c "import django; print(django.get_version())"
-        
-    - Alternatively, try verifying the installation by typing:
-
-        django-admin --version
-
-    - Next, we need to establish a Django 'project'&mdash;a collection of settings for an instance of Django, including database configuration, Django-specific options and application-specific settings.
-
-### references:
+### References
 
 * Justin Ellingwood. 2015-Mar-05. "How To Install the Django Web Framework on Ubuntu 14.04" https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-14-04
 
