@@ -189,32 +189,7 @@ echo 'source /usr/local/bin/virtualenvwrapper.sh' >> .bashrc;
 <a href="#django-install"></a>
 ## Django Install
 
-```
-git clone git@github.com:src-its/django-ca ca-web
-cd ca-web;
-mkvirtualenv ca-web
-add2virtualenv .
-setvirtualenvproject
-deactivate
-workon ca-web
-cd core/settings/
-cp secrets.py.example secrets.py
-cp aaron.py.example ca.py
-vim ca.py
-## ENTER YOUR SETTINGS here
-echo 'export DJANGO_SETTINGS_MODULE=core.settings.ca' >> ~/.virtualenvs/ca-web/bin/postactivate
-deactivate
-sudo service postgres restart
-## MAKE YOUR configurations
-sudo /etc/init.d/postgresql restart
-workon ca-web
-django createdb
-```
-
-
-
 1. After you’ve created and activated a virtual environment, use pip to install Django. Regardless of whether you are using version 2 or 3 of Python, it should be called just pip when you are in your virtual environment. Also note that you do not need to use sudo since you are installing locally:
-
 
         pip install Django
 
@@ -228,11 +203,8 @@ django createdb
 
     - Next, we need to establish a Django 'project'&mdash;a collection of settings for an instance of Django, including database configuration, Django-specific options and application-specific settings.
 
-
-
 ### references:
 
+* Justin Ellingwood. 2015-Mar-05. "How To Install the Django Web Framework on Ubuntu 14.04" https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-14-04
 
-Justin Ellingwood. 2015-Mar-05. "How To Install the Django Web Framework on Ubuntu 14.04" https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-14-04
-
-Kenneth Reitz Project. 2016. "Virtual Environments" **Python Guide.** http://docs.python-guide.org/en/latest/dev/virtualenvs/
+* Kenneth Reitz Project. 2016. "Virtual Environments" **Python Guide.** http://docs.python-guide.org/en/latest/dev/virtualenvs/
