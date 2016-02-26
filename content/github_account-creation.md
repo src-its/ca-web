@@ -22,4 +22,4 @@ To configure your account, open your Git Shell. Setting your name and email addr
 
 ["GitHub Help."] Set Up Git. Accessed February 25, 2016. https://help.github.com/articles/set-up-git/.
 
-[Git] "1.6 Getting Started - First-Time Git Setup." Git. Accessed February 25, 2016. https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup.
+["Git."] "1.6 Getting Started - First-Time Git Setup." Git. Accessed February 25, 2016. https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup.
