@@ -52,6 +52,6 @@ There is no 'right' way to speak a human language. There is no 'proper' English 
 
 ## Further Reading and References
 <!-- mostly wrote this from previous knowledge, so I'm just linking to some relevant wikipedia articles. -->
-* ["Formal Language." Wikipedia. Wikimedia Foundation. Web. 02 Feb. ](https://en.wikipedia.org/wiki/Formal_language)
-* ["Markup Language." Wikipedia. Wikimedia Foundation. Web. 02 Feb.](https://en.wikipedia.org/wiki/Markup_language)
-* ["Programming Languages." Wikipedia. Wikimedia Foundation. Web. 02 Feb. 2016](https://en.wikipedia.org/wiki/Programming_language)
+* ["Formal Language." Wikipedia. Accessed February 25, 2016.](https://en.wikipedia.org/wiki/Formal_language)
+* ["Markup Language." Wikipedia. Accessed February 25, 2016.](https://en.wikipedia.org/wiki/Markup_language)
+* ["Programming Languages." Wikipedia. Accessed February 25, 2016.](https://en.wikipedia.org/wiki/Programming_language)
