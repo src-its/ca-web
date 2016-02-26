@@ -4,8 +4,11 @@
 ### Premise of a wrapper/enviroment:
 
 -The most basic form, essentially a function that is called within a function:
+    
     -does not have to be in the same language
+    
     -data formats must both be compatible with one another
+    \
 -Programs like SWIG can wrap programs for the use automatically
 -Programmers want to use wrappers to adapt their own code to code that might not have been written by themselves or their teams
 -Useful in writing error checking functions without increasing the length of code by a considerable amount
