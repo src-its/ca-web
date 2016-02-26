@@ -18,8 +18,8 @@ To configure your account, open your Git Shell. Setting your name and email addr
 
 1. [Learn how to avail of SSH keys for added security.](https://github.com/src-its/ca-web/blob/master/content/git_ssh-setup.md).
 
-## Sources:
+## References:
 
-GitHub. "Set Up Git" https://help.github.com/articles/set-up-git/
+["GitHub Help."] Set Up Git. Accessed February 25, 2016. https://help.github.com/articles/set-up-git/.
 
-Git. "Git - First-Time Setup"  https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+[Git] "1.6 Getting Started - First-Time Git Setup." Git. Accessed February 25, 2016. https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup.
