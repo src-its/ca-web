@@ -28,5 +28,5 @@
 
 ## References:
 
-* https://en.wikipedia.org/wiki/Wrapper_library
-* https://en.wikipedia.org/wiki/Driver_wrapper
+* [Wikipedia: Wrapper Library](https://en.wikipedia.org/wiki/Wrapper_library)
+* [Wikipedia: Driver Wrapper](https://en.wikipedia.org/wiki/Driver_wrapper)
