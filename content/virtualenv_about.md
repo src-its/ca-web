@@ -9,3 +9,7 @@ Or more generally, what if you want to install an application and leave it be? I
 Also, what if you can’t install packages into the global site-packages directory? For instance, on a shared host.
 
 In all these cases, virtualenv can help you. It creates an environment that has its own installation directories, that doesn’t share libraries with other virtualenv environments (and optionally doesn’t access the globally installed libraries either).
+
+ ## References
+ 
+ "Virtualenv 14.0.6 : Python Package Index." Virtualenv 14.0.6 : Python Package Index. Accessed February 25, 2016. https://pypi.python.org/pypi/virtualenv.
