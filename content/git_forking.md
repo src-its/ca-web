@@ -27,3 +27,5 @@ If you are using terminal and you are pushing to your fork, only your fork will 
 If you want the changes you made to your fork to also be included in the main repository, then after you fork, you must go into the main repository in GitHub and create a pull request.
 
 The owner of that repository will then take a look at your pull request and decide whether to keep it or not.
+
+## References:
