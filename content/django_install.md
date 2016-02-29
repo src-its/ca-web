@@ -4,22 +4,22 @@
 
 ## Installing the Django [web framework](https://github.com/src-its/ca-web/blob/master/content/web-framework_definition.md)
 
-Django is a full-featured Python web framework for developing dynamic websites and applications. [ref: Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-14-04)
+Django is a full-featured Python web framework used for developing dynamic websites and applications. [ref: Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-14-04)
 
 <a href="#configuration-cptions"></a>
 ## Be Aware of Configuration Options:
 
-There are a number of different ways in which you can install Django depending upon your needs and how you want to configure your development environment. These have different advantages and one method may lend itself better to your specific situation than others.
+There are a number of different ways in which you can install Django depending upon your needs and how you want to configure your development environment. These have different advantages and a particular method may lend itself better to your specific situation than an other method.
 
 Some of the different methods are:
 
-* **Global Install from Packages**: The official Ubuntu repositories contain Django packages that can be installed easily with the conventional apt package manager. This is very simple, but not as flexible as some other methods. Also, the version contained in the repositories may lag behind the official versions available from the project.
+* **Global Install from Packages**: The official Ubuntu repositories contain Django packages that can be installed easily with the conventional apt package manager. This is very simple, but not as flexible as other methods. Also, the version contained in the repositories may lag behind the official versions available from the project.
 
 * **Global Install through pip**: The pip tool is a package manager for Python packages. If you install pip, you can easily install Django on the system level for use by any user. This should always contain the latest stable release. Even so, global installations are inherently less flexible.
 
 * **Install through pip in a Virtualenv**: The Python virtualenv package allows you to create self-contained environments for various projects. Using this technology, you can install Django in a project directory without affecting the greater system. This allows you to provide per-project customizations and packages easily. Virtual environments add some slight mental and process overhead in comparison to globally accessible installation, but provide the most flexibility. **This is the installation method that we use (detailed below).**
 
-* **Development Version Install through git**: If you wish to install the latest development version instead of the stable release, you will have to acquire the code from the git repo. This is necessary to get the latest features/fixes and can be done globally or locally. Development versions do not have the same stability guarantees, however.
+* **Development Version Install through git**: If you wish to install the latest development version instead of the stable release, you will have to acquire the code from the git repo. This is necessary to get the latest features/fixes and can be done globally or locally. However, development versions do not have the same stability guarantees.
 
 ----
 <a href="#system-prep"></a>
