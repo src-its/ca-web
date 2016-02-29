@@ -1,10 +1,10 @@
 ## What is Markdown and Why Do We Use it?
 
-Markdown was developed in 2004 by John Gruber, who wrote the first markdown-to-html converter in Perl that has become widely used in web applications. [^commonmark] It is a simple language and software tool used by web writers to convert plain text into HTML. According to its creator, John Gruber, the design goal of Markdown “is to make it as readable as possible”.
+Markdown was developed in 2004 by John Gruber. He wrote the first markdown-to-html converter in Perl, markdown is a simple language and software tool used to convert plain text into HTML. It is now widely used in web applications [^commonmark]. The design goal of Markdown “is to make it as readable as possible” (John Gruber).
 
 <!-- Citation needed for comment above -->
 
-Markdown's simplicity makes it readable and accessible, including for those who don’t know about coding. Even for those who are familiar with HTML, Markdown makes it easier to spot encoding errors. Markdown can also be considered both a lazy and an efficient way to write HTML. It allows one to simply define elements such as headers, links, but reduces the jargon and extranious coding required by HTML. 
+Markdown's simplicity makes it readable and accessible, including for those who don’t know much about coding. Even for those who are familiar with HTML, Markdown makes it easier to spot encoding errors. Markdown can also be considered both a lazy and an efficient way to write HTML. It allows one to simply define elements such as headers, links, but reduces the jargon and extranious coding required by HTML. 
 
 Consider writing this:
 
