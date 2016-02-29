@@ -3,7 +3,7 @@
 #### Checking for & Generating SSH keys
 <a name="generate-key"></a>
 
-Before generating a new SSH key, you should check to see if any SSH keys exist.
+Before generating a new SSH key,  check to see if any SSH keys exist.
 
 Open Git Bash and enter the following command:
 
