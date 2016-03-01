@@ -40,15 +40,16 @@
 
     - Set its values appropriately for the database you are working with.
 
-1. Define your settings as the default:
+1. Return to your user's home directory and define your settings as the default:
 
+        (src-its) ~/django-ca $ cd
         (src-its) ~/django-ca $ echo 'export DJANGO_SETTINGS_MODULE=core.settings.ca' >> ~/.virtualenvs/ca-web/bin/postactivate
         
    **NOTE:** This command may need editing for your particular set-up. It adds the assignment of the DJANGO_SETTINGS_MODULE to the python module responsible for supplying the django settings.
 
 1. alias django into your `~/.bashrc`
 
-        `alias django='django-admin.py'`)
+        alias django='django-admin.py'
 
 1. log out and back into your virtual environment in order to ensure that the alias takes effect:
 
@@ -65,7 +66,11 @@
 
 #### Set up postgresql
 
-1. Adjust your settings for postgres. The psql database user (e.g. caweb) must use `md5` rather than peer access. To enable this, edit `/etc/postgresql/9.3/main/pg_hba.conf`.  Add add a line for `username` and specify md5 access:
+1. Adjust your settings for postgres. The psql database user (e.g. caweb) must use `md5` rather than peer access. To enable this, edit `/etc/postgresql/9.3/main/pg_hba.conf` as root. 
+
+        sudo vim /etc/postgresql/9.3/main/pg_hba.conf
+
+Add add a line for `username` and specify md5 access:
 
 ```
      # TYPE  DATABASE        USER            ADDRESS                 METHOD
@@ -79,8 +84,7 @@
         ~ $ sudo -iu postgres
         ~ $ psql -c 'CREATE USER <username> WITH SUPERUSER;'
 
-
-*When creating a database from scratch* (for a 'vanilla' copy of this work environment):
+* When creating a database from scratch* (for a 'vanilla' copy of this work environment):
 
 1. Add the `caweb` user.
 
