@@ -200,6 +200,30 @@ cd;
 echo 'source /usr/local/bin/virtualenvwrapper.sh' >> .bashrc;
 ```
 
+## Django Setup on Fedora
+The steps are a bit less steamlined on Fedora, but they should be simple enough to follow. 
+1. Download the .tar file containing the GEOS 3.5 package [here](https://trac.osgeo.org/geos/). Extract it to where ever is most convenient for you.
+2. Now we have to setup our deleopment tools. Type into your console:
+
+        sudo yum groupinstall "Development tools"
+        
+3. Now that the development tools are good to go, we can start to configure our package. Navigate your way to the geos-3.5.0 folder through the terminal and type in:
+
+        ./configure
+        
+This will make sure that the directories are in the right place.
+4. Now, type into the console
+
+        make
+
+You can (and probably should) run some type of check to ensure that the files compiled correctly
+
+        make check
+        
+5. Now all that is left to to actually install out package. To do this, type into the console:
+
+        make install
+
 ### References
 
 * Justin Ellingwood. 2015-Mar-05. "How To Install the Django Web Framework on Ubuntu 14.04" https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-14-04
