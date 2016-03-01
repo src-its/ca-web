@@ -138,7 +138,7 @@ elaborate here about the purpose and function of each pakage:
 
     - If the `mkvirtualenv` returns a "command not found" error, follow these steps:
 
-    - check that `virtualenvwrapper.sh` is in `/usr/local/bin`; if not, use `locate virtualenvwrapper.sh` and then `ln -s` to the install location
+    - check that `virtualenvwrapper.sh` is in `/usr/local/bin`; if not, first update your system’s file index with `updatedb` and then use `locate virtualenvwrapper.sh` to figure out where the file resides.  Use `ln -s` to symbolically link the install location
    - use the `source` command to pass the contents of 'virtualenvwrapper.sh'to the Tcl interpreter:
 
          `~ $ source /usr/local/bin/virtualenvwrapper.sh`
@@ -147,7 +147,7 @@ elaborate here about the purpose and function of each pakage:
 
          `~ $ mkvirtualenv ca-web`
 
-    - exit virtualenv and `echo` the `source` command into the local user's `.bashrc`:
+    - exit virtualenv and `echo` the `source` command into the local user's `.bashrc` (make sure that you `cd` back to your user’s home directory before running the following command):
 
          `~ $ deactivate`
          `~ $ echo 'source /usr/local/bin/virtualenvwrapper.sh' >> .bashrc`

@@ -1,5 +1,7 @@
 ## Initializing the [ca-web](https://github.com/src-its/django-ca) Django Application
 
+1. Ensure that your [ssh keys are entered into your profile](/content/git_ssh-setup.md).
+
 1. Clone the repository and install the requirements
 
          workon ca-web
@@ -12,8 +14,6 @@
 1. Configure the virtual environment to work with the application without needing to directly invoke 'manage.py':
 
    - ensure that you're in your project working directory (we're using ca-web as our example).
-
-                 cd ca-web
 
    - Switch into the virtual environment.
 
@@ -31,8 +31,11 @@
          (ca-web)~/ca-web$ cd core/settings/
          (ca-web)~/ca-web/core/settings$ cp secrets.py.example secrets.py
 
+    - NOTE: The `secrets.py` file contains your credentials for connecting to your database.  Be sure to change the salt values in this file and enter the user name and password that you will use when establishing your database connection.
+
 1. Generate a `settings.py` file based on any of the examples under `core` > `settings`. :
 
+         (ca-web)~/ca-web$ cd core/settings/
          (ca-web)~/django-ca/core/settings$ cp aaron.py ca.py
 
     - Set its values appropriately for the database you are working with.
@@ -169,23 +172,24 @@ This is for public facing servers only.
 It is not possible to provide a on-off deployment script for this process due to the need to edit configuration files, as provided above.  The following code block consolidates the steps defined above.  Use it for references purposes only.
 
 ```
-git clone git@github.com:src-its/django-ca ca-web
+git clone git@github.com:src-its/django-ca ca-web;
 cd ca-web;
-mkvirtualenv ca-web
-add2virtualenv .
-setvirtualenvproject
-deactivate
-workon ca-web
-cd core/settings/
-cp secrets.py.example secrets.py
-cp aaron.py.example ca.py
-vim ca.py
-## ENTER YOUR SETTINGS here
-echo 'export DJANGO_SETTINGS_MODULE=core.settings.ca' >> ~/.virtualenvs/ca-web/bin/postactivate
-deactivate
-sudo service postgres restart
-## MAKE YOUR configurations
-sudo /etc/init.d/postgresql restart
-workon ca-web
-django createdb
+mkvirtualenv ca-web;
+add2virtualenv .;
+setvirtualenvproject;
+deactivate;
+workon ca-web;
+pip install -r requirements.txt
+cd core/settings/;
+cp secrets.py.example secrets.py;
+cp aaron.py.example ca.py;
+vim ca.py;
+## ENTER YOUR SETTINGS HERE
+echo 'export DJANGO_SETTINGS_MODULE=core.settings.ca' >> ~/.virtualenvs/ca-web/bin/postactivate;
+deactivate;
+sudo service postgres restart;
+## MAKE YOUR CONFIGURATIONS
+sudo /etc/init.d/postgresql restart;
+workon ca-web;
+django createdb;
 ```
