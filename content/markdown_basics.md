@@ -621,7 +621,6 @@ Content for chapter one.
 <br>
 <br>
 
-
 ## Images
 Images have a similar syntax to links but include a preceding exclamation point.
 
@@ -647,14 +646,9 @@ With a reference later in the document defining the URL location:
 
 [id]: http://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 
-
     [id]: http://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 
-
-
 ## Citations and References
-
-
 
 Citations in HTML are generally achieved as such:
 
@@ -669,11 +663,7 @@ Quote here.
 
 -- <cite>Benjamin Franklin</cite>
 
-
-
 Citations and References are treated differently by different flavours of Markdown:
-
-
 
 GitHub Flavored Markdown doesn't support footnotes, but you can manually fake it¹ with Unicode characters or superscript tags, e.g. `<sup>1</sup>`.
 
@@ -716,7 +706,6 @@ Results in:
 This is [an example][id] reference-style link.
 
 [id]: http://example.com/  "Optional Title Here"
-
 
 It might be tempting to use sequential numbers as id for the reference-style links, but the order of links can of course change during writing. It may make sense to think of the id in reference-style links as a citekey, and people should be free use that functionality of their reference manager. The citekey is used to link to the reference list at the bottom of the document, different from linking to the citekey in a separate bibtex file.
 

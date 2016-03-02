@@ -1,6 +1,5 @@
 ## What is a Python virual environment?
 
-
 ### Premise of a wrapper/enviroment:
 
 - The most basic form, essentially a function that is called within a function:
@@ -26,7 +25,7 @@
     - using modern hardware on depreciated OS
 - For backwards compatibility
 
-## References:
+## References
 
 * [Wikipedia: Wrapper Library](https://en.wikipedia.org/wiki/Wrapper_library)
 * [Wikipedia: Driver Wrapper](https://en.wikipedia.org/wiki/Driver_wrapper)

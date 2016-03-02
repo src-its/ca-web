@@ -13,7 +13,7 @@ There are a number of different ways in which you can install Django depending u
 
 Some of the different methods are:
 
-* **Global Install from Packages**: The official Ubuntu repositories contain Django packages that can be installed easily with the conventional apt package manager. This is very simple, but not as flexible as other methods. Also, the version contained in the repositories may lag behind the official versions available from the project.
+* **Global Install from Packages**: The official Fedora repositories contain Django packages that can be installed easily with the conventional apt package manager. This is very simple, but not as flexible as other methods. Also, the version contained in the repositories may lag behind the official versions available from the project.
 
 * **Global Install through pip**: The pip tool is a package manager for Python packages. If you install pip, you can easily install Django on the system level for use by any user. This should always contain the latest stable release. Even so, global installations are inherently less flexible.
 
@@ -67,15 +67,6 @@ elaborate here about the purpose and function of each pakage:
  libxslt1-dev
 -->
 
-3. Link image libraries to standard Debian locations
-
-   Ubuntu has these in an 'unusual' location for debian, so the following links ensure that things like Pillow find them.
-
-        sudo ln -s /usr/lib/x86_64-linux-gnu/libjpeg.so /usr/lib
-        sudo ln -s /usr/lib/x86_64-linux-gnu/libfreetype.so /usr/lib
-        sudo ln -s /usr/lib/x86_64-linux-gnu/libz.so /usr/lib
-> **Note:** Make sure these links are valid if you are installing into a new version of Ubuntu (other than 14.04)
-
 1. Install geospatial libraries
 
    <!--We should note why we're asking users to do this-->
@@ -108,7 +99,7 @@ elaborate here about the purpose and function of each pakage:
 
         sudo python get-pip.py
 
-    Alternatively, you can use the Ubuntu package manager to install pip for you:
+    Alternatively, you can use the Fedora package manager to install pip for you:
 
         sudo apt-get install python-pip
 
@@ -175,7 +166,7 @@ elaborate here about the purpose and function of each pakage:
 
 ---
 
-** For a one-off system prep and environment build on Ubuntu 14.04, you can use to following code (which basically re-produces all the steps given above):
+** For a one-off system prep and environment build, you can use to following code (which basically re-produces all the steps given above):
 
 ```
 sudo apt-get update;
@@ -201,8 +192,11 @@ echo 'source /usr/local/bin/virtualenvwrapper.sh' >> .bashrc;
 ```
 
 ## Django Setup on Fedora
+
 The steps are a bit less steamlined on Fedora, but they should be simple enough to follow. 
+
 1. Download the .tar file containing the GEOS 3.5 package [here](https://trac.osgeo.org/geos/). Extract it to where ever is most convenient for you.
+
 2. Now we have to setup our deleopment tools. Type into your console:
 
         sudo yum groupinstall "Development tools"

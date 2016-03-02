@@ -1,4 +1,4 @@
-Added this file and two urls for all of us to look into GitHub writing and referencing formats
+Added this file and two urls for all of us to look into GitHub writing and referencing formats.
 
 ##Autolinked references and URLs
 

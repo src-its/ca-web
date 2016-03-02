@@ -13,8 +13,10 @@ The client (your browser) requests data from a web application (html, css, etc).
 
 ##References:
 
-```
-[^wikipedia]: Wikipedia. "Web framework" [Last modified 27 January 2016, at 11:53.] Wikimedia Foundation, Inc. https://en.wikipedia.org/wiki/Web_framework [Accessed 27 January, 2016]
-```
+
+* Wikipedia. "Web framework" [Last modified 27 January 2016, at 11:53.] Wikimedia Foundation, Inc. https://en.wikipedia.org/wiki/Web_framework [Accessed 27 January, 2016]
+* Chapter 1: Introduction to Django](http://www.djangobook.com/en/2.0/chapter01.html)
+
 
 [^wikipedia]: Wikipedia. "Web framework" [Last modified 27 January 2016, at 11:53.] Wikimedia Foundation, Inc. https://en.wikipedia.org/wiki/Web_framework [Accessed 27 January, 2016]
+

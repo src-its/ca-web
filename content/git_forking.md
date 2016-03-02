@@ -29,3 +29,5 @@ If you want the changes you made to your fork to also be included in the main re
 The owner of that repository will then take a look at your pull request and decide whether to keep it or not.
 
 ## References:
+
+* [GitHub Help: Fork A Repo](https://help.github.com/articles/fork-a-repo/)

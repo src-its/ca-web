@@ -1,7 +1,7 @@
-### How to install/configure SSH keys for GitHub on Ubuntu
-----
-#### Checking for & Generating SSH keys
+## How to install/configure SSH keys for GitHub on Ubuntu
+
 <a name="generate-key"></a>
+### Checking for & Generating SSH keys
 
 Before generating a new SSH key,  check to see if any SSH keys exist.
 
@@ -29,9 +29,10 @@ You'll be prompted to select a location to save the file.  Either change it to y
 
     Enter a file in which to save the key(/Users/you/.ssh/id_rsa): [Press enter]
     
-#### Copying your SSH Key
+### Copying your SSH Key
 
 <!-- Should this be a separate article? Seems like the issue of accessing host machine files is a more general issue. -->
+
 We have an issue where there are multiple clipboards on one given OS. While we may be able to copy a string of text (such as that of the SSH key) we are not able to transfer it across from the virtual machine to our parent machine. To rectify this, we should use an addon called *VirtualBox Guest*. In essence, the addon allows for file sharing between the guest machine and the host machine. VirtualBox normally has this functionality built in, but only for an OS with a GUI (and Ubuntu Server is solely command prompt based). To set up VirtualBox Guest, first you must got to `Devices` and then `Install Guest Additions`. From there you must enter the Guest Additions CD Image. After that, you must mount the CD Rom as such:
 
     sudo mount /dev/cdrom /media/cdrom
@@ -49,7 +50,8 @@ Last, but not least, we can finally build and install out addon!
     sudo /media/cdrom/VBoxLinuxAdditions.run
     
 The original article can be found [here](http://en.ig.ma/notebook/2012/virtualbox-guest-additions-on-ubuntu-server)
-#### Adding your SSH key to GitHub
+
+### Adding your SSH key to GitHub
 
 To add your SSH key to GitHub, first navigate to your `.ssh` folder. Open `id_rsa.pub` (or whatever you named you file) in a text editor and copy its contents. Proceed with the following steps:
 
@@ -68,7 +70,8 @@ Click `Add key`.
 Confirm the action by entering your GitHub password.
 
 
-#### Adding your SSH key to the SSH Agent
+### Adding your SSH key to the SSH Agent
+
 <a name="add-key-to-agent"></a>
 
 Ensure ssh-agent is enabled:
@@ -90,7 +93,7 @@ Add your SSH key to the ssh-agent using the following command:
     ssh-add ~/.ssh/id_rsa
 
 
-#### Testing and Connecting over SSH
+### Testing and Connecting over SSH
 
 When you test your connection, you'll need to authenticate this action using your password, which is the SSH key passphrase you created earlier. For more information on working with SSH key passphrases, see Working with SSH key passphrases.
 
@@ -103,16 +106,20 @@ Verify that the fingerprint in the warning matches the messsage you see, then ty
 Hi username! You've successfully authenticated, but GitHub does not
 provide shell access.
 ```
+
 Verify that the resulting message contains your username. 
+
 ----
-----
-----
+
+
 #### Troubleshooting
+
 If you see a message that contains "access denied," follow these steps.
 
 First, run this command to search for typos in the domain:
 
 `ssh -vT git@github.com`
+
 It should tell you that a connection is being made to aa GitHub IP on port 22.
 
 Second, don't try to connect using your own user. Always use the 'git' user. Verify connection by typing:
@@ -122,9 +129,11 @@ Second, don't try to connect using your own user. Always use the 'git' user. Ver
 Third, make sure you have a key that is being used. Start by turning on your SSH Agent:
 
 `eval "$(ssh-agent -s)"` with GitBash or `eval $(ssh-agent -s)` with another terminal.
+
 Follow this command by verifying that you have a private key generated and loaded into SSH:
 
 OpenSSH 6.7 or older: `ssh-add -l`
+
 OpenSSH 6.8 or newer: `ssh-add -l -E md5`
 
 This should print out a large string of numbers and letters. If not you need to [generate a new key](#generate-key).
@@ -135,15 +144,24 @@ Fourth, check that the key is trying to connect to git@github.com using this com
 If the output contains `type -1`, that means SSH couldn't find a file to use.
 
 Finally, verify that the public key is attached to your account.
+
 Start your SSH Agent in the background with `ssh-agent -s`.
+
 Then take note of your public key fingerprint: 
+
 OpenSSH 6.7 or older: `ssh-add -l`
+
 OpenSSH 6.8 or newer: `ssh-add -l -E md5`
+
 Go to GitHub and click `Settings`.
+
 In the user settings sidebar, click SSH keys.
+
 Compare the list of SSH keys with the output from the `ssh-add` command.
+
 ----
-### References:
+
+## References
 
 * GitHub. 2016 "Generating a new SSH key" . *GitHub Inc.* https://help.github.com/articles/generating-a-new-ssh-key/
 * GitHub. 2016 "Checking for existing SSH keys" . *GitHub Inc.* https://help.github.com/articles/checking-for-existing-ssh-keys/

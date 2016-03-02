@@ -22,7 +22,6 @@ Hosting at home, or **self-hosting** is the lowest-cost, greatest-control option
 
 <!-- here we need to elaboriate --> 
 
-
 #### Commercially-Hosted Servers
 
 Most people wishing to host a website opt for third-party hosting.  Advantages of hosted servers are that they are fast, always-on, powerful machines with access to lots of bandwidth.
@@ -42,8 +41,16 @@ There are even a few companies and organizations who offer free hosting services
 <!-- add to the list of examples above and add hyperlinks to the example -->
 
 ## References:
-```
-[^wikipedia]: Wikipedia. "Server (computing)." Wikimedia Foundation, Inc. https://en.wikipedia.org/wiki/Server_(computing)
-[^romkey]: https://romkey.com/2011/05/03/why-i-dont-self-host-anymore/ "romkey. 2011. "WHY I DON’T SELF-HOST ANYMORE." [Posted 2011/05/03] *ROMKEY.COM*  https://romkey.com/2011/05/03/why-i-dont-self-host-anymore/"
+
+<!-- We need to complete these citations -->
+
+* Netgear. http://documentation.netgear.com/wgt624v4/enu/202-10234-01/WGT624_RM-05-04.html
+* Romkey. 2011. "Why I Don't Self-Host Anymore." *ROMKEY.COM* Available at: https://romkey.com/2011/05/03/why-i-dont-self-host-anymore/"
+* Wikipedia. "Server (computing)." Wikimedia Foundation, Inc. https://en.wikipedia.org/wiki/Server_(computing)
+
+<!-- Citekeys are repeated to make the in-line citations work correctly; they will not appear in the final article output -->
+
+[^wikipedia]: https://en.wikipedia.org/wiki/Server_(computing) "Wikipedia. 'Server (computing).' Wikimedia Foundation, Inc."
+[^romkey]: https://romkey.com/2011/05/03/why-i-dont-self-host-anymore/ "romkey. 2011. 'WHY I DON’T SELF-HOST ANYMORE.' *ROMKEY.COM*"
 [^netgear]: http://documentation.netgear.com/wgt624v4/enu/202-10234-01/WGT624_RM-05-04.html
-```
+

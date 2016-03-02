@@ -201,8 +201,11 @@ echo 'source /usr/local/bin/virtualenvwrapper.sh' >> .bashrc;
 ```
 
 ## Django Setup on Fedora
+
 The steps are a bit less steamlined on Fedora, but they should be simple enough to follow. 
+
 1. Download the .tar file containing the GEOS 3.5 package [here](https://trac.osgeo.org/geos/). Extract it to where ever is most convenient for you.
+
 2. Now we have to setup our deleopment tools. Type into your console:
 
         sudo yum groupinstall "Development tools"

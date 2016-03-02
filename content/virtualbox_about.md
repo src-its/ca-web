@@ -6,11 +6,14 @@ VirtualBox can be run on the Linux, OS X, Windows, Solaris, and OpenSolaris oper
 
 [Installation instructions are available on the VirtualBox website](https://www.virtualbox.org/manual/ch02.html). [^virtualbox_man]  When installing VirtualBox as a Desktop OS, you should also install the '[Guest Additions](https://www.virtualbox.org/manual/ch04.html)' package of device drivers and system applications to improve the ease of use.
 
-## References:
+## References
 
-```
-[^wikipedia_hypervisor]: https://en.wikipedia.org/wiki/Hypervisor 
-[^virtualbox_man]: https://www.virtualbox.org/manual/ch02.html
-```
+<!-- We need to complete these citations -->
+
+* Wikipedia. "Hypervisor" Available at: https://en.wikipedia.org/wiki/Hypervisor 
+* Virtualbox. Available at: https://www.virtualbox.org/manual/ch02.html
+
+<!-- Citekeys are repeated to make the in-line citations work correctly; they will not appear in the final article output -->
+
 [^wikipedia_hypervisor]: https://en.wikipedia.org/wiki/Hypervisor 
 [^virtualbox_man]: https://www.virtualbox.org/manual/ch02.html

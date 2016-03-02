@@ -34,6 +34,7 @@ If you have ssh keys installed, try to clone the repository [using the command l
 Be sure to replace `user-name` with your user name, and `repository` with your target repository. E.g., `git clone git@github.com:/src-its/ca-web`
 
 ## Using PyCharm
+
 You will need your github account details registered in PyCharm -- you can do this by going under IDE Settings, selecting GitHub, and filling in the required security credentials. 
 
 Next, in the main menu choose VCS > Checkout from Version Control > GitHub. A box titled "Select Git Hub Repository to Clone" will open. From there, you can use the drop-down box to choose the repository you want to clone, and give the project a name and file location. Click "Clone" to finalize these details and begin cloning the repository. 
