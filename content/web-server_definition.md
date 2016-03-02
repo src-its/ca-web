@@ -7,7 +7,7 @@
 - [x] introduce how term can refer to multiple concepts
 - [x] note conceptual distinctions
 - [ ] contribute references
-- [ ] format article
+- [x] format article
 
 ---
 
@@ -17,7 +17,9 @@ The term 'server' can refer either to the entire computer system, an appliance, 
 
 A computer that is specifically configured as a server is referred to as a **'bare metal'** server. Servers that are run as software applications within a computer system are **'appliances'**, which sit on assigned ports and can be run alongside one other--each with prescribed / managed settings for traffic behavior.  Specific applications that manage the incoming and outgoing HTTP requests are **'software servers'**.
 
- ## References
+## References
 
-[^wikipedia]: https://en.wikipedia.org/wiki/Web_server Wikipedia. "Web server" [Last modified 27 January 2016, at 14:28.] **Wikimedia Foundation, Inc.** https://en.wikipedia.org/wiki/Web_server [Accessed 27 January, 2016].
+* Wikipedia. "Web server" **Wikimedia Foundation, Inc.** [Last modified 27 January 2016, at 14:28.] https://en.wikipedia.org/wiki/Web_server Available at: https://en.wikipedia.org/wiki/Web_server [Accessed 27 January, 2016].
+
+[^wikipedia]: https://en.wikipedia.org/wiki/Web_server Wikipedia. "Wikipedia. 'Web server' **Wikimedia Foundation, Inc.**"
 
