@@ -1,5 +1,5 @@
 
-## Configuring and Deploying Ubuntu Server as a VirtualBox application
+## Configuring and Deploying Ubuntu Server as a VirtualBox Application
 
 
 ----
