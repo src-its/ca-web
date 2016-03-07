@@ -38,13 +38,15 @@
          (ca-web)~/ca-web$ cd core/settings/
          (ca-web)~/django-ca/core/settings$ cp aaron.py ca.py
 
-    - Set its values appropriately for the database you are working with.
+    - Set its values appropriately for the database you are working with. You'll need to come back to this step after you've created a database to replace "NAME" and "USER" with your values(both caweb if you follow these instructions to the letter), and go into the secrets file to add the right password.
 
 1. Return to your user's home directory and define your settings as the default:
 
         (src-its) ~/django-ca $ cd
         (src-its) ~/django-ca $ echo 'export DJANGO_SETTINGS_MODULE=core.settings.ca' >> ~/.virtualenvs/ca-web/bin/postactivate
-        
+
+   -  Remember to replace core.settings.ca with the location of your settings file. 
+
    **NOTE:** This command may need editing for your particular set-up. It adds the assignment of the DJANGO_SETTINGS_MODULE to the python module responsible for supplying the django settings.
 
 1. alias django into your `~/.bashrc`
@@ -57,7 +59,7 @@
         workon ca-web
 
     - Your prompt should change to reflect that you are now in your virtual environment. It will look something like this
-    
+
 ```
      (ca-web)src-its@ubuntu:~/ca-web$.
 
@@ -66,7 +68,7 @@
 
 #### Set up postgresql
 
-1. Adjust your settings for postgres. The psql database user (e.g. caweb) must use `md5` rather than peer access. To enable this, edit `/etc/postgresql/9.3/main/pg_hba.conf` as root. 
+1. Adjust your settings for postgres. The psql database user (e.g. caweb) must use `md5` rather than peer access. To enable this, edit `/etc/postgresql/9.3/main/pg_hba.conf` as root.
 
         sudo vim /etc/postgresql/9.3/main/pg_hba.conf
 
@@ -93,7 +95,7 @@ Add add a line for `username` and specify md5 access:
 1. Create the `caweb` database.
 
          ~ $ psql -c "CREATE DATABASE caweb;"
-         
+
 1. Change ownership of the `caweb` database to the `caweb` user.
 
          ~ $ psql -c "ALTER DATABASE caweb OWNER TO caweb;"
@@ -101,7 +103,7 @@ Add add a line for `username` and specify md5 access:
 1. Now drop directly into psql as the `caweb` user:
 
          psql caweb
-         
+
 1. Your terminal should change to something like this:
 
          caweb=#
