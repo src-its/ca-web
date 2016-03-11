@@ -23,5 +23,5 @@ When you fork a repository, any subsequent changes to the original repository wi
 
 <!-- Add in-line citations to the main content body. -->
 
-[^git-guides_forking]: https://guides.github.com/activities/forking/ ""
+[^git-guides_forking]: https://guides.github.com/activities/forking/ "GitHub Guides. 2014. Forking Projects."
 
