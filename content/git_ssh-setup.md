@@ -1,33 +1,35 @@
-## How to install/configure SSH keys for GitHub on Ubuntu
+## How to install/configure SSH keys for GitHub on Ubuntu?
+
+SSH keys are a way to identify trusted computers without involving passwords.[^github-help_generating-ssh-key]
 
 <a name="generate-key"></a>
-### Checking for & Generating SSH keys
+### Checking for Existing SSH keys
 
-Before generating a new SSH key,  check to see if any SSH keys exist.
+You may already be using SSH keys to connect to a web application and server.  If you already have an SSH key and if you don't wish to configure different keys for different applications, you can upload a public key for your existing key pair.
 
-Open Git Bash and enter the following command:
+First, check whether you have any SSH keys by opening Git Bash and entering the following command:
 
-    ls -al ~/.ssh
-    #Lists the files in your .ssh directory, if they exist
-
-Check your directory for an existing public SSH key.
+     ls -al ~/.ssh
 
 By default, the filenames of the public keys are one of the following:
 
-* `id_dsa.pub`
-* `id_ecdsa.pub`
-* `id_ed25519.pub`
-* `id_rsa.pub`
+    id_dsa.pub
+    id_ecdsa.pub
+    id_ed25519.pub
+    id_rsa.pub
 
-If you see an existing key pair that you would like to use, you can [add it to the ssh-agent](#add-key-to-agent).
+If you see an existing key pair that you would like to use, you can [add it to the GitHub ssh-agent](#add-key-to-agent).
 
-If not, then generate a new SSH key using the following command:
+If not, then to generate a new SSH key, use the following command:
 
     ssh-keygen -t rsa -b 4096
 
-You'll be prompted to select a location to save the file.  Either change it to your preferred location, or accept the default  by pressing `Enter`.
+You'll be prompted to select a location to save the file:
 
     Enter a file in which to save the key(/Users/you/.ssh/id_rsa): [Press enter]
+
+Either change it to your preferred location, or accept the default by pressing `Enter`.
+
     
 ### Copying your SSH Key
 
@@ -51,6 +53,8 @@ Last, but not least, we can finally build and install out addon!
     
 The original article can be found [here](http://en.ig.ma/notebook/2012/virtualbox-guest-additions-on-ubuntu-server)
 
+
+<a href="add-key-to-agent"></a>
 ### Adding your SSH key to GitHub
 
 To add your SSH key to GitHub, first navigate to your `.ssh` folder. Open `id_rsa.pub` (or whatever you named you file) in a text editor and copy its contents. Proceed with the following steps:
@@ -168,3 +172,7 @@ Compare the list of SSH keys with the output from the `ssh-add` command.
 * GitHub. 2016 "Adding a new SSH key to your GitHub Account" . *GitHub Inc.* https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 * GitHub. 2016 "Testing your SSH connection" . *GitHub Inc.* https://help.github.com/articles/testing-your-ssh-connection/
 * GitHub. 2016 "Error: Permission denied (publickey)" . *GitHub Inc.* https://help.github.com/articles/error-permission-denied-publickey/
+* 
+
+[^github-help_generating-ssh-key]: https://help.github.com/articles/generating-a-new-ssh-key/ "GitHub. 2016 'Generating a new SSH key'. *GitHub Help."
+

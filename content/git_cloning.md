@@ -6,7 +6,7 @@ Cloning is the process of creating a copy of an existing Git repository.  When c
 
 ---
 
-- [] From the Git command line
+- [ ] From the Git command line
 - [x] Using Pycharm
 - [x] Using Pycharm
 

@@ -3,7 +3,7 @@
 ---
 
 - [x] explain what forking is and where it is useful
-- [x] detail how to fork
+- [ ] detail how to fork
 
 ---
 
