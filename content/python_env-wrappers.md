@@ -25,6 +25,10 @@
     - using modern hardware on depreciated OS
 - For backwards compatibility
 
+As technology moves forward, software and hardware become more efficient and more powerful. However, progress tends to progress discretely, rather than continuously and so there comes a point where some hardware is simply incompatible with new hardware. This can be due to a plethora of reasons; lazy developers, old hardware is simply too different from new, etc. One way to overcome this barrier is using something called a device wrapper. But what is a device wrapper?
+
+In essence, a device wrapper is code that emulates the environment in which the device works *inside* of the main environment. What happens is that the newer, more powerful OS will set aside some memory and trick the drivers inside the old device into thinking that it is actually plugged into an older OS that supports it. 
+
 ## References
 
 * [Wikipedia: Wrapper Library](https://en.wikipedia.org/wiki/Wrapper_library)
