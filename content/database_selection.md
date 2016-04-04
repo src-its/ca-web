@@ -20,7 +20,6 @@ Relational databases use Structured Querying Language (SQL), making them appropr
 Relational databases are usually the best choice for applications involving complicated querying, database transactions, and regular data analysis. If you need to handle many database transactions, the referential integrity of a relational database and ACID ensure that they are processed reliably.[^homan]
 
 **Non-relational databases** like MongoDB represent data in collections of JSON documents.[^homan] NoSQL systems are useful for data structures where objects may have a varying number of attributes or in which you can't no beforehand how many attributes it may have, or for data which may have attributes with large binary data, such as sound or vide files. [^kolakowski] In a nonrelational database, such data can be stored without explicitly being linked to data in other tables. [^homan]
-<!-- still needs editing for plagiarism below -->
 
 Non-relational databases offer a major security advantage in that they don't use SQL and for the most part have no schema, meaning they are immune to SQL injection. Some non-relational databases, such as Mongo, also allow databases to be sharded indefinitely, i.e. to be broken up into multiple partitions to overcome hardware limitations at the expense of replicability. [^homan]
 
@@ -31,13 +30,15 @@ Other reasons for choosing a non-relational database include:[^homan]
 * Finding yourself de-normalizing your database schema or coding around performance and horizontal scalability issues
 * Problems easily pre-defining your schema because of the nature of your data model
 
-In non-relational databases like Mongo, there are no joins like there would be in relational databases. This means you need to perform multiple queries and join the data manually within your code -- and that can get very ugly, very fast.[^homan]
+However, a major pitfall of non-relationanl databases is the lack of joins, requiring you instead to join the data manually inside your code and creating opportunities for problems to arise. [^homan]
 
 ### Common Database Software 
 
-**Microsoft SQL Server** is generally regarded as simple to set up and maintain, and is especially popular in companies where most of the IT staff has strong Microsoft experience and is not fully conversant with open source.[^kolakowski]
+**Microsoft SQL Server** is generally regarded as simple to set up and maintain, and is a popular choice for companies whose IT staff has more experience with Microsoft than with open source. [^kolakowski]
 
-**MongoDB** is an open-source platform with commercial licensing and support available.  MongoDB offers high performance, high availability and scalable solution licensing.[^kolakowski] The Mongo import utility can import JSON, CSV and TSV file formats. Mongo query targets of data are technically represented as BSON (binary JASON).[^homan] Mongo is a popular non-relational database for MongoDB Ember Angular and Node.js (MEAN) stack developers because it’s basically written in JavaScript; JSON is JavaScript Object Notation, which is a lightweight data interchange format. If your data model turns out to be very complex, or if you find yourself having to de-normalize your database schema, non-relational databases like Mongo may be the best way to go.[^homan] 
+<!-- more work needed -->
+
+**MongoDB** is an open-source platform with commercial licensing and support available, offering high performance, high availability and scalable solution licensing.[^factora] IT can handle data in JSON, CSV and TSV file formats, which are represented internally as BSON (binary JASON).[^homan] Mongo is popular amongst MongoDB Ember Angular and Node.js (MEAN) stack developers because it's written in JSON, a lightweight data interchange format based on JavaScript. Mongo may turnIf your data model turns out to be very complex, or if you find yourself having to de-normalize your database schema, non-relational databases like Mongo may be the best way to go.[^homan] 
 
 **MySQL** is a mature open-source relational platform offers little or no cost for a development environment, and native versions are available that can run on all major desktop and server platforms. MySQL instances are also available through virtual data centers supported by companies like Amazon, Dell or Rackspace. Another benefit: MySQL can scale in response to business strategy, and supports industry-standard security policies. Oracle (which took over MySQL when it acquired Sun) offers commercial support and licensing for production implementations.[^kolakowski]
 
