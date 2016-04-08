@@ -1,6 +1,6 @@
 ## ca-web
 
-### [a space to learn](https://github.com/src-its/ca-web/wiki) about web applications
+### a space to learn about web applications
 
 This repository is developed to help SRC students to better understand the process of web applications and application development.
 
