@@ -5,7 +5,7 @@
 - [ ] detail how to fork
 
 
-When you click on "Fork" on GitHub for a specific repository, you create a copy of that repository. Your fork copy is independent of the original repository. That is, as opposed to [cloning](/content/git_cloning.md), a forks acts as a sort of bridge between the original repository and your personal copy.[^git-guides_forking]
+When you click on "Fork" on GitHub for a specific repository, you create a copy of that repository. Your fork copy is independent of the original repository. That is, as opposed to the Git concept of [cloning](/content/git_cloning.md), a GitHub fork acts as a sort of bridge between the original repository and your personal copy.[^git-guides_forking]
 
 One might wish to fork a repository if one wishes to make independent, customized changes to someone elses work or when you are not a permitted developer for a given repository.
 
