@@ -32,5 +32,5 @@ In addition to installing Git locally in your machine, you also need a server to
 * Git. ["Git Basics"](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
 
 [^mcwilliams]: https://jahya.net/blog/git-vs-github/ "Andrew McWilliams. 'Is Git the Same Thing as Github!?'"
-[^git_about-vcs]: https://git-scm.com/book/en/v2/Getting-Started-About-Version-ControlGit. "Git. 'About Version Control'"
+[^git_about-vcs]: https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control "Git. 'About Version Control'"
 [^git_basics]: https://git-scm.com/book/en/v2/Getting-Started-Git-BasicsGit. "Git. 'Git Basics'."
