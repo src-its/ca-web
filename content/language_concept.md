@@ -6,13 +6,15 @@ Formally, a language is just a set of valid strings as determined by some rule.
 
 Computer languages are formal languages that can be described in concrete terms and which adhere rigidly to rules. The rules of computer languages must all be explicitly defined in order to convey meaning between two systems. Computer programming languages such as Java, Python, or C++, are simply collections of rules for valid expressions of meaning within a bounded context (i.e. the interaction of programs). 
 
-Spoken and written human languages can be viewed as far less 'formal' in the sense that words can convey a specific, shared meaning even where they are not formally defined.  For example, to obtain valid three-letter English words, one could work through a dictionary compiling the strings "bat", "cat", "the", "too", etc. Depending on the size, thoroughness and objective of those compiling the dictionary, however, this exercise might not provide a comprehensive collection of valid strings; words like "ooh" and "ahh", for example, might be missing. Similarly, cultural phenomenon can lead to the spontaneous creation of new words and expressions, such as the recent prominence of words in American English like "amazeballs" and phrases like "totes adorbs".
+Spoken and written human languages can be viewed as far less 'formal' in the sense that words can convey a specific, shared meaning even where they are not formally defined.  For example, to obtain valid three-letter English words, one could work through a dictionary compiling the strings "bat", "cat", "the", "too", etc. In a formal sense, this list of strings is a language - but in a human sense it's largely meaningless. Human languages are constantly adding and removing new vocabulary and phraseology while formal languages are restricted to the defining rule set. 
+
+<!--Depending on the size, thoroughness and objective of those compiling the dictionary, however, this exercise might not provide a comprehensive collection of valid strings; words like "ooh" and "ahh", for example, might be missing. Similarly, cultural phenomenon can lead to the spontaneous creation of new words and expressions, such as the recent prominence of words in American English like "amazeballs" and phrases like "totes adorbs". -->
  
 The meaning conveyed by terms and expressions change and evolve as people use them differently.
 
 ### computer languages
 
-- [ ] Torring Complete languages
+- [ ] Turing Complete languages
 - [ ] scripting languages
 - [ ] programming languages
 - [ ] object-oriented languages
@@ -29,7 +31,11 @@ Computer languages behave like human languages in that clear communication depen
 
 A programming language is used to issue commands to a computer.
 
-A markup language is used to provide semantic information about a document. For example, there is some debate about whether Java and HTML are considered a 'markup language' or a 'programming language'.
+A markup language is used to provide semantic information about a document. 
+
+<!-- I'm pretty sure the below is untrue. There might be some confusion but the distinction between a mark-up language and programming language is formal enough that there isn't debate. -->
+
+<!--  For example, there is some debate about whether Java and HTML are considered a 'markup language' or a 'programming language'. -->
 
 <!-- This paragraph needs some further revisions and links in the text to different references (especially statements).  -->
 
