@@ -46,3 +46,14 @@ Since KVM is really a driver for the physical CPU capabilities, it is very tight
 
 * [Difference between KVM and QEMU](http://serverfault.com/questions/208693/difference-between-kvm-and-qemu)
 * [KVM and QEMU – do you know the connection?](http://www.innervoice.in/blogs/2014/03/10/kvm-and-qemu/)
+
+<!--
+
+* [Kernel Virtual Machine](http://www.linux-kvm.org/page/Main_Page)
+* [Blogs by Sriram](http://www.innervoice.in/blogs/2014/03/10/kvm-and-qemu/)
+* [Kernel-based Virtual Machine](https://en.wikipedia.org/wiki/Kernel-based_Virtual_Machine)
+* [Protection ring](https://en.wikipedia.org/wiki/Protection_ring)
+* [Conventional PCI](https://en.wikipedia.org/wiki/Conventional_PCI)
+* [QEMU](http://wiki.qemu.org/Main_Page)
+
+-->
